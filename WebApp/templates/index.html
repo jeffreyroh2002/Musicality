@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Music Analysis App</title>
+</head>
+<body>
+    <div id="questionnaire">
+        <!-- Your questionnaire elements will go here -->
+        <h2>Music Rating Questionnaire</h2>
+        <p>Rate the following aspects of the music:</p>
+        <!-- Example question -->
+        <div class="question">
+            <label for="question1">How would you rate the mood of the music?</label>
+            <input type="range" id="question1" name="question1" min="1" max="10">
+            <span id="question1Value">5</span>
+        </div>
+        <!-- Add more questions as needed -->
+        <button onclick="submitRating()">Submit Ratings</button>
+    </div>
+
+    <div id="analysis-results" style="display: none;">
+        <!-- Display analysis results here -->
+        <h2>Music Analysis Results</h2>
+        <div id="genreResult"></div>
+        <div id="moodResult"></div>
+        <!-- Add more result sections as needed -->
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
