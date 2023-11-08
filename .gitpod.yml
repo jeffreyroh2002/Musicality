@@ -1,7 +1,0 @@
-tasks:
-  - name: Install dependencies
-    command: pip install -r requirements.txt
-
-  - name: Run Flask app
-    command: python app.py
-    port: 5000
