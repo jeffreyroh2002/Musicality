@@ -38,4 +38,8 @@ class Test(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     test_name = db.Column(db.String(30), nullable=False)
     test_date = db.Column(db.Datetime, nullable=False, default=datetime.now)
-    content
+    contents = db.Column(db.PickleType(mutable=True), nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+
+    def __repr__(self):
+        return f"Test('{self.test_name}', '{self.test_date}')"
