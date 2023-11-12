@@ -4,7 +4,7 @@ from forms import UserAnswerForm
 
 questions = Blueprint('questions', __name__)
 
-@questions.route("/user/<string:username>", methods=['GET', 'POST'])
+@questions.route("/test", methods=['GET', 'POST'])
 def test_questions():
     user = User.query.filter_by(username=username).first()
 
