@@ -14,7 +14,7 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(120), unique = True, nullable = False)
     image_file = db.Column(db.String(20), nullable=False, default = 'default.jpg')
     password = db.Column(db.String(60), nullable= False)
-    posts = db.relationship('Post', backref = 'author', lazy=True)
+    answers = db.relationship('UserAnswer', backref = 'user', lazy=True)
 
     def get_reset_token(self, expires_sec=1800):
         s = Serializer(current_app.config['SECRET_KEY'], expires_sec)
@@ -35,17 +35,37 @@ class User(db.Model, UserMixin):
 class Question(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     wav_file_path = db.Column(db.String(255), nullable=False)
-    question1 = db.Column(db.Integer, nullable=False)
-    question2 = db.Column(db.Integer, nullable=False)
-    question3 = db.Column(db.Integer, nullable=False)
-    question4 = db.Column(db.Integer, nullable=False)
+    overall_q = db.Column(db.Integer, nullable=False)
+    genre_q = db.Column(db.Integer, nullable=False)
+    mood_q = db.Column(db.Integer, nullable=False)
+    vocal_q = db.Column(db.Integer, nullable=False)
 
-    def __init__(self, audio_file, question1, question2, question3, question4):
-        self.wav_file_path = audio_file_path
-        self.question1 = question2
-        self.question2 = question3
-        self.question3 = question4
-        self.question4 = question4
+    def __init__(self, wav_file, overall_q, genre_q, mood_q, quevocal_qstion4):
+        self.wav_file_path = wav_file_path
+        self.overall_q = overall_q
+        self.genre_q = genre_q
+        self.mood_q = mood_q
+        self.vocal_q = vocal_q
 
     def __repr__(self):
         return f"<Question {self.id}>"
+
+class UserAnswer(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
+    question_id = db.Column(db.Integer, db.ForeignKey('question.id'), nullable=False)
+    overall_rating = db.Column(db.Integer, nullable=False)
+    genre_rating = db.Column(db.Integer, nullable=True)
+    mood_rating = db.Column(db.Integer, nullable=True)
+    vocal_rating = db.Column(db.Integer, nullable=True)
+
+    def __init__(self, user_id, question_id, enjoyment_rating, genre_rating, mood_rating, vocal_timbre_rating):
+        self.user_id = user_id
+        self.question_id = question_id
+        self.enjoyment_rating = enjoyment_rating
+        self.genre_rating = genre_rating
+        self.mood_rating = mood_rating
+        self.vocal_timbre_rating = vocal_timbre_rating
+    
+    def __repr__(self):
+        return f"<UserAnswer {self.id} - User: {self.user.username}, Question ID: {self.question_id}>"
