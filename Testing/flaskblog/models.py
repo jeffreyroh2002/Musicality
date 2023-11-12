@@ -33,25 +33,15 @@ class User(db.Model, UserMixin):
         return f"User('{self.username}', '{self.email}', '{self.image_file}')"
 
 class AudioFile(db.Model):
-    ###update this
+    id = db.Column(db.Integer, primary_key=True)
+    file_path = db.Column(db.String(255), nullable=False)
+    questions = db.relationship('Question', backref='audio_file', lazy=True)
 
 class Question(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    wav_file_path = db.Column(db.String(255), nullable=False)
-    overall_q = db.Column(db.Integer, nullable=False)
-    genre_q = db.Column(db.Integer, nullable=False)
-    mood_q = db.Column(db.Integer, nullable=False)
-    vocal_q = db.Column(db.Integer, nullable=False)
-
-    def __init__(self, wav_file, overall_q, genre_q, mood_q, quevocal_qstion4):
-        self.wav_file_path = wav_file_path
-        self.overall_q = overall_q
-        self.genre_q = genre_q
-        self.mood_q = mood_q
-        self.vocal_q = vocal_q
-
-    def __repr__(self):
-        return f"<Question {self.id}>"
+    text = db.Column(db.String(255), nullable=False)
+    audio_file_id = db.Column(db.Integer, db.ForeignKey('audio_file.id'), nullable=False)
+    user_answers = db.relationship('UserAnswer', backref='question', lazy=True)
 
 class UserAnswer(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -62,13 +52,6 @@ class UserAnswer(db.Model):
     mood_rating = db.Column(db.Integer, nullable=True)
     vocal_rating = db.Column(db.Integer, nullable=True)
 
-    def __init__(self, user_id, question_id, enjoyment_rating, genre_rating, mood_rating, vocal_timbre_rating):
-        self.user_id = user_id
-        self.question_id = question_id
-        self.enjoyment_rating = enjoyment_rating
-        self.genre_rating = genre_rating
-        self.mood_rating = mood_rating
-        self.vocal_timbre_rating = vocal_timbre_rating
-    
+
     def __repr__(self):
         return f"<UserAnswer {self.id} - User: {self.user.username}, Question ID: {self.question_id}>"
