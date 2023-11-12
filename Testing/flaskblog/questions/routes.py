@@ -34,7 +34,7 @@ def test_questions(audio_file_id):
 
             return redirect(url_for('questions.test_questions', audio_file_id=audio_file_id))
 
-        return render_template('user_info.html', username=username, form=form, audio_file=audio_file)
+        return render_template('questionnaire.html', username=username, form=form, audio_file=audio_file)
 
     return "User not found"
 
