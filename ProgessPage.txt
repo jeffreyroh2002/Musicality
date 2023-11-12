@@ -1,0 +1,15 @@
+Holes in current progress and to do list
+
+First need to figure out how and where to store audio file
+
+
+questions:
+routes.py --> make a function for get_next_audio_file_id()
+
+templates:
+questionnaire.html --> update path to audio file
+
+user:
+routes.py --> create a user about page with results or if none take first test button
+
+??models.py --> fix to take in audio file correctly
