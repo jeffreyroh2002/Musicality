@@ -26,8 +26,18 @@ def test_questions(audio_file_id):
             db.session.add(user_answer)
             db.session.commit()
 
+            next_audio_file_id = get_next_audio_file_id(audio_file_id)  ##fix this
+            if next_audio_file_id is not None:
+                return redirect(url_for('questions.test_questions', audio_file_id=next_audio_file_id))
+            else:
+                return redirect(url_for('questions.survey_completed'))
+
             return redirect(url_for('questions.test_questions', audio_file_id=audio_file_id))
 
         return render_template('user_info.html', username=username, form=form, audio_file=audio_file)
 
     return "User not found"
+
+@questions.route("/survey-completed", methods=['GET'])
+def survey_completed():
+    return render_template('survey_completed.html')
