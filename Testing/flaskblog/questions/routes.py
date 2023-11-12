@@ -5,37 +5,31 @@ from forms import UserAnswerForm
 questions = Blueprint('questions', __name__)
 
 @questions.route("/test", methods=['GET', 'POST'])
+@login_required
 def test_questions():
     user = User.query.filter_by(username=username).first()
 
     if user:
-        # Get all questions for the user
+        # Get all questions for the user -> change to one each in future
         questions = Question.query.all()
 
-        if request.method == 'POST':
-            form = UserAnswerForm(request.form)
+        form = UserAnswerForm()
 
-            if form.validate():
-                for question in questions:
-                    user_answer = UserAnswer(
-                        user_id=user.id,
-                        question_id=question.id,
-                        enjoyment_rating=form.enjoyment_rating.data,
-                        genre_rating=form.genre_rating.data if form.genre_rating.data != 'not_sure' else None,
-                        mood_rating=form.mood_rating.data if form.mood_rating.data != 'not_sure' else None,
-                        vocal_timbre_rating=form.vocal_timbre_rating.data if form.vocal_timbre_rating.data != 'not_sure' else None
-                    )
-
-                    db.session.add(user_answer)
-                    db.session.commit()
-
-                return redirect(url_for('users.user_info', username=username))
-
-        else:
-            # Dynamically generate form fields based on questions
-            form = UserAnswerForm()
+        if form.validate_on_submit():
             for question in questions:
-                setattr(form, f'question_{question.id}', IntegerField(question.text, choices=[(i, str(i)) for i in range(1, 6)] + [('not_sure', 'Not sure')]))
+                user_answer = UserAnswer(
+                    user_id=user.id,
+                    question_id=question.id,
+                    enjoyment_rating=getattr(form, f'question_{question.id}').data,
+                    genre_rating=getattr(form, f'question_{question.id}').data if getattr(form, f'question_{question.id}').data != 'not_sure' else None,
+                    mood_rating=getattr(form, f'question_{question.id}').data if getattr(form, f'question_{question.id}').data != 'not_sure' else None,
+                    vocal_timbre_rating=getattr(form, f'question_{question.id}').data if getattr(form, f'question_{question.id}').data != 'not_sure' else None
+                )
+                
+                db.session.add(user_answer)
+                db.session.commit()
+
+            return redirect(url_for(questions.test_questions))
 
         return render_template('user_info.html', username=username, questions=questions, form=form)
 
