@@ -31,3 +31,20 @@ class User(db.Model, UserMixin):
 
     def __repr__(self):
         return f"User('{self.username}', '{self.email}', '{self.image_file}')"
+
+class Question(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    wav_file = db.Column(db.String(255), nullable=False)
+    question1 = db.Column(db.String(255), nullable=False)
+    question2 = db.Column(db.String(255), nullable=False)
+    question3 = db.Column(db.String(255), nullable=False)
+    question4 = db.Column(db.String(255), nullable=False)
+
+    def __init__(self, audio_file, question1, question2, question3, question4):
+        self.question1 = question2
+        self.question2 = question3
+        self.question3 = question4
+        self.question4 = question4
+
+    def __repr__(self):
+        return f"<Question {self.id}>"
