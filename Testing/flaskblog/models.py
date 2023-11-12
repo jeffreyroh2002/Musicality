@@ -32,6 +32,9 @@ class User(db.Model, UserMixin):
     def __repr__(self):
         return f"User('{self.username}', '{self.email}', '{self.image_file}')"
 
+class AudioFile(db.Model):
+    ###update this
+
 class Question(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     wav_file_path = db.Column(db.String(255), nullable=False)
