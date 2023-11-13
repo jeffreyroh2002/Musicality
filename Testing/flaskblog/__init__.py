@@ -30,4 +30,17 @@ def create_app(config_class=Config):
     app.register_blueprint(main)
     #app.register_blueprint(errors)
 
+    with app.app_context():
+        # Create instances of AudioFile and add them to the database
+        from flaskblog.models import AudioFile
+
+        audio_files_directory = 'static/audio/'
+
+        for order, file_name in enumerate(os.listdir(audio_files_directory), start=1):
+            file_path = os.path.join(audio_files_directory, file_name)
+            audio_file = AudioFile(file_path=file_path, order=order)
+            db.session.add(audio_file)
+        
+        db.session.commit()
+        
     return app
