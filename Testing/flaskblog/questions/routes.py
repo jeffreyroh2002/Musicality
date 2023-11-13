@@ -1,7 +1,7 @@
-from flask import render_template, redirect, url_for
+from flask import render_template, redirect, url_for, Blueprint
 from flask_login import current_user, login_required
-from models import db, UserAnswer, AudioFile
-from forms import UserAnswerForm
+from flaskblog.models import db, UserAnswer, AudioFile
+from .forms import UserAnswerForm  #.forms imports from same package dir
 
 def get_next_audio_file_id(current_audio_file_id):
     current_audio_file = AudioFile.query.get_or_404(current_audio_file_id)
