@@ -35,6 +35,7 @@ class User(db.Model, UserMixin):
 class AudioFile(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     file_path = db.Column(db.String(255), nullable=False)
+    order = db.Column(db.Integer, nullable=False)
     questions = db.relationship('Question', backref='audio_file', lazy=True)
 
 class Question(db.Model):
