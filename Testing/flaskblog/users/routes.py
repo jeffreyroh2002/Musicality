@@ -65,6 +65,7 @@ def account():
 
 ### need to add results root for user ####
 
+"""
 @users.route("/reset_password", methods=['GET', 'POST'])
 def reset_request():
     if current_user.is_authenticated:
@@ -94,3 +95,4 @@ def reset_token(token):
         flash('Your password has been updated! You are now able to log in', 'success')
         return redirect(url_for('users.login'))
     return render_template('reset_token.html', title='Reset Password', form=form)
+"""
