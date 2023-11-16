@@ -13,3 +13,21 @@ user:
 routes.py --> create a user about page with results or if none take first test button
 
 ??models.py --> fix to take in audio file correctly
+
+
+2023-11-15 update
+1. extract '1 min or 30 sec' from each audio files and save it in the 'static/audio' folder (1 min that represents the characteristic of each song)
+
+audio file - > static/audio에 저장
+
+default test의 경우 
+
+40 곡 (1분 or 30초) 들려주고 평가
+
+유저 모델 -> id, username, email, password, tests(relationship('Test")), answers(relationship(UserAnswer))
+
+테스트 모델 -> id, 테스트 명, 테스트 실시일, 참여자 id(foreignkey(user))#새로운 테스트 할 때마다 갱신
+
+오디오 모델 -> id, 오디오 이름, path, 장르, 보컬, background mood, 질문(relationship(UserAnswer))  
+
+답변 모델 -> id, overall_rating, genre_rating, mood_rating, vocal_rating, user_id(foreignkey(User)), audio_id(foreignKey(AudioFile)) 
