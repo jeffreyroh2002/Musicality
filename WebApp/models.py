@@ -16,6 +16,7 @@ class User(db.Model, UserMixin):
     email = db.Column(db.String(120), unique=True, nullable=False)
     password = db.Column(db.String(60), nullable=True)
     tests = db.relationship("Test", backref="subject", lazy=True)
+    answers = db.relationship("UserAnswer", backref="user", lazy=True)
 
     def get_reset_token(self, expires_sec=600):
         s = Serializer(current_app.config["SECRET_KEY"], expires_sec)
@@ -38,8 +39,36 @@ class Test(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     test_name = db.Column(db.String(30), nullable=False)
     test_date = db.Column(db.Datetime, nullable=False, default=datetime.now)
-    contents = db.Column(db.PickleType(mutable=True), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
 
     def __repr__(self):
-        return f"Test('{self.test_name}', '{self.test_date}')"
+        return f"Test('{self.user_id}', '{self.test_name}', '{self.test_date}')"
+
+
+class AudioFile(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    audio_name = db.Column(db.String(20), nullable=False)
+    audio_path = db.Column(db.String(50), nullable=False)
+    genre = db.Column(db.Text, nullable=False)  # json.dump로 dict type 처리 후 save
+    mood = db.Column(db.Text, nullable=False)
+    vocal = db.Column(db.Text, nullable=False)
+
+    def __repr__(self):
+        return f"AudioFile('{self.audio_name}', '{self.audio_path}', '{self.genre}', '{self.mood}', '{self.vocal}')"
+
+
+class UserAnswer(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    overall_rating = db.Column(db.Integer, nullable=False)
+    genre_rating = db.Column(
+        db.Integer, nullable=False
+    )  # if user check "I don't know" == -1
+    mood_rating = db.Column(db.Integer, nullable=False)
+    vocal_rating = db.Column(db.Integer, nullable=False)
+    user_id = db.Column(db.Integer, db.ForeignKey("user.id"), nullable=False)
+    audio_id = db.Column(db.Integer, db.ForeignKey("audiofile.id"), nullable=False)
+
+    def __repr__(self):
+        return (
+            f"UserAnswer('{self.user_id}', '{self.audio_id}', '{self.overall_rating}')"
+        )

@@ -28,6 +28,6 @@ default test의 경우
 
 테스트 모델 -> id, 테스트 명, 테스트 실시일, 참여자 id(foreignkey(user))#새로운 테스트 할 때마다 갱신
 
-오디오 모델 -> id, 오디오 이름, path, 장르, 보컬, background mood, 질문(relationship(UserAnswer))  
+오디오 모델 -> id, 오디오 이름, path, 장르, 보컬, background mood, 답변(relationship(UserAnswer))  
 
 답변 모델 -> id, overall_rating, genre_rating, mood_rating, vocal_rating, user_id(foreignkey(User)), audio_id(foreignKey(AudioFile)) 
