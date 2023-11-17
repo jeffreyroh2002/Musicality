@@ -5,7 +5,7 @@ from .forms import UserAnswerForm  #.forms imports from same package dir
 
 def get_next_audio_file_id(current_audio_file_id):
     current_audio_file = AudioFile.query.get_or_404(current_audio_file_id)
-    next_audio_file = AudioFile.query.filter(AudioFile.order > current_audio_file.order).order_by(AudioFile.order.asc()).first()
+    next_audio_file = AudioFile.query.filter(AudioFile.id > current_audio_file.id).order_by(AudioFile.id.asc()).first()
 
     if next_audio_file:
         return next_audio_file.id
@@ -23,20 +23,23 @@ def test_questions(audio_file_id):
 
     if form.validate_on_submit():
         user_answer = UserAnswer(
-            user=current_user,
             overall_rating=form.overall_rating.data,
-            genre_rating=form.genre_rating.data if form.genre_rating.data != 'not_sure' else None,
-            mood_rating=form.mood_rating.data if form.mood_rating.data != 'not_sure' else None,
-            vocal_timbre_rating=form.vocal_timbre_rating.data if form.vocal_timbre_rating.data != 'not_sure' else None,
-            user = current_user
+            genre_rating=form.genre_rating.data if form.genre_rating.data != 'not_sure' else -1,
+            mood_rating=form.mood_rating.data if form.mood_rating.data != 'not_sure' else -1,
+            vocal_timbre_rating=form.vocal_timbre_rating.data if form.vocal_timbre_rating.data != 'not_sure' else -1,
+            user = current_user,
+            audio_id = audio_file.id
         )
 
-        db.session.add(user_answer)
-        db.session.commit()
+        if UserAnswer.query.filter_by(audio_id='audio_file.id').first() == None:
+            db.session.add(user_answer)
+            db.session.commit()
 
         next_audio_file_id = get_next_audio_file_id(audio_file_id)
         if next_audio_file_id is not None:
             return redirect(url_for('questions.test_questions', audio_file_id=next_audio_file_id))
+        else:
+            return redirect(url_for('questions.survey_completed'))
 
     return render_template('questionnaire.html', form=form, audio_file=audio_file)
 
