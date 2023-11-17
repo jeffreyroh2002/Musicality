@@ -4,6 +4,7 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 from flask_mail import Mail
 from WebApp.config import Config
+import os
 
 db = SQLAlchemy()
 bcrypt = Bcrypt()
@@ -23,5 +24,12 @@ def create_app(config_class=Config):
     mail.init_app(app)
 
     # section for importing blueprints
+    from WebApp.users.routes import users
+    from WebApp.main.routes import main
+    from WebApp.questions.routes import questions
 
+    app.register_blueprint(users)
+    app.register_blueprint(main)
+    app.register_blueprint(questions)
+    
     return app
