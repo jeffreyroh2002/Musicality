@@ -30,10 +30,9 @@ def test_questions(audio_file_id):
             user = current_user,
             audio_id = audio_file.id
         )
-
-        if UserAnswer.query.filter_by(audio_id='audio_file.id').first() == None:
-            db.session.add(user_answer)
-            db.session.commit()
+        
+        db.session.add(user_answer)
+        db.session.commit()
 
         next_audio_file_id = get_next_audio_file_id(audio_file_id)
         if next_audio_file_id is not None:
