@@ -7,7 +7,7 @@
   <!-- Audio Player -->
   <audio controls>
     <!-- need to update path to audio file -->
-    <source src="{{ url_for('static', filename='audio/' + audio_file.file_path) }}" type="audio/wav"> 
+    <source src="{{audio_file.file_path}}" type="audio/wav"> 
     Your browser does not support the audio player. Please consider upgrading to a modern browser.
   </audio>
 
