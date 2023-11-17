@@ -2,7 +2,6 @@ from flask import Flask
 #from flaskblog.extensions import db, bcrypt, login_manager, mail
 from flaskblog.extensions import db, bcrypt, login_manager
 from flaskblog.config import Config
-from flaskblog.questions.routes import questions
 import os
 
 def create_app(config_class=Config):
@@ -17,6 +16,8 @@ def create_app(config_class=Config):
 
     from flaskblog.users.routes import users
     from flaskblog.main.routes import main
+    from flaskblog.questions.routes import questions
+
     app.register_blueprint(users)
     app.register_blueprint(questions)
     app.register_blueprint(main)
