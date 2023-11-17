@@ -7,6 +7,8 @@ app.app_context().push()
 
 # Save audio files into DB
 with app.app_context():
+    db.drop_all()
+    db.create_all()
     from WebApp.models import AudioFile
     audio_files_dir = os.path.join(os.getcwd(), 'WebApp', 'static', 'audio')
     for file_name in os.listdir(audio_files_dir):
