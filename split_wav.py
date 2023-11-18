@@ -2,7 +2,7 @@ import sys
 import os
 from pydub import AudioSegment
 
-def split_wav_into_segments(input_directory, output_directory, txt_file, segment_length_ms=60000):
+def split_wav_into_segments(input_directory, output_directory, txt_file, segment_length_ms=30000):
     # Create the output directory if it doesn't exist
     os.makedirs(output_directory, exist_ok=True)
 
