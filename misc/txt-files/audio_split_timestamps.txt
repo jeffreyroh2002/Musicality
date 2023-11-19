@@ -1,0 +1,36 @@
+ES_A World That's Gone Bad - The Devil's Sway.wav,120,180
+ES_AFTERPARTY - dasloe.wav,80,140
+ES_Air on the G String - Johannes Bornlof.wav,67,97
+ES_Anywhere but Here - Easton.wav,0,60
+ES_Bam Bam - Bambi Haze.wav,71,101
+ES_Big Reveal - Torii Wolf.wav,43,73
+ES_Birdhouse - Hara Noda.wav,20,80
+ES_Born to Be This High - Snake City.wav,56,86
+ES_Can't Help It - spring gang.wav,12,72
+ES_Drifting Away - Mama Zula.wav,45,75
+ES_Faller - Ikhana.wav,30,90
+ES_Go on Blues - Bo the Drifter.wav,45,65
+ES_Good Vibes Only - Nbhd Nick.wav,23,53
+ES_Hierarchy (Clean Version) - Roof.wav,20,50
+ES_I Feel Good - Mama Zula.wav,93,123
+ES_I'm Looking Ahead - Ebo Krdum.wav,10,40
+ES_Keep on Shining - Zorro.wav,117,147
+ES_Like It or Love It - Iso Indies.wav,12,42
+ES_Lily My Dear - Bladverk Band.wav,70,130
+ES_Look at You Differently - Snake City.wav,38,98
+ES_Lose - R.A.D..wav,25,55
+ES_Luvsick - Collin Lim.wav,8,68
+ES_No Crime - The Devil's Sway.wav,35,95
+ES_Put My Roots Down - Just Peachy.wav,51,81
+ES_Ride This Train - Robson Carver.wav,17,47
+ES_Royal Estate - Francis Wells.wav,22,82
+ES_Sooner Than You Know - Carvings.wav,21,51
+ES_Stays The Same - Gloria Tells.wav,48,78
+ES_Stellar Park - Squiid.wav,13,43
+ES_Sudden Death - Sightless in Shadow.wav,0,30
+ES_Sure Is Heaven to Me - Binkley.wav,9,39
+ES_The Jazz Messenger - Vendla.wav,73,133
+ES_The Old Dirt Road - Bo the Drifter.wav,95,125
+ES_Trapped in a Maze - Philip Ayers.wav,49,79
+ES_We Came to Party - Basixx.wav,28,88
+ES_Where R U_ - King Sis.wav,30,60
