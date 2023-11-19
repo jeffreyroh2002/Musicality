@@ -12,8 +12,8 @@ def split_wav_into_segments(input_directory, output_directory, txt_file, segment
             content = content.strip()  # remove \n
             data = content.split(",")
             song_name = data[0]
-            start_time = data[1]
-            end_time = start_time + segment_length_ms
+            start_time = int(data[1]) * 1000  # change ms into sec
+            end_time = int(data[2]) * 1000 
             
             # Load the input WAV file
             input_path = os.path.join(input_directory, song_name)
@@ -28,10 +28,6 @@ def split_wav_into_segments(input_directory, output_directory, txt_file, segment
             segment.export(output_file, format="wav")
             
             content = file.readline()
-
-
-    for input_file in input_files:
-        input_path = os.path.join(input_directory, input_file)
 
         
 
