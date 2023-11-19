@@ -1,4 +1,4 @@
-from flask import render_template, redirect, url_for, Blueprint
+from flask import render_template, redirect, url_for, Blueprint, flash
 from flask_login import current_user, login_required
 from WebApp.models import db, UserAnswer, AudioFile
 from .forms import UserAnswerForm  #.forms imports from same package dir
@@ -17,6 +17,18 @@ questions = Blueprint('questions', __name__)
 @questions.route("/test/<int:audio_file_id>", methods=['GET', 'POST'])
 @login_required
 def test_questions(audio_file_id):
+    if audio_file_id == 0:
+        latest_answer = UserAnswer.query.filter_by(user=current_user).order_by(UserAnswer.audio_id.desc()).first()
+        if not latest_answer:
+            return redirect(url_for('questions.test_questions', audio_file_id=1))
+        latest_audio_num = latest_answer.audio_id
+        if len(AudioFile.query.all()) == latest_audio_num:
+            flash('You have already taken this test!', 'info')
+            return redirect(url_for('questions.survey_completed'))
+        else:
+            flash('It seems you have already answers some questions in the past. Starting where you left off.', 'info')
+            return redirect(url_for('questions.test_questions', audio_file_id=latest_audio_num+1))
+
     user = current_user
     audio_file = AudioFile.query.get_or_404(audio_file_id)
     form = UserAnswerForm()
