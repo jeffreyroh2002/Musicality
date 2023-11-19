@@ -53,10 +53,17 @@ def test_questions(audio_file_id):
         if next_audio_file_id is not None:
             return redirect(url_for('questions.test_questions', audio_file_id=next_audio_file_id))
         else:
-            return redirect(url_for('questions.survey_completed'))
+            # Populate User Answers to a single Test Model (unique-id)
+
+            test = Test(test_name="Overall Test", user_id=current_user.id)
+
+            return redirect(url_for('results.show_results', test_id=...))
+
+            #return redirect(url_for('questions.survey_completed'))
 
     return render_template('questionnaire.html', form=form, audio_file=audio_file)
 
 @questions.route("/survey-completed", methods=['GET'])
 def survey_completed():
+
     return render_template('survey_completed.html')
