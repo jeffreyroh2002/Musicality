@@ -17,6 +17,9 @@ questions = Blueprint('questions', __name__)
 @questions.route("/test/<int:audio_file_id>", methods=['GET', 'POST'])
 @login_required
 def test_questions(audio_file_id):
+
+    user = current_user
+    
     if audio_file_id == 0:
         latest_answer = UserAnswer.query.filter_by(user=current_user).order_by(UserAnswer.audio_id.desc()).first()
         if not latest_answer:
@@ -28,8 +31,7 @@ def test_questions(audio_file_id):
         else:
             flash('It seems you have already answers some questions in the past. Starting where you left off.', 'info')
             return redirect(url_for('questions.test_questions', audio_file_id=latest_audio_num+1))
-
-    user = current_user
+    
     audio_file = AudioFile.query.get_or_404(audio_file_id)
     form = UserAnswerForm()
 
