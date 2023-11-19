@@ -37,7 +37,7 @@ def test_questions(test_type, audio_file_id):
             return redirect(url_for('questions.test_questions', test_type=test_type, audio_file_id=1))
 
         
-        latest_answer = UserAnswer.query.filter_by(user=current_user).order_by(UserAnswer.audio_id.desc()).first()
+        latest_answer = UserAnswer.query.filter((UserAnswer.user==current_user) & UserAnswer.test==test).order_by(UserAnswer.audio_id.desc()).first()
         latest_audio_num = latest_answer.audio_id
         
         # when you have already finished this type of test
