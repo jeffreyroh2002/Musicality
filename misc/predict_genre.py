@@ -8,9 +8,6 @@ saved_model_path = "../results/1014_genre_11x100_50ep_0.00005lr/saved_model"
 test_data_path = "genre_testing_data.json"
 model_saved_mfcc = "../genre_dataset/genre_11x100.json" # change into txt file
 
-# Create the output directory if it doesn't exist
-os.makedirs(output_dir, exist_ok=True)
-
 def load_testing_data(test_data_path):
     with open(test_data_path, "r") as fp:
         test_data = json.load(fp)
