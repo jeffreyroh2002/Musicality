@@ -25,7 +25,7 @@ with app.app_context():
     db.drop_all()
     db.create_all()
     from WebApp.models import AudioFile
-    audio_files_dir = os.path.join(os.getcwd(), 'WebApp', 'static', 'audio')
+    audio_files_dir = os.path.join(os.getcwd(), 'WebApp', 'static', 'audio_full_mix')
     for file_name in os.listdir(audio_files_dir):
         file_path = os.path.join(audio_files_dir, file_name)
 
