@@ -80,5 +80,8 @@ def test_questions(test_type, audio_file_id):
 
 @questions.route("/survey-completed", methods=['GET'])
 def survey_completed():
+    ### Instead Render new template that is a loading screen. "Hang in there..."
+    #return render_template('survey_completed.html')
 
-    return render_template('survey_completed.html')
+    #for now, instantly direct to test_results route
+    return redirect(url_for('results.single_test_result'))

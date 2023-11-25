@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% if test.test_type == 1 %}
+        <h1>Your Generic Test Results</h1>
+    {% elif test.test_type == 2 %}
+        <h1>Your Contextual Test Results</h1>
+    {% endif %}
+
+    <h2>Genre you like:</h2>
+    <ul>
+        <li> Blues: {{ genre_score[Blues] }} </li>
+        <li> Ballad: {{ genre_score[Ballad] }} </li>
+        <li> Classical: {{ genre_score[Classical] }} </li>
+        <li> Country: {{ genre_score[Country] }} </li>
+        <li> Electronic: {{ genre_score[Electronic] }} </li>
+        <li> Jazz: {{ genre_score[Jazz] }} </li>
+        <li> Metal: {{ genre_score[Metal] }} </li>
+        <li> Pop: {{ genre_score[Pop] }} </li>
+        <li> Reggae: {{ genre_score[Reggae] }} </li>
+        <li> Rock: {{ genre_score[Rock] }} </li>
+        <li> Soul/R&B: {{ genre_score[Soul/R&B] }} </li>
+    </ul>
+
+    <h2>Mood you like:</h2>
+    <ul>
+        <li> Angry: {{ mood_score[Blues] }} </li>
+        <li> Bright: {{ mood_score[Ballad] }} </li>
+        <li> Melancholy: {{ mood_score[Classical] }} </li>
+        <li> Relaxed: {{ mood_score[Country] }} </li>
+    </ul>
+
+    <h2>Vocals you like:</h2>
+    <ul>
+        <li> Clear: {{ vocal_score[Clear] }} </li>
+        <li> Ethereal: {{ vocal_score[Ethereal] }} </li>
+        <li> Raspy: {{ vocal_score[Raspy] }} </li>
+    </ul>
+
+
+{% endblock content %}
