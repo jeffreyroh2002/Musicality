@@ -4,7 +4,7 @@ from tensorflow import keras
 import os
 
 # Load the saved model
-saved_model_path = "../results/1014_genre_11x100_50ep_0.00005lr/saved_model"
+saved_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_vocal', 'saved_model')
 test_data_path = "genre_testing_data.json"
 model_saved_mfcc = "../genre_dataset/genre_11x100.json" # change into txt file
 

@@ -4,9 +4,10 @@ from tensorflow import keras
 import os
 
 # Load the saved model
-saved_model_path = "../results/1014_genre_11x100_50ep_0.00005lr/saved_model"
+saved_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_mood', 'saved_model')
 test_data_path = "genre_testing_data.json"
 model_saved_mfcc = "../genre_dataset/genre_11x100.json" # change into txt file
+
 
 def load_testing_data(test_data_path):
     with open(test_data_path, "r") as fp:
@@ -26,7 +27,7 @@ def load_mfcc_labels(model_saved_mfcc):  # change using txt
 
     return mfcc_labels
 
-def predict_genre(saved_model_path, test_data_path, model_saved_mfcc):
+def predict_mood(saved_model_path, test_data_path, model_saved_mfcc):
     X_test, y_test, filenames = load_testing_data(test_data_path)
     X_test = X_test[..., np.newaxis]  # If needed, reshape your data for the model input
     mfcc_labels = load_mfcc_labels(model_saved_mfcc)
@@ -73,9 +74,9 @@ def predict_genre(saved_model_path, test_data_path, model_saved_mfcc):
             segment_count += 1
 
         # Calculate the average radar values for the song
-        predicted_genre = {genre:percent/segment_count for genre, percent in label_counts.items()}
+        predicted_mood = {mood:percent/segment_count for mood, percent in label_counts.items()}
         
-        output[f] = predicted_genre
+        output[f] = predicted_mood
         segment_count = 0
         label_counts = {label: 0 for label in label_list.values()}
 
