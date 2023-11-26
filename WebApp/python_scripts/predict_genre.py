@@ -28,7 +28,7 @@ def load_mfcc_labels(model_saved_mfcc):  # change using txt
     return mfcc_labels
 """
 
-def predict_genre(saved_model_path, test_data_path, model_saved_mfcc):
+def predict_genre(saved_model_path, test_data_path):
     X_test, y_test, filenames = load_testing_data(test_data_path)
     X_test = X_test[..., np.newaxis]  # If needed, reshape your data for the model input
 

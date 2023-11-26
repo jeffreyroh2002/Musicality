@@ -27,11 +27,10 @@ def load_mfcc_labels(model_saved_mfcc):  # change using txt
 
     return mfcc_labels
 """
-def predict_timbre(saved_model_path, test_data_path, model_saved_mfcc):
+def predict_timbre(saved_model_path, test_data_path):
     X_test, y_test, filenames = load_testing_data(test_data_path)
     X_test = X_test[..., np.newaxis]  # If needed, reshape your data for the model input
-    mfcc_labels = load_mfcc_labels(model_saved_mfcc)
-
+    
     loaded_model = keras.models.load_model(saved_model_path)
 
     # Make predictions
