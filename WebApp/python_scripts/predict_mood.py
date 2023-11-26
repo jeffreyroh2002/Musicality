@@ -6,8 +6,7 @@ import os
 # Load the saved model
 saved_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_mood', 'saved_model')
 test_data_path = "genre_testing_data.json"
-model_saved_mfcc = "../genre_dataset/genre_11x100.json" # change into txt file
-
+mfcc_labels = np.array([""])
 
 def load_testing_data(test_data_path):
     with open(test_data_path, "r") as fp:
@@ -19,6 +18,7 @@ def load_testing_data(test_data_path):
 
     return X_test, y_test, filenames
 
+"""
 def load_mfcc_labels(model_saved_mfcc):  # change using txt
     with open(model_saved_mfcc, "r") as fp:
         data = json.load(fp)
@@ -26,6 +26,7 @@ def load_mfcc_labels(model_saved_mfcc):  # change using txt
     mfcc_labels = np.array(data["mapping"])  # Adjust the key as per your data format
 
     return mfcc_labels
+"""
 
 def predict_mood(saved_model_path, test_data_path, model_saved_mfcc):
     X_test, y_test, filenames = load_testing_data(test_data_path)
