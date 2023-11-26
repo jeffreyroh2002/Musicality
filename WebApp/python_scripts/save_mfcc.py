@@ -3,8 +3,8 @@ import os
 import math
 import librosa
 
-DATASET_PATH = os.path.join(os.getcwd(), 'WebApp', 'static', 'audio_data')
-JSON_FILE_NAME = os.path.join(os.getcwd(), 'WebApp', 'static', 'audio_data', 'audio_full_mix_split')
+DATASET_PATH = "../static/audio_data/audio_vocals_split"
+JSON_FILE_NAME = "vocal_mfcc.json"
 JSON_PATH = JSON_FILE_NAME
 
 SAMPLE_RATE = 22050
