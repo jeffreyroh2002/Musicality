@@ -4,9 +4,9 @@ from tensorflow import keras
 import os
 
 # Load the saved model
-saved_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_genre', 'saved_model')
-test_data_path = "genre_testing_data.json"
-model_saved_mfcc = "../genre_dataset/genre_11x100.json" # change into txt file
+saved_model_path = "pred_genre/save_model"
+test_data_path = "../static/mfccs/full_mix_mfcc.json"
+mfcc_labels = np.array(["RB_Soul", "HipHop", "Blues", "Reggae", "Rock", "Orchestral", "Pop", "Metal", "Ballad", "Electronic", "Jazz", "Country"])
 
 def load_testing_data(test_data_path):
     with open(test_data_path, "r") as fp:
@@ -18,6 +18,7 @@ def load_testing_data(test_data_path):
 
     return X_test, y_test, filenames
 
+"""
 def load_mfcc_labels(model_saved_mfcc):  # change using txt
     with open(model_saved_mfcc, "r") as fp:
         data = json.load(fp)
@@ -25,11 +26,11 @@ def load_mfcc_labels(model_saved_mfcc):  # change using txt
     mfcc_labels = np.array(data["mapping"])  # Adjust the key as per your data format
 
     return mfcc_labels
+"""
 
 def predict_genre(saved_model_path, test_data_path, model_saved_mfcc):
     X_test, y_test, filenames = load_testing_data(test_data_path)
     X_test = X_test[..., np.newaxis]  # If needed, reshape your data for the model input
-    mfcc_labels = load_mfcc_labels(model_saved_mfcc)
 
     loaded_model = keras.models.load_model(saved_model_path)
 
