@@ -1,20 +1,20 @@
 from WebApp import db, create_app
 import os
-from WebApp.python_scripts import predict_genre
-from WebApp.python_scripts import predict_mood
-from WebApp.python_scripts import predict_timbre
+from WebApp.python_scripts.predict_genre import predict_genre
+from WebApp.python_scripts.predict_mood import predict_mood
+from WebApp.python_scripts.predict_timbre import predict_timbre
 import json
 
 # path for predicting genre, mood, timbre
 
-genre_saved_mfcc = "static/mfccs/full_mix_mfcc.json"
-mood_saved_mfcc = "static/mfccs/instrumental_mfcc.json"
-timbre_saved_mfcc = "static/mfccs/vocal_mfcc.json"
 
-genre_model_path = "python_scripts/pred_genre/saved_model"
-mood_model_path = "python_scripts/pred_mood/saved_model"
-timbre_model_path = "python_scripts/pred_vocal/saved_model"
+genre_saved_mfcc = os.path.join(os.getcwd(), 'WebApp', 'static', 'mfccs', 'full_mix_mfcc.json')
+mood_saved_mfcc = os.path.join(os.getcwd(), 'WebApp', 'static', 'mfccs', 'instrumental_mfcc.json')
+timbre_saved_mfcc = os.path.join(os.getcwd(), 'WebApp', 'static', 'mfccs', 'vocal_mfcc.json')
 
+genre_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_genre', 'saved_model')
+mood_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_mood', 'saved_model')
+timbre_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_vocal', 'saved_model')
 
 app = create_app()
 
@@ -44,15 +44,18 @@ with app.app_context():
         vocal_file_path = os.path.join(vocals_dir, vocal_file_name)
 
         # Predict and save genre, mood, and timbre data
-        genre_data = predict_genre(genre_model_path, full_mix_file_path, genre_saved_mfcc)
-        mood_data = predict_mood(mood_model_path, instrumental_file_path, mood_saved_mfcc)
+        genre_data = predict_genre(genre_model_path, genre_saved_mfcc)
+
+        """
+        mood_data = predict_mood(mood_model_path, mood_saved_mfcc)
 
         # Check if the vocal file exists
         if os.path.exists(vocal_file_path):
-            timbre_data = predict_timbre(timbre_model_path, vocal_file_path, timbre_saved_mfcc)
+            timbre_data = predict_timbre(timbre_model_path, timbre_saved_mfcc)
         else:
             # Set the vocal element to "Voiceless" if the vocal file doesn't exist
             timbre_data = {"vocal_element": "Voiceless"}
+        """
 
         # Convert data to JSON format
         genre_data_json = json.dumps(genre_data)
