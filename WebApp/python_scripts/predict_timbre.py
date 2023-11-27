@@ -4,9 +4,12 @@ from tensorflow import keras
 import os
 
 # Load the saved model
-saved_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_vocal', 'saved_model')
+saved_model_path = os.path.join(
+    os.getcwd(), "WebApp", "python_scripts", "pred_vocal", "saved_model"
+)
 test_data_path = "genre_testing_data.json"
-mfcc_labels = np.array([""])
+mfcc_labels = np.array(["Smooth", "Dreamy", "Raspy", "Voiceless"])
+
 
 def load_testing_data(test_data_path):
     with open(test_data_path, "r") as fp:
@@ -18,6 +21,7 @@ def load_testing_data(test_data_path):
 
     return X_test, y_test, filenames
 
+
 """
 def load_mfcc_labels(model_saved_mfcc):  # change using txt
     with open(model_saved_mfcc, "r") as fp:
@@ -27,10 +31,12 @@ def load_mfcc_labels(model_saved_mfcc):  # change using txt
 
     return mfcc_labels
 """
+
+
 def predict_timbre(saved_model_path, test_data_path):
     X_test, y_test, filenames = load_testing_data(test_data_path)
     X_test = X_test[..., np.newaxis]  # If needed, reshape your data for the model input
-    
+
     loaded_model = keras.models.load_model(saved_model_path)
 
     # Make predictions
@@ -41,24 +47,22 @@ def predict_timbre(saved_model_path, test_data_path):
 
     # Define your label list mapping class indices to labels
     label_list = {}
-    for i in range (len(mfcc_labels)):
+    for i in range(len(mfcc_labels)):
         label_list[i] = mfcc_labels[i]
 
     Song_list = set(filenames)
     Song_list = list(Song_list)
     Sorted_Song_list = sorted(Song_list)
-    Song_list = {label : [] for label in Sorted_Song_list}
+    Song_list = {label: [] for label in Sorted_Song_list}
 
-    # sort labels 
+    # sort labels
     for i, label in enumerate(predicted_class_indices):
         f_name = filenames[i]
         Song_list[f_name].append(i)
 
-
     # Initialize variables for percentage calculation
     segment_count = 0
     label_counts = {label: 0 for label in label_list.values()}
-
 
     output = {}
 
@@ -73,8 +77,10 @@ def predict_timbre(saved_model_path, test_data_path):
             segment_count += 1
 
         # Calculate the average radar values for the song
-        predicted_timbre = {timbre:percent/segment_count for timbre, percent in label_counts.items()}
-        
+        predicted_timbre = {
+            timbre: percent / segment_count for timbre, percent in label_counts.items()
+        }
+
         output[f] = predicted_timbre
         segment_count = 0
         label_counts = {label: 0 for label in label_list.values()}
