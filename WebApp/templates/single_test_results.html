@@ -8,33 +8,32 @@
 
     <h2>Genre you like:</h2>
     <ul>
-        <li> Blues: {{ genre_score[Blues] }} </li>
-        <li> Ballad: {{ genre_score[Ballad] }} </li>
-        <li> Classical: {{ genre_score[Classical] }} </li>
-        <li> Country: {{ genre_score[Country] }} </li>
-        <li> Electronic: {{ genre_score[Electronic] }} </li>
-        <li> Jazz: {{ genre_score[Jazz] }} </li>
-        <li> Metal: {{ genre_score[Metal] }} </li>
-        <li> Pop: {{ genre_score[Pop] }} </li>
-        <li> Reggae: {{ genre_score[Reggae] }} </li>
-        <li> Rock: {{ genre_score[Rock] }} </li>
-        <li> Soul/R&B: {{ genre_score[Soul/R&B] }} </li>
+        <li> Blues: {{ genre_score['Blues'] }} </li>
+        <li> Ballad: {{ genre_score['Ballad'] }} </li>
+        <li> Classical: {{ genre_score['Orchestral'] }} </li>
+        <li> Country: {{ genre_score['Country'] }} </li>
+        <li> Electronic: {{ genre_score['Electronic'] }} </li>
+        <li> Jazz: {{ genre_score['Jazz'] }} </li>
+        <li> Metal: {{ genre_score['Metal'] }} </li>
+        <li> Pop: {{ genre_score['Pop'] }} </li>
+        <li> Reggae: {{ genre_score['Reggae'] }} </li>
+        <li> Rock: {{ genre_score['Rock'] }} </li>
+        <li> Soul/R&B: {{ genre_score['RB_Soul'] }} </li>
     </ul>
 
     <h2>Mood you like:</h2>
     <ul>
-        <li> Angry: {{ mood_score[Blues] }} </li>
-        <li> Bright: {{ mood_score[Ballad] }} </li>
-        <li> Melancholy: {{ mood_score[Classical] }} </li>
-        <li> Relaxed: {{ mood_score[Country] }} </li>
+        <li> Angry: {{ mood_score['Angry'] }} </li>
+        <li> Bright: {{ mood_score['Bright'] }} </li>
+        <li> Melancholy: {{ mood_score['Melancholic'] }} </li>
+        <li> Relaxed: {{ mood_score['Relaxed'] }} </li>
     </ul>
 
     <h2>Vocals you like:</h2>
     <ul>
-        <li> Clear: {{ vocal_score[Clear] }} </li>
-        <li> Ethereal: {{ vocal_score[Ethereal] }} </li>
-        <li> Raspy: {{ vocal_score[Raspy] }} </li>
+        <li> Clear: {{ vocal_score['Smooth'] }} </li>
+        <li> Ethereal: {{ vocal_score['Dreamy'] }} </li>
+        <li> Raspy: {{ vocal_score['Raspy'] }} </li>
+        <li> Voiceless: {{ vocal_score['Voiceless'] }} </li>
     </ul>
-
-
 {% endblock content %}
