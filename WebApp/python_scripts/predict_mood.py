@@ -78,7 +78,7 @@ def predict_mood(saved_model_path, test_data_path):
 
         # Calculate the average radar values for the song
         predicted_mood = {
-            mood: percent / segment_count for mood, percent in label_counts.items()
+            mood: round(percent / segment_count, 2) for mood, percent in label_counts.items()
         }
 
         output[f] = predicted_mood

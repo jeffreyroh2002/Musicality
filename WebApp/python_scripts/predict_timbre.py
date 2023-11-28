@@ -78,7 +78,7 @@ def predict_timbre(saved_model_path, test_data_path):
 
         # Calculate the average radar values for the song
         predicted_timbre = {
-            timbre: percent / segment_count for timbre, percent in label_counts.items()
+            timbre: round(percent / segment_count, 2) for timbre, percent in label_counts.items()
         }
 
         output[f] = predicted_timbre
