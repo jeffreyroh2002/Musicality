@@ -74,7 +74,7 @@ def predict_genre(saved_model_path, test_data_path):
             segment_count += 1
 
         # Calculate the average radar values for the song
-        predicted_genre = {genre: round(percent / segment_count, 2) for genre, percent in label_counts.items()}
+        predicted_genre = {genre: round(float(percent) / segment_count, 2) for genre, percent in label_counts.items()}
         
         output[f] = predicted_genre
         segment_count = 0
