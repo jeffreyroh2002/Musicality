@@ -33,14 +33,21 @@ with app.app_context():
     mood_data = predict_mood(mood_model_path, mood_saved_mfcc)
     timbre_data = predict_timbre(timbre_model_path, timbre_saved_mfcc)
 
-    # Convert data to JSON format
-    genre_data_json = json.dumps(genre_data)
-    mood_data_json = json.dumps(mood_data)
-    timbre_data_json = json.dumps(timbre_data)
-
     # Iterate through the full mix directory
     for full_mix_file_name in os.listdir(full_mix_dir):
         full_mix_file_path = os.path.join(full_mix_dir, full_mix_file_name)
+
+        # Extract first 5 characters from full mix name
+        audio_name_prefix = full_mix_file_name[:8]
+
+        relevant_genre_data = genre_data.get(audio_name_prefix, {})
+        relevant_mood_data = mood_data.get(audio_name_prefix, {})
+        relevant_timbre_data = timbre_data.get(audio_name_prefix, {})
+
+        # Convert data to JSON format
+        genre_data_json = json.dumps(relevant_genre_data)
+        mood_data_json = json.dumps(relevant_mood_data)
+        timbre_data_json = json.dumps(relevant_timbre_data)
 
         # Create an instance of AudioFile and add it to the database session
         audio_file = AudioFile(
