@@ -73,15 +73,15 @@ def test_questions(test_type, audio_file_id):
             # save the end time, when finishing the test
             test.test_end_time = datetime.now()
             db.session.commit()
-
-            return redirect(url_for('questions.survey_completed'))
+            test_id = test.id
+            return redirect(url_for('questions.survey_completed', test_id=test_id))
 
     return render_template('questionnaire.html', form=form, audio_file=audio_file)
 
-@questions.route("/survey-completed", methods=['GET'])
-def survey_completed():
+@questions.route("/survey-completed/<int:test_id>", methods=['GET'])
+def survey_completed(test_id):
     ### Instead Render new template that is a loading screen. "Hang in there..."
     #return render_template('survey_completed.html')
 
     #for now, instantly direct to test_results route
-    return redirect(url_for('results.single_test_result'))
+    return redirect(url_for('results.single_test_result', test_id=test_id))
