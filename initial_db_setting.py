@@ -33,6 +33,10 @@ with app.app_context():
     mood_data = predict_mood(mood_model_path, mood_saved_mfcc)
     timbre_data = predict_timbre(timbre_model_path, timbre_saved_mfcc)
 
+    # Set default timbre values
+    default_timbre_data = {'Smooth': 0.0, 'Dreamy': 0.0, 'Raspy': 0.0, 'Voiceless': 1.0}
+
+
     # Iterate through the full mix directory
     for full_mix_file_name in os.listdir(full_mix_dir):
         full_mix_file_path = os.path.join(full_mix_dir, full_mix_file_name)
@@ -45,14 +49,13 @@ with app.app_context():
         relevant_mood_data = next((data for key, data in mood_data.items() if key.startswith(audio_name_prefix)), {})
         relevant_timbre_data = next((data for key, data in timbre_data.items() if key.startswith(audio_name_prefix)), {})
 
-
         # Convert data to JSON format
         genre_data_json = json.dumps(relevant_genre_data)
         mood_data_json = json.dumps(relevant_mood_data)
-        if relevant_timbre_data is None:
-            # If relevant_timbre_data is not available, set 'Voiceless' to 1 and others to 0
-            timbre_data_json = json.dumps({'Smooth': 0, 'Dreamy': 0, 'Raspy': 0, 'Voiceless': 1})
-        else:
+        timbre_data_json = json.dumps(default_timbre_data)
+        
+        # If relevant_timbre_data is available, replace the default values
+        if relevant_timbre_data:
             timbre_data_json = json.dumps(relevant_timbre_data)
 
         # Create an instance of AudioFile and add it to the database session
