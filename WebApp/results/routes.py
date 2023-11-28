@@ -1,7 +1,7 @@
+import json
 from flask import render_template, redirect, url_for, Blueprint, flash, abort
 from flask_login import current_user, login_required
 from WebApp.models import db, Test, UserAnswer, AudioFile
-from .forms import UserAnswerForm  #.forms imports from same package dir
 
 """
 results = Blueprint('results', __name__)
@@ -45,7 +45,7 @@ def single_test_result(test_id):
         overall_rating = answer.overall_rating   # need to use this
         genre_rating = answer.genre_rating
         mood_rating = answer.mood_rating
-        vocal_rating = answer.vocal_rating
+        vocal_timbre_rating = answer.vocal_timbre_rating
 
         #Calculate each genre score
         genre_weighted = {}
@@ -93,21 +93,16 @@ def single_test_result(test_id):
                 print("Error decoding vocal_data JSON.")
 
             for vocal_name, proportion in vocal_data.items():
-                vocal_weighted[vocal_name] = proportion * vocal_rating
+                vocal_weighted[vocal_name] = proportion * vocal_timbre_rating
             
             for vocal in vocal_weighted:
                 vocal_score[vocal] += vocal_weighted[vocal]
         else:
             print("Vocal data is not available or is in an unexpected format.")
         
-    return render_template('single_test_result.html', user=user, test=test, genre_score=genre_score, mood_score=mood_score, vocal_score=vocal_score)
-    
+    return render_template('single_test_results.html', user=user, test=test, genre_score=genre_score, mood_score=mood_score, vocal_score=vocal_score)
 
-
-@results.route("/test-results/<int:user_id>", methods=['GET', 'POST'])
-@login_required
-def show_user_results():
-    # load all of users previous tests -> might want to add this to user instead
-
-
-
+# @results.route("/test-results/<int:user_id>", methods=['GET', 'POST'])
+# @login_required
+# def show_user_results():
+#     # load all of users previous tests -> might want to add this to user instead
