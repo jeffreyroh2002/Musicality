@@ -28,37 +28,19 @@ with app.app_context():
     instrumentals_dir = os.path.join(os.getcwd(), 'audio_data', 'audio_instrumental_split')
     vocals_dir = os.path.join(os.getcwd(), 'audio_data', 'audio_vocals_split')
 
+    # Predict and save genre, mood, and timbre data
+    genre_data = predict_genre(genre_model_path, genre_saved_mfcc)
+    mood_data = predict_mood(mood_model_path, mood_saved_mfcc)
+    timbre_data = predict_timbre(timbre_model_path, timbre_saved_mfcc)
+
+    # Convert data to JSON format
+    genre_data_json = json.dumps(genre_data)
+    mood_data_json = json.dumps(mood_data)
+    timbre_data_json = json.dumps(timbre_data)
+
     # Iterate through the full mix directory
     for full_mix_file_name in os.listdir(full_mix_dir):
         full_mix_file_path = os.path.join(full_mix_dir, full_mix_file_name)
-        
-        # Extract the common prefix (first 8 characters) from the full mix file name
-        common_prefix = full_mix_file_name[:8]
-
-        # Determine the corresponding instrumental and vocal file names
-        instrumental_file_name = common_prefix + "_instrumental.wav"
-        vocal_file_name = common_prefix + "_vocal.wav"
-
-        # Generate file paths for instrumental and vocal files
-        instrumental_file_path = os.path.join(instrumentals_dir, instrumental_file_name)
-        vocal_file_path = os.path.join(vocals_dir, vocal_file_name)
-
-        # Predict and save genre, mood, and timbre data
-        genre_data = predict_genre(genre_model_path, genre_saved_mfcc)
-        mood_data = predict_mood(mood_model_path, mood_saved_mfcc)
-
-        # Check if the vocal file exists
-        if os.path.exists(vocal_file_path):
-            timbre_data = predict_timbre(timbre_model_path, timbre_saved_mfcc)
-        else:
-            # just move on if vocal file doesn't exist
-            pass
-            # timbre_data = {"vocal": "Voiceless"}
-
-        # Convert data to JSON format
-        genre_data_json = json.dumps(genre_data)
-        mood_data_json = json.dumps(mood_data)
-        timbre_data_json = json.dumps(timbre_data) if timbre_data is not None else None
 
         # Create an instance of AudioFile and add it to the database session
         audio_file = AudioFile(
