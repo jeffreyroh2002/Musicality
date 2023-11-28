@@ -27,9 +27,11 @@ def create_app(config_class=Config):
     from WebApp.users.routes import users
     from WebApp.main.routes import main
     from WebApp.questions.routes import questions
+    from WebApp.results.routes import results
 
     app.register_blueprint(users)
     app.register_blueprint(main)
     app.register_blueprint(questions)
-    
+    app.register_blueprint(results)
+
     return app
