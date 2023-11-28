@@ -45,10 +45,15 @@ with app.app_context():
         relevant_mood_data = next((data for key, data in mood_data.items() if key.startswith(audio_name_prefix)), {})
         relevant_timbre_data = next((data for key, data in timbre_data.items() if key.startswith(audio_name_prefix)), {})
 
+
         # Convert data to JSON format
         genre_data_json = json.dumps(relevant_genre_data)
         mood_data_json = json.dumps(relevant_mood_data)
-        timbre_data_json = json.dumps(relevant_timbre_data)
+        if relevant_timbre_data = None:
+            # If relevant_timbre_data is not available, set 'Voiceless' to 1 and others to 0
+            timbre_data_json = json.dumps({'Smooth': 0, 'Dreamy': 0, 'Raspy': 0, 'Voiceless': 1})
+        else:
+            timbre_data_json = json.dumps(relevant_timbre_data)
 
         # Create an instance of AudioFile and add it to the database session
         audio_file = AudioFile(
