@@ -24,9 +24,9 @@ with app.app_context():
     db.create_all()
     from WebApp.models import AudioFile
 
-    full_mix_dir = os.path.join(os.getcwd(), 'WebApp', 'static', 'audio_data', 'audio_full_mix_split')
-    instrumentals_dir = os.path.join(os.getcwd(), 'WebApp', 'static', 'audio_data', 'audio_instrumental_split')
-    vocals_dir = os.path.join(os.getcwd(), 'WebApp', 'static', 'audio_data', 'audio_vocals_split')
+    full_mix_dir = os.path.join(os.getcwd(), 'audio_data', 'audio_full_mix_split')
+    instrumentals_dir = os.path.join(os.getcwd(), 'audio_data', 'audio_instrumental_split')
+    vocals_dir = os.path.join(os.getcwd(), 'audio_data', 'audio_vocals_split')
 
     # Iterate through the full mix directory
     for full_mix_file_name in os.listdir(full_mix_dir):
@@ -45,30 +45,28 @@ with app.app_context():
 
         # Predict and save genre, mood, and timbre data
         genre_data = predict_genre(genre_model_path, genre_saved_mfcc)
-
-        """
         mood_data = predict_mood(mood_model_path, mood_saved_mfcc)
 
         # Check if the vocal file exists
         if os.path.exists(vocal_file_path):
             timbre_data = predict_timbre(timbre_model_path, timbre_saved_mfcc)
         else:
-            # Set the vocal element to "Voiceless" if the vocal file doesn't exist
-            timbre_data = {"vocal_element": "Voiceless"}
-        """
+            # just move on if vocal file doesn't exist
+            pass
+            # timbre_data = {"vocal": "Voiceless"}
 
         # Convert data to JSON format
         genre_data_json = json.dumps(genre_data)
-        #mood_data_json = json.dumps(mood_data)
-        #timbre_data_json = json.dumps(timbre_data)
+        mood_data_json = json.dumps(mood_data)
+        timbre_data_json = json.dumps(timbre_data) if timbre_data is not None else None
 
         # Create an instance of AudioFile and add it to the database session
         audio_file = AudioFile(
             audio_name=full_mix_file_name,
             file_path=full_mix_file_path,
             genre=genre_data_json,
-            #mood=mood_data_json,
-            #vocal=timbre_data_json
+            mood=mood_data_json,
+            vocal=timbre_data_json
         )
         db.session.add(audio_file)
 
