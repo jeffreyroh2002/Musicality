@@ -40,9 +40,10 @@ with app.app_context():
         # Extract first 5 characters from full mix name
         audio_name_prefix = full_mix_file_name[:8]
 
-        relevant_genre_data = genre_data.get(audio_name_prefix, {})
-        relevant_mood_data = mood_data.get(audio_name_prefix, {})
-        relevant_timbre_data = timbre_data.get(audio_name_prefix, {})
+        # Find a match in the data dictionaries based on the audio file name prefix
+        relevant_genre_data = next((data for key, data in genre_data.items() if key.startswith(audio_name_prefix)), {})
+        relevant_mood_data = next((data for key, data in mood_data.items() if key.startswith(audio_name_prefix)), {})
+        relevant_timbre_data = next((data for key, data in timbre_data.items() if key.startswith(audio_name_prefix)), {})
 
         # Convert data to JSON format
         genre_data_json = json.dumps(relevant_genre_data)
