@@ -3,6 +3,7 @@ import os
 import math
 import librosa
 
+
 DATASET_PATH = "../audio_data/audio_instrumental_split"
 JSON_FILE_NAME = "../WebApp/static/mfccs/instrumental_mfcc.json"
 JSON_PATH = JSON_FILE_NAME
@@ -12,7 +13,6 @@ DURATION = 30
 SAMPLES_PER_TRACK = SAMPLE_RATE * DURATION
 
 def save_mfcc(dataset_path, json_path, n_mfcc=13, n_fft=2048, hop_length=512, num_segments=5):
-
     # data dictionary
     data = {
         "mapping": [],
@@ -31,6 +31,7 @@ def save_mfcc(dataset_path, json_path, n_mfcc=13, n_fft=2048, hop_length=512, nu
         length = int(signal.shape[0]/float(sr))  # measured in seconds for GTZAN Dataset
 
         num_samples_per_segment = int(SAMPLES_PER_TRACK / num_segments)
+
 
         # need the number of vectors for mfcc extraction to be equal for each segment
         expected_num_mfcc_vectors_per_segment = math.ceil(num_samples_per_segment / hop_length)
@@ -75,9 +76,11 @@ def save_mfcc(dataset_path, json_path, n_mfcc=13, n_fft=2048, hop_length=512, nu
         elif length != 30 :
             print(f"Error : {file_name}")
 
+
     with open(json_path, "w") as fp:
         json.dump(data, fp, indent=4)
 
 
 if __name__ == "__main__":
     save_mfcc(DATASET_PATH, JSON_PATH, num_segments=10)
+
