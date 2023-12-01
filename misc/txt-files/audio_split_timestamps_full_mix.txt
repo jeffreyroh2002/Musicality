@@ -10,7 +10,7 @@ ES_Can't Help It - spring gang.wav,12,72
 ES_Drifting Away - Mama Zula.wav,45,75
 ES_Every Song - Gamma Skies.wav,38,68
 ES_Faller - Ikhana.wav,30,90
-ES_Go on Blues - Bo the Drifter.wav,45,65
+ES_Go on Blues - Bo the Drifter.wav,40, 70
 ES_Good Vibes Only - Nbhd Nick.wav,23,53
 ES_Hierarchy (Clean Version) - Roof.wav,20,50
 ES_I Feel Good - Mama Zula.wav,93,123

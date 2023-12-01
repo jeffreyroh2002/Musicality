@@ -8,7 +8,7 @@ ES_Can't Help It STEMS MELODY - spring gang.wav,12,72
 ES_Drifting Away STEMS MELODY - Mama Zula.wav,45,75
 ES_Every Song STEMS MELODY - Gamma Skies.wav,38,68
 ES_Faller STEMS MELODY - Ikhana.wav,30,90
-ES_Go on Blues STEMS MELODY - Bo the Drifter.wav,45,65
+ES_Go on Blues STEMS MELODY - Bo the Drifter.wav,40,70
 ES_Good Vibes Only STEMS MELODY - Nbhd Nick.wav,23,53
 ES_Hierarchy (Clean Version) STEMS MELODY - Roof.wav,20,50
 ES_I Feel Good STEMS MELODY - Mama Zula.wav,93,123
