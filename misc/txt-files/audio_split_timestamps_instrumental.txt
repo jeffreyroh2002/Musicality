@@ -10,7 +10,7 @@ ES_Can't Help It (Instrumental Version) - spring gang.wav,12,72
 ES_Drifting Away (Instrumental Version) - Mama Zula.wav,45,75
 ES_Every Song (Instrumental Version) - Gamma Skies.wav,38,68
 ES_Faller (Instrumental Version) - Ikhana.wav,30,90
-ES_Go on Blues (Instrumental Version) - Bo the Drifter.wav,45,65
+ES_Go on Blues (Instrumental Version) - Bo the Drifter.wav,40,70
 ES_Good Vibes Only (Instrumental Version) - Nbhd Nick.wav,23,53
 ES_Hierarchy (Instrumental Version) - Roof.wav,20,50
 ES_I Feel Good (Instrumental Version) - Mama Zula.wav,93,123
