@@ -20,6 +20,7 @@ questions = Blueprint('questions', __name__)
 def test_questions(test_type, audio_file_id):
 
     user = current_user
+    # we also have to consider the case that a user already have taken a specific type of test, and need additional test.
     test = Test.query.filter((Test.user_id==user.id) & (Test.test_type==test_type)).first()
 
     if audio_file_id == 0:
@@ -37,13 +38,13 @@ def test_questions(test_type, audio_file_id):
             return redirect(url_for('questions.test_questions', test_type=test_type, audio_file_id=1))
 
         
-        latest_answer = UserAnswer.query.filter((UserAnswer.user==current_user) & UserAnswer.test==test).order_by(UserAnswer.audio_id.desc()).first()
+        latest_answer = UserAnswer.query.filter((UserAnswer.user==current_user) & (UserAnswer.test==test)).order_by(UserAnswer.audio_id.desc()).first()
         latest_audio_num = latest_answer.audio_id
         
         # when you have already finished this type of test
         if len(AudioFile.query.all()) == latest_audio_num:
             flash('You have already taken this test!', 'info')
-            return redirect(url_for('questions.survey_completed'))
+            return redirect(url_for('results.single_test_result', test_id=test.id))
         else:
             flash('It seems you have already answers some questions in the past. Starting where you left off.', 'info')
             return redirect(url_for('questions.test_questions', test_type=test_type, audio_file_id=latest_audio_num+1))
@@ -73,8 +74,8 @@ def test_questions(test_type, audio_file_id):
             # save the end time, when finishing the test
             test.test_end_time = datetime.now()
             db.session.commit()
-            test_id = test.id
-            return redirect(url_for('questions.survey_completed', test_id=test_id))
+
+            return redirect(url_for('results.single_test_result', test_id=test.id))
 
     return render_template('questionnaire.html', form=form, audio_file=audio_file)
 
@@ -84,4 +85,6 @@ def survey_completed(test_id):
     #return render_template('survey_completed.html')
 
     #for now, instantly direct to test_results route
+
+    # in this URL, we should show thankful comments & loading screens with a new HTML page
     return redirect(url_for('results.single_test_result', test_id=test_id))
