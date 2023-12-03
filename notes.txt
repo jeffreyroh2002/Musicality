@@ -1,0 +1,19 @@
+Pop --> appears a lot in RnB, electronic
+Electronic --> appears a lot in rock
+Rock --> not represented enough
+rnb --> extremely underreprsented
+
+hip hop: Good
+jazz: good
+Ballad: good, but extremely overrepresented
+
+====
+
+
+suggestions:
+
+need to add more non-metal-like electronic songs so it doesn't
+wrongly classify as rock
+
+---------
+Mood: born to be this high... wrong
