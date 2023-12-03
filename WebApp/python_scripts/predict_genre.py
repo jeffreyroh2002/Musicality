@@ -39,6 +39,7 @@ def predict_genre(saved_model_path, test_data_path):
 
     # If you have a classification task, you can get the predicted class indices:
     predicted_class_indices = np.argmax(predictions, axis=1)
+    #predicted_probabilities = keras.activations.softmax(predictions, axis=1)
 
     # Define your label list mapping class indices to labels
     label_list = {}
