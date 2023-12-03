@@ -1,0 +1,1287 @@
+Audio Name: ES_A World That's Gone Bad - The Devil's Sway.wav_1.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_A World That's Gone Bad - The Devil's Sway.wav_1.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.1
+  Metal: 0.0
+  Ballad: 0.5
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.4
+
+Audio Name: ES_AFTERPARTY - dasloe.wav_2.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_AFTERPARTY - dasloe.wav_2.wav
+Genre Values:
+  RB_Soul: 0.1
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.6
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.3
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Air on the G String - Johannes Bornlof.wav_3.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Air on the G String - Johannes Bornlof.wav_3.wav
+Genre Values:
+  RB_Soul: 0.2
+  HipHop: 0.0
+  Blues: 0.1
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.1
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.1
+  Electronic: 0.1
+  Jazz: 0.4
+  Country: 0.0
+
+Audio Name: ES_Anywhere but Here - Easton.wav_4.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Anywhere but Here - Easton.wav_4.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.1
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.1
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.8
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Bam Bam - Bambi Haze.wav_5.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Bam Bam - Bambi Haze.wav_5.wav
+Genre Values:
+  RB_Soul: 0.1
+  HipHop: 0.1
+  Blues: 0.0
+  Reggae: 0.3
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.5
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Big Reveal - Torii Wolf.wav_6.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Big Reveal - Torii Wolf.wav_6.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.2
+  Metal: 0.0
+  Ballad: 0.1
+  Electronic: 0.0
+  Jazz: 0.7
+  Country: 0.0
+
+Audio Name: ES_Birdhouse - Hara Noda.wav_7.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Birdhouse - Hara Noda.wav_7.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.9
+  Country: 0.1
+
+Audio Name: ES_Born to Be This High - Snake City.wav_8.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Born to Be This High - Snake City.wav_8.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.2
+  Blues: 0.0
+  Reggae: 0.1
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.5
+  Metal: 0.2
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Can't Help It - spring gang.wav_9.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Can't Help It - spring gang.wav_9.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.1
+  Blues: 0.0
+  Reggae: 0.1
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.2
+  Ballad: 0.0
+  Electronic: 0.4
+  Jazz: 0.2
+  Country: 0.0
+
+Audio Name: ES_Drifting Away - Mama Zula.wav_10.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Drifting Away - Mama Zula.wav_10.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.7
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.3
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Every Song - Gamma Skies.wav_11.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Every Song - Gamma Skies.wav_11.wav
+Genre Values:
+  RB_Soul: 0.5
+  HipHop: 0.0
+  Blues: 0.1
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.4
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Faller - Ikhana.wav_12.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Faller - Ikhana.wav_12.wav
+Genre Values:
+  RB_Soul: 0.5
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.3
+  Electronic: 0.2
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Go on Blues - Bo the Drifter.wav_13.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Go on Blues - Bo the Drifter.wav_13.wav
+Genre Values:
+  RB_Soul: 0.17
+  HipHop: 0.0
+  Blues: 0.5
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.17
+  Country: 0.17
+
+Audio Name: ES_Good Vibes Only - Nbhd Nick.wav_14.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Good Vibes Only - Nbhd Nick.wav_14.wav
+Genre Values:
+  RB_Soul: 0.1
+  HipHop: 0.9
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Hierarchy (Clean Version) - Roof.wav_15.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Hierarchy (Clean Version) - Roof.wav_15.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.7
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.3
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_I Feel Good - Mama Zula.wav_16.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_I Feel Good - Mama Zula.wav_16.wav
+Genre Values:
+  RB_Soul: 0.1
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.5
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.4
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_I'm Looking Ahead - Ebo Krdum.wav_17.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_I'm Looking Ahead - Ebo Krdum.wav_17.wav
+Genre Values:
+  RB_Soul: 0.1
+  HipHop: 0.1
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.2
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.6
+
+Audio Name: ES_Keep on Shining - Zorro.wav_18.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Keep on Shining - Zorro.wav_18.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.1
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.7
+  Metal: 0.0
+  Ballad: 0.1
+  Electronic: 0.0
+  Jazz: 0.1
+  Country: 0.0
+
+Audio Name: ES_Like It or Love It - Iso Indies.wav_19.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Like It or Love It - Iso Indies.wav_19.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.3
+  Blues: 0.0
+  Reggae: 0.3
+  Rock: 0.1
+  Orchestral: 0.0
+  Pop: 0.1
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.2
+
+Audio Name: ES_Lily My Dear - Bladverk Band.wav_20.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Lily My Dear - Bladverk Band.wav_20.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 1.0
+  Country: 0.0
+
+Audio Name: ES_Look at You Differently - Snake City.wav_21.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Look at You Differently - Snake City.wav_21.wav
+Genre Values:
+  RB_Soul: 0.8
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.1
+  Metal: 0.0
+  Ballad: 0.1
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Lose - R.A.D..wav_22.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Lose - R.A.D..wav_22.wav
+Genre Values:
+  RB_Soul: 0.3
+  HipHop: 0.0
+  Blues: 0.3
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.4
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Luvsick - Collin Lim.wav_23.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Luvsick - Collin Lim.wav_23.wav
+Genre Values:
+  RB_Soul: 0.8
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.1
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.1
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_No Crime - The Devil's Sway.wav_24.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_No Crime - The Devil's Sway.wav_24.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.9
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.1
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Our Song - Adelyn Paik.wav_25.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Our Song - Adelyn Paik.wav_25.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.9
+  Electronic: 0.0
+  Jazz: 0.1
+  Country: 0.0
+
+Audio Name: ES_Put My Roots Down - Just Peachy.wav_26.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Put My Roots Down - Just Peachy.wav_26.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.6
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.3
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.1
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Ride This Train - Robson Carver.wav_27.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Ride This Train - Robson Carver.wav_27.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.1
+  Reggae: 0.0
+  Rock: 0.1
+  Orchestral: 0.0
+  Pop: 0.1
+  Metal: 0.0
+  Ballad: 0.2
+  Electronic: 0.0
+  Jazz: 0.1
+  Country: 0.4
+
+Audio Name: ES_Royal Estate - Francis Wells.wav_28.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Royal Estate - Francis Wells.wav_28.wav
+Genre Values:
+  RB_Soul: 0.8
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.2
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Sooner Than You Know - Carvings.wav_29.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Sooner Than You Know - Carvings.wav_29.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.9
+  Ballad: 0.0
+  Electronic: 0.1
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Stays The Same - Gloria Tells.wav_30.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Stays The Same - Gloria Tells.wav_30.wav
+Genre Values:
+  RB_Soul: 0.4
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.1
+  Orchestral: 0.0
+  Pop: 0.5
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Stellar Park - Squiid.wav_31.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Stellar Park - Squiid.wav_31.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.1
+  Reggae: 0.0
+  Rock: 0.1
+  Orchestral: 0.0
+  Pop: 0.3
+  Metal: 0.1
+  Ballad: 0.0
+  Electronic: 0.4
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Sudden Death - Sightless in Shadow.wav_32.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Sudden Death - Sightless in Shadow.wav_32.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 1.0
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_Sure Is Heaven to Me - Binkley.wav_33.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Sure Is Heaven to Me - Binkley.wav_33.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.2
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.2
+  Electronic: 0.0
+  Jazz: 0.4
+  Country: 0.2
+
+Audio Name: ES_The Jazz Messenger - Vendla.wav_34.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_The Jazz Messenger - Vendla.wav_34.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.1
+  Reggae: 0.1
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.3
+  Country: 0.5
+
+Audio Name: ES_The Old Dirt Road - Bo the Drifter.wav_35.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_The Old Dirt Road - Bo the Drifter.wav_35.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.1
+  Reggae: 0.0
+  Rock: 0.1
+  Orchestral: 0.0
+  Pop: 0.1
+  Metal: 0.0
+  Ballad: 0.6
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.1
+
+Audio Name: ES_This Old Habit - Victor Lundberg.wav_36.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_This Old Habit - Victor Lundberg.wav_36.wav
+Genre Values:
+  RB_Soul: 0.1
+  HipHop: 0.2
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.3
+  Metal: 0.0
+  Ballad: 0.3
+  Electronic: 0.0
+  Jazz: 0.1
+  Country: 0.0
+
+Audio Name: ES_Trapped in a Maze - Philip Ayers.wav_37.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Trapped in a Maze - Philip Ayers.wav_37.wav
+Genre Values:
+  RB_Soul: 0.0
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.2
+  Pop: 0.0
+  Metal: 0.1
+  Ballad: 0.5
+  Electronic: 0.2
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_We Came to Party - Basixx.wav_38.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_We Came to Party - Basixx.wav_38.wav
+Genre Values:
+  RB_Soul: 0.2
+  HipHop: 0.0
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.5
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.2
+  Jazz: 0.0
+  Country: 0.1
+
+Audio Name: ES_Where R U_ - King Sis.wav_39.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Where R U_ - King Sis.wav_39.wav
+Genre Values:
+  RB_Soul: 0.4
+  HipHop: 0.6
+  Blues: 0.0
+  Reggae: 0.0
+  Rock: 0.0
+  Orchestral: 0.0
+  Pop: 0.0
+  Metal: 0.0
+  Ballad: 0.0
+  Electronic: 0.0
+  Jazz: 0.0
+  Country: 0.0
+
+Audio Name: ES_A World That's Gone Bad - The Devil's Sway.wav_1.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_A World That's Gone Bad - The Devil's Sway.wav_1.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.8
+  Bright: 0.2
+  Relaxed: 0.0
+
+Audio Name: ES_AFTERPARTY - dasloe.wav_2.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_AFTERPARTY - dasloe.wav_2.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.2
+  Bright: 0.7
+  Relaxed: 0.1
+
+Audio Name: ES_Air on the G String - Johannes Bornlof.wav_3.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Air on the G String - Johannes Bornlof.wav_3.wav
+Mood Values:
+  Melancholic: 0.3
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.7
+
+Audio Name: ES_Anywhere but Here - Easton.wav_4.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Anywhere but Here - Easton.wav_4.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 1.0
+  Bright: 0.0
+  Relaxed: 0.0
+
+Audio Name: ES_Bam Bam - Bambi Haze.wav_5.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Bam Bam - Bambi Haze.wav_5.wav
+Mood Values:
+  Melancholic: 0.4
+  Angry: 0.3
+  Bright: 0.1
+  Relaxed: 0.2
+
+Audio Name: ES_Big Reveal - Torii Wolf.wav_6.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Big Reveal - Torii Wolf.wav_6.wav
+Mood Values:
+  Melancholic: 0.7
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.3
+
+Audio Name: ES_Birdhouse - Hara Noda.wav_7.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Birdhouse - Hara Noda.wav_7.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.0
+  Bright: 0.4
+  Relaxed: 0.6
+
+Audio Name: ES_Born to Be This High - Snake City.wav_8.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Born to Be This High - Snake City.wav_8.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.9
+  Bright: 0.1
+  Relaxed: 0.0
+
+Audio Name: ES_Can't Help It - spring gang.wav_9.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Can't Help It - spring gang.wav_9.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.1
+  Bright: 0.9
+  Relaxed: 0.0
+
+Audio Name: ES_Drifting Away - Mama Zula.wav_10.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Drifting Away - Mama Zula.wav_10.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.0
+  Bright: 1.0
+  Relaxed: 0.0
+
+Audio Name: ES_Every Song - Gamma Skies.wav_11.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Every Song - Gamma Skies.wav_11.wav
+Mood Values:
+  Melancholic: 0.6
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.4
+
+Audio Name: ES_Faller - Ikhana.wav_12.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Faller - Ikhana.wav_12.wav
+Mood Values:
+  Melancholic: 0.1
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.9
+
+Audio Name: ES_Go on Blues - Bo the Drifter.wav_13.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Go on Blues - Bo the Drifter.wav_13.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.17
+  Bright: 0.0
+  Relaxed: 0.83
+
+Audio Name: ES_Good Vibes Only - Nbhd Nick.wav_14.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Good Vibes Only - Nbhd Nick.wav_14.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.2
+  Bright: 0.3
+  Relaxed: 0.5
+
+Audio Name: ES_Hierarchy (Clean Version) - Roof.wav_15.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Hierarchy (Clean Version) - Roof.wav_15.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.8
+  Bright: 0.2
+  Relaxed: 0.0
+
+Audio Name: ES_I Feel Good - Mama Zula.wav_16.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_I Feel Good - Mama Zula.wav_16.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.2
+  Bright: 0.8
+  Relaxed: 0.0
+
+Audio Name: ES_I'm Looking Ahead - Ebo Krdum.wav_17.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_I'm Looking Ahead - Ebo Krdum.wav_17.wav
+Mood Values:
+  Melancholic: 0.4
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.6
+
+Audio Name: ES_Keep on Shining - Zorro.wav_18.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Keep on Shining - Zorro.wav_18.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.9
+  Bright: 0.1
+  Relaxed: 0.0
+
+Audio Name: ES_Like It or Love It - Iso Indies.wav_19.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Like It or Love It - Iso Indies.wav_19.wav
+Mood Values:
+  Melancholic: 0.1
+  Angry: 0.3
+  Bright: 0.2
+  Relaxed: 0.4
+
+Audio Name: ES_Lily My Dear - Bladverk Band.wav_20.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Lily My Dear - Bladverk Band.wav_20.wav
+Mood Values:
+  Melancholic: 0.5
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.5
+
+Audio Name: ES_Look at You Differently - Snake City.wav_21.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Look at You Differently - Snake City.wav_21.wav
+Mood Values:
+  Melancholic: 0.3
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.7
+
+Audio Name: ES_Lose - R.A.D..wav_22.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Lose - R.A.D..wav_22.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 1.0
+
+Audio Name: ES_Luvsick - Collin Lim.wav_23.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Luvsick - Collin Lim.wav_23.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.0
+  Bright: 0.9
+  Relaxed: 0.1
+
+Audio Name: ES_No Crime - The Devil's Sway.wav_24.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_No Crime - The Devil's Sway.wav_24.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.0
+  Bright: 1.0
+  Relaxed: 0.0
+
+Audio Name: ES_Our Song - Adelyn Paik.wav_25.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Our Song - Adelyn Paik.wav_25.wav
+Mood Values:
+  Melancholic: 1.0
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.0
+
+Audio Name: ES_Put My Roots Down - Just Peachy.wav_26.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Put My Roots Down - Just Peachy.wav_26.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.0
+  Bright: 1.0
+  Relaxed: 0.0
+
+Audio Name: ES_Ride This Train - Robson Carver.wav_27.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Ride This Train - Robson Carver.wav_27.wav
+Mood Values:
+  Melancholic: 0.6
+  Angry: 0.0
+  Bright: 0.3
+  Relaxed: 0.1
+
+Audio Name: ES_Royal Estate - Francis Wells.wav_28.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Royal Estate - Francis Wells.wav_28.wav
+Mood Values:
+  Melancholic: 0.1
+  Angry: 0.2
+  Bright: 0.3
+  Relaxed: 0.4
+
+Audio Name: ES_Sooner Than You Know - Carvings.wav_29.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Sooner Than You Know - Carvings.wav_29.wav
+Mood Values:
+  Melancholic: 0.1
+  Angry: 0.6
+  Bright: 0.3
+  Relaxed: 0.0
+
+Audio Name: ES_Stays The Same - Gloria Tells.wav_30.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Stays The Same - Gloria Tells.wav_30.wav
+Mood Values:
+  Melancholic: 0.1
+  Angry: 0.1
+  Bright: 0.7
+  Relaxed: 0.1
+
+Audio Name: ES_Stellar Park - Squiid.wav_31.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Stellar Park - Squiid.wav_31.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.4
+  Bright: 0.5
+  Relaxed: 0.1
+
+Audio Name: ES_Sudden Death - Sightless in Shadow.wav_32.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Sudden Death - Sightless in Shadow.wav_32.wav
+Mood Values:
+  Melancholic: 0.1
+  Angry: 0.9
+  Bright: 0.0
+  Relaxed: 0.0
+
+Audio Name: ES_Sure Is Heaven to Me - Binkley.wav_33.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Sure Is Heaven to Me - Binkley.wav_33.wav
+Mood Values:
+  Melancholic: 0.1
+  Angry: 0.0
+  Bright: 0.4
+  Relaxed: 0.5
+
+Audio Name: ES_The Jazz Messenger - Vendla.wav_34.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_The Jazz Messenger - Vendla.wav_34.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.2
+  Bright: 0.6
+  Relaxed: 0.2
+
+Audio Name: ES_The Old Dirt Road - Bo the Drifter.wav_35.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_The Old Dirt Road - Bo the Drifter.wav_35.wav
+Mood Values:
+  Melancholic: 0.4
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.6
+
+Audio Name: ES_This Old Habit - Victor Lundberg.wav_36.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_This Old Habit - Victor Lundberg.wav_36.wav
+Mood Values:
+  Melancholic: 0.5
+  Angry: 0.1
+  Bright: 0.0
+  Relaxed: 0.4
+
+Audio Name: ES_Trapped in a Maze - Philip Ayers.wav_37.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Trapped in a Maze - Philip Ayers.wav_37.wav
+Mood Values:
+  Melancholic: 0.8
+  Angry: 0.0
+  Bright: 0.1
+  Relaxed: 0.1
+
+Audio Name: ES_We Came to Party - Basixx.wav_38.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_We Came to Party - Basixx.wav_38.wav
+Mood Values:
+  Melancholic: 0.2
+  Angry: 0.0
+  Bright: 0.5
+  Relaxed: 0.3
+
+Audio Name: ES_Where R U_ - King Sis.wav_39.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Where R U_ - King Sis.wav_39.wav
+Mood Values:
+  Melancholic: 0.1
+  Angry: 0.7
+  Bright: 0.2
+  Relaxed: 0.0
+
+Audio Name: ES_A World That's Gone Bad - The Devil's Sway.wav_1.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_A World That's Gone Bad - The Devil's Sway.wav_1.wav
+Vocal: {"Smooth": 0.4, "Dreamy": 0.4, "Raspy": 0.2, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.4
+  Dreamy: 0.4
+  Raspy: 0.2
+  Voiceless: 0.0
+
+Audio Name: ES_AFTERPARTY - dasloe.wav_2.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_AFTERPARTY - dasloe.wav_2.wav
+Vocal: {"Smooth": 0.9, "Dreamy": 0.1, "Raspy": 0.0, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.9
+  Dreamy: 0.1
+  Raspy: 0.0
+  Voiceless: 0.0
+
+Audio Name: ES_Air on the G String - Johannes Bornlof.wav_3.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Air on the G String - Johannes Bornlof.wav_3.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_Anywhere but Here - Easton.wav_4.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Anywhere but Here - Easton.wav_4.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.6, "Voiceless": 0.4}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.6
+  Voiceless: 0.4
+
+Audio Name: ES_Bam Bam - Bambi Haze.wav_5.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Bam Bam - Bambi Haze.wav_5.wav
+Vocal: {"Smooth": 0.1, "Dreamy": 0.0, "Raspy": 0.9, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.1
+  Dreamy: 0.0
+  Raspy: 0.9
+  Voiceless: 0.0
+
+Audio Name: ES_Big Reveal - Torii Wolf.wav_6.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Big Reveal - Torii Wolf.wav_6.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 1.0, "Raspy": 0.0, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 1.0
+  Raspy: 0.0
+  Voiceless: 0.0
+
+Audio Name: ES_Birdhouse - Hara Noda.wav_7.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Birdhouse - Hara Noda.wav_7.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_Born to Be This High - Snake City.wav_8.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Born to Be This High - Snake City.wav_8.wav
+Vocal: {"Smooth": 0.2, "Dreamy": 0.8, "Raspy": 0.0, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.2
+  Dreamy: 0.8
+  Raspy: 0.0
+  Voiceless: 0.0
+
+Audio Name: ES_Can't Help It - spring gang.wav_9.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Can't Help It - spring gang.wav_9.wav
+Vocal: {"Smooth": 0.5, "Dreamy": 0.3, "Raspy": 0.2, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.5
+  Dreamy: 0.3
+  Raspy: 0.2
+  Voiceless: 0.0
+
+Audio Name: ES_Drifting Away - Mama Zula.wav_10.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Drifting Away - Mama Zula.wav_10.wav
+Vocal: {"Smooth": 0.2, "Dreamy": 0.6, "Raspy": 0.2, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.2
+  Dreamy: 0.6
+  Raspy: 0.2
+  Voiceless: 0.0
+
+Audio Name: ES_Every Song - Gamma Skies.wav_11.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Every Song - Gamma Skies.wav_11.wav
+Vocal: {"Smooth": 0.6, "Dreamy": 0.4, "Raspy": 0.0, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.6
+  Dreamy: 0.4
+  Raspy: 0.0
+  Voiceless: 0.0
+
+Audio Name: ES_Faller - Ikhana.wav_12.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Faller - Ikhana.wav_12.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 1.0, "Raspy": 0.0, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 1.0
+  Raspy: 0.0
+  Voiceless: 0.0
+
+Audio Name: ES_Go on Blues - Bo the Drifter.wav_13.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Go on Blues - Bo the Drifter.wav_13.wav
+Vocal: {"Smooth": 0.5, "Dreamy": 0.0, "Raspy": 0.5, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.5
+  Dreamy: 0.0
+  Raspy: 0.5
+  Voiceless: 0.0
+
+Audio Name: ES_Good Vibes Only - Nbhd Nick.wav_14.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Good Vibes Only - Nbhd Nick.wav_14.wav
+Vocal: {"Smooth": 0.1, "Dreamy": 0.0, "Raspy": 0.9, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.1
+  Dreamy: 0.0
+  Raspy: 0.9
+  Voiceless: 0.0
+
+Audio Name: ES_Hierarchy (Clean Version) - Roof.wav_15.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Hierarchy (Clean Version) - Roof.wav_15.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.3, "Raspy": 0.7, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.3
+  Raspy: 0.7
+  Voiceless: 0.0
+
+Audio Name: ES_I Feel Good - Mama Zula.wav_16.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_I Feel Good - Mama Zula.wav_16.wav
+Vocal: {"Smooth": 0.6, "Dreamy": 0.3, "Raspy": 0.1, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.6
+  Dreamy: 0.3
+  Raspy: 0.1
+  Voiceless: 0.0
+
+Audio Name: ES_I'm Looking Ahead - Ebo Krdum.wav_17.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_I'm Looking Ahead - Ebo Krdum.wav_17.wav
+Vocal: {"Smooth": 0.5, "Dreamy": 0.2, "Raspy": 0.3, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.5
+  Dreamy: 0.2
+  Raspy: 0.3
+  Voiceless: 0.0
+
+Audio Name: ES_Keep on Shining - Zorro.wav_18.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Keep on Shining - Zorro.wav_18.wav
+Vocal: {"Smooth": 0.1, "Dreamy": 0.8, "Raspy": 0.1, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.1
+  Dreamy: 0.8
+  Raspy: 0.1
+  Voiceless: 0.0
+
+Audio Name: ES_Like It or Love It - Iso Indies.wav_19.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Like It or Love It - Iso Indies.wav_19.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.5, "Raspy": 0.5, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.5
+  Raspy: 0.5
+  Voiceless: 0.0
+
+Audio Name: ES_Lily My Dear - Bladverk Band.wav_20.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Lily My Dear - Bladverk Band.wav_20.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_Look at You Differently - Snake City.wav_21.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Look at You Differently - Snake City.wav_21.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 1.0, "Raspy": 0.0, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 1.0
+  Raspy: 0.0
+  Voiceless: 0.0
+
+Audio Name: ES_Lose - R.A.D..wav_22.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Lose - R.A.D..wav_22.wav
+Vocal: {"Smooth": 0.6, "Dreamy": 0.1, "Raspy": 0.1, "Voiceless": 0.2}
+Vocal Values:
+  Smooth: 0.6
+  Dreamy: 0.1
+  Raspy: 0.1
+  Voiceless: 0.2
+
+Audio Name: ES_Luvsick - Collin Lim.wav_23.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Luvsick - Collin Lim.wav_23.wav
+Vocal: {"Smooth": 0.5, "Dreamy": 0.3, "Raspy": 0.0, "Voiceless": 0.2}
+Vocal Values:
+  Smooth: 0.5
+  Dreamy: 0.3
+  Raspy: 0.0
+  Voiceless: 0.2
+
+Audio Name: ES_No Crime - The Devil's Sway.wav_24.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_No Crime - The Devil's Sway.wav_24.wav
+Vocal: {"Smooth": 0.1, "Dreamy": 0.6, "Raspy": 0.3, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.1
+  Dreamy: 0.6
+  Raspy: 0.3
+  Voiceless: 0.0
+
+Audio Name: ES_Our Song - Adelyn Paik.wav_25.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Our Song - Adelyn Paik.wav_25.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 1.0, "Raspy": 0.0, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 1.0
+  Raspy: 0.0
+  Voiceless: 0.0
+
+Audio Name: ES_Put My Roots Down - Just Peachy.wav_26.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Put My Roots Down - Just Peachy.wav_26.wav
+Vocal: {"Smooth": 0.2, "Dreamy": 0.6, "Raspy": 0.2, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.2
+  Dreamy: 0.6
+  Raspy: 0.2
+  Voiceless: 0.0
+
+Audio Name: ES_Ride This Train - Robson Carver.wav_27.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Ride This Train - Robson Carver.wav_27.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_Royal Estate - Francis Wells.wav_28.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Royal Estate - Francis Wells.wav_28.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_Sooner Than You Know - Carvings.wav_29.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Sooner Than You Know - Carvings.wav_29.wav
+Vocal: {"Smooth": 0.5, "Dreamy": 0.1, "Raspy": 0.4, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.5
+  Dreamy: 0.1
+  Raspy: 0.4
+  Voiceless: 0.0
+
+Audio Name: ES_Stays The Same - Gloria Tells.wav_30.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Stays The Same - Gloria Tells.wav_30.wav
+Vocal: {"Smooth": 0.3, "Dreamy": 0.6, "Raspy": 0.1, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.3
+  Dreamy: 0.6
+  Raspy: 0.1
+  Voiceless: 0.0
+
+Audio Name: ES_Stellar Park - Squiid.wav_31.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Stellar Park - Squiid.wav_31.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_Sudden Death - Sightless in Shadow.wav_32.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Sudden Death - Sightless in Shadow.wav_32.wav
+Vocal: {"Smooth": 0.3, "Dreamy": 0.2, "Raspy": 0.5, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.3
+  Dreamy: 0.2
+  Raspy: 0.5
+  Voiceless: 0.0
+
+Audio Name: ES_Sure Is Heaven to Me - Binkley.wav_33.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Sure Is Heaven to Me - Binkley.wav_33.wav
+Vocal: {"Smooth": 0.2, "Dreamy": 0.3, "Raspy": 0.5, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.2
+  Dreamy: 0.3
+  Raspy: 0.5
+  Voiceless: 0.0
+
+Audio Name: ES_The Jazz Messenger - Vendla.wav_34.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_The Jazz Messenger - Vendla.wav_34.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_The Old Dirt Road - Bo the Drifter.wav_35.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_The Old Dirt Road - Bo the Drifter.wav_35.wav
+Vocal: {"Smooth": 0.2, "Dreamy": 0.3, "Raspy": 0.5, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.2
+  Dreamy: 0.3
+  Raspy: 0.5
+  Voiceless: 0.0
+
+Audio Name: ES_This Old Habit - Victor Lundberg.wav_36.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_This Old Habit - Victor Lundberg.wav_36.wav
+Vocal: {"Smooth": 0.7, "Dreamy": 0.1, "Raspy": 0.1, "Voiceless": 0.1}
+Vocal Values:
+  Smooth: 0.7
+  Dreamy: 0.1
+  Raspy: 0.1
+  Voiceless: 0.1
+
+Audio Name: ES_Trapped in a Maze - Philip Ayers.wav_37.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Trapped in a Maze - Philip Ayers.wav_37.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_We Came to Party - Basixx.wav_38.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_We Came to Party - Basixx.wav_38.wav
+Vocal: {"Smooth": 0.2, "Dreamy": 0.5, "Raspy": 0.3, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.2
+  Dreamy: 0.5
+  Raspy: 0.3
+  Voiceless: 0.0
+
+Audio Name: ES_Where R U_ - King Sis.wav_39.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Where R U_ - King Sis.wav_39.wav
+Vocal: {"Smooth": 0.2, "Dreamy": 0.8, "Raspy": 0.0, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.2
+  Dreamy: 0.8
+  Raspy: 0.0
+  Voiceless: 0.0
+
