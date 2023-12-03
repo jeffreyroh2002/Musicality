@@ -12,7 +12,7 @@ genre_saved_mfcc = os.path.join(os.getcwd(), 'WebApp', 'static', 'mfccs', 'full_
 mood_saved_mfcc = os.path.join(os.getcwd(), 'WebApp', 'static', 'mfccs', 'instrumental_mfcc.json')
 timbre_saved_mfcc = os.path.join(os.getcwd(), 'WebApp', 'static', 'mfccs', 'vocal_mfcc.json')
 
-genre_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_genre', 'saved_model')
+genre_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_genre_7', 'saved_model')
 mood_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_mood', 'saved_model')
 timbre_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_vocal', 'saved_model')
 
