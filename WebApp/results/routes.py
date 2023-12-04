@@ -106,3 +106,10 @@ def single_test_result(test_id):
 # @login_required
 # def show_user_results():
 #     # load all of users previous tests -> might want to add this to user instead
+
+@results.route("/test_history")
+@login_required
+def test_history():
+    tests = Test.query.filter_by(subject=current_user).order_by(Test.id.asc()).all()
+
+    return render_template("test_history.html", tests=tests)
