@@ -35,7 +35,7 @@
       {{ form.vocal_timbre_rating(class="form-control") }}
     </div>
     {% if audio_file.id != 1 %}
-      <a href="{{ url_for('questions.test_questions', test_type = test_type, audio_file_id=audio_file.id-1) }}" id="button1" class="btn btn-primary"">Previous</a>
+      <a href="{{ url_for('questions.test_questions', test_type = test_type, audio_file_id=audio_file.id-1) }}" id="button1" class="btn btn-primary">Previous</a>
     {% endif %}
     <button type="submit" id="button1" class="btn btn-primary">Next</button>
   </form>
