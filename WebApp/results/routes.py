@@ -2,6 +2,8 @@ import json
 from flask import render_template, redirect, url_for, Blueprint, flash, abort
 from flask_login import current_user, login_required
 from WebApp.models import db, Test, UserAnswer, AudioFile
+from sklearn.preprocessing import normalize
+from sklearn.metrics.pairwise import cosine_similarity
 
 """
 results = Blueprint('results', __name__)
@@ -13,6 +15,16 @@ def show_single_result(test_id):
     user = current_user
     test = Test.query.filter((Test.user_id==current_user.id) & Test_test_type==1)
 """
+
+def get_attribute_name(index):
+    # Define the order of attributes in your feature vectors
+    attributes = ['Blues', 'Ballad', 'Orchestral', 'Country', 'Electronic', 'HipHop', 'Jazz', 'Metal', 
+                  'Pop', 'Reggae', 'Rock', 'RB_Soul', 
+                  'Angry', 'Bright', 'Melancholic', 'Relaxed', 
+                  'Smooth', 'Dreamy', 'Raspy', 'Voiceless']
+    
+    # Return the attribute name corresponding to the given index
+    return attributes[index]
 
 results = Blueprint('results', __name__)
 @results.route("/test-results/<int:test_id>", methods=['GET', 'POST'])
@@ -32,6 +44,9 @@ def single_test_result(test_id):
     mood_score = {'Angry': 0, 'Bright': 0, 'Melancholic': 0, 'Relaxed': 0}
     vocal_score = {'Smooth': 0,'Dreamy': 0,'Raspy': 0,'Voiceless': 0}
 
+    # High Rating song tracker
+    high_rated_songs = []
+
     answers = UserAnswer.query.filter_by(test_id=test_id).all()
     for answer in answers:
         audio = AudioFile.query.get(answer.audio_id)
@@ -46,6 +61,10 @@ def single_test_result(test_id):
         genre_rating = answer.genre_rating
         mood_rating = answer.mood_rating
         vocal_timbre_rating = answer.vocal_timbre_rating
+
+        # store highly rated songs into high_rated songs list
+        if (overall_rating >= 2):
+            high_rated_songs.append(answer.audio_id)
 
         #Calculate each genre score
         genre_weighted = {}
@@ -99,6 +118,69 @@ def single_test_result(test_id):
                 vocal_score[vocal] += vocal_weighted[vocal]
         else:
             print("Vocal data is not available or is in an unexpected format.")
+        
+    # array of arrays to store each feature vector of highly rated songs
+    high_rated_feature_vectors = []
+    for high_rated_song in high_rated_songs:
+        audio = AudioFile.query.get(high_rated_song)
+        genre_data = json.loads(audio.genre)
+        mood_data = json.loads(audio.mood)
+        vocal_data = json.loads(audio.vocal)
+
+        # print("genre data", genre_data)
+        # print("mood data", mood_data)
+        # print("vocal data", vocal_data)
+
+        # Flatten the dictionaries into a single array
+        feature_vector = list(genre_data.values()) + list(mood_data.values()) + list(vocal_data.values())
+
+        # Normalize the feature vector
+        normalized_vector = normalize([feature_vector])[0]
+        high_rated_feature_vectors.append(normalized_vector)
+        
+    
+    print(high_rated_feature_vectors)
+
+    # Create an empty list to store the similarities
+    similarity_scores = []
+
+    # Iterate over each pair of feature vectors
+    for i in range(len(high_rated_feature_vectors)):
+        for j in range(i + 1, len(high_rated_feature_vectors)):
+            # Calculate cosine similarity
+            similarity = cosine_similarity([high_rated_feature_vectors[i]], [high_rated_feature_vectors[j]])[0][0]
+            
+            # Store the similarity score with song indices (or any other identifier you have)
+            similarity_scores.append(((i, j), similarity))
+
+    # Print or process the similarity scores as needed
+    for pair, score in similarity_scores:
+        print(f"Similarity between songs {pair[0]} and {pair[1]}: {score}")
+    
+    # Sort the similarity scores in descending order
+    sorted_scores = sorted(similarity_scores, key=lambda x: x[1], reverse=True)
+
+    # Set a threshold for high similarity (e.g., 0.7)
+    high_similarity_threshold = 0.6
+
+    # Filter out song pairs with high similarity
+    high_similarity_pairs = [pair for pair, score in sorted_scores if score > high_similarity_threshold]
+
+    # Analyze the feature vectors of these song pairs
+    common_attributes = {}
+    for i, j in high_similarity_pairs:
+        for attr, value in enumerate(high_rated_feature_vectors[i]):
+            if value > 0:  # or some threshold to determine if an attribute is significant
+                attribute_name = get_attribute_name(attr)  # function to map index to attribute name
+                common_attributes[attribute_name] = common_attributes.get(attribute_name, 0) + 1
+
+    # Find the most common attributes
+    most_common_attributes = sorted(common_attributes.items(), key=lambda x: x[1], reverse=True)
+
+    # Interpret and present the findings
+    print("Your top music preferences are characterized by:")
+    for attr, count in most_common_attributes:
+        print(f"- {attr}: Appearing in {count} of your top song pairs")
         
     return render_template('single_test_results.html', user=user, test=test, genre_score=genre_score, mood_score=mood_score, vocal_score=vocal_score)
 
