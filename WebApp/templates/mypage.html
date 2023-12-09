@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="content-section">
+        <h2 class="account-heading" id="greeting">My Page</h2>
+        <div class="list-group">
+            <a href="{{ url_for('users.account') }}" class="list-group-item list-group-item-action">Account Management</a>
+            <a href="{{ url_for('results.test_history')}}" class="list-group-item list-group-item-action">My Test History</a>
+            <a href="#" class="list-group-item list-group-item-action">etc..</a>
+        </div>
+    </div>
+{% endblock content %}

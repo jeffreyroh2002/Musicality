@@ -61,6 +61,11 @@ def account():
         form.email.data = current_user.email
     return render_template('account.html', title='Account', form=form)
 
+@users.route("/mypage")
+@login_required
+def mypage():
+    return render_template('mypage.html', title='My Page')
+
 
 ### need to add results root for user ####
 

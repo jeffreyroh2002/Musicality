@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="content-section">
+        <h2 class="account-heading" id="greeting">Hello, {{ current_user.username }}</h2>
+        <legend class="border-bottom mb-4">Your Test History</legend>
+        {% for test in tests %}
+            {% if test.test_end_time %}
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body"">
+                        <h5 class="card-title" style="text-align: center;">{{ test.test_end_time }}</h5>
+                        <h5 class="card-title" style="text-align: center;">test type {{ test.test_type }}</h5>
+                        <div style="text-align: center; margin-top: 30px;">
+                            <a href="{{ url_for('results.single_test_result', test_id=test.id) }}" id="button1" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                  </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock content %}
