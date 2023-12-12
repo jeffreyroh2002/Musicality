@@ -1,431 +1,392 @@
 Audio Name: ES_A World That's Gone Bad - The Devil's Sway.wav_1.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_A World That's Gone Bad - The Devil's Sway.wav_1.wav
 Genre Values:
-  RB_Soul: 0.0
   HipHop: 0.0
-  Rock: 0.5
-  Pop: 0.1
-  Ballad: 0.25
+  Rock: 0.6
+  Ballad: 0.3
   Electronic: 0.05
-  Jazz: 0.1
+  Jazz: 0.05
+  Soul/R&B: 0.0
 
 Audio Name: ES_AFTERPARTY - dasloe.wav_2.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_AFTERPARTY - dasloe.wav_2.wav
 Genre Values:
-  RB_Soul: 0.0
-  HipHop: 0.05
+  HipHop: 0.5
   Rock: 0.0
-  Pop: 0.25
-  Ballad: 0.3
-  Electronic: 0.4
+  Ballad: 0.05
+  Electronic: 0.2
   Jazz: 0.0
+  Soul/R&B: 0.25
 
 Audio Name: ES_Air on the G String - Johannes Bornlof.wav_3.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Air on the G String - Johannes Bornlof.wav_3.wav
 Genre Values:
-  RB_Soul: 0.1
   HipHop: 0.0
   Rock: 0.0
-  Pop: 0.0
-  Ballad: 0.2
+  Ballad: 0.6
   Electronic: 0.0
-  Jazz: 0.7
+  Jazz: 0.4
+  Soul/R&B: 0.0
 
 Audio Name: ES_Anywhere but Here - Easton.wav_4.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Anywhere but Here - Easton.wav_4.wav
 Genre Values:
-  RB_Soul: 0.0
-  HipHop: 0.15
+  HipHop: 0.2
   Rock: 0.8
-  Pop: 0.0
   Ballad: 0.0
-  Electronic: 0.05
+  Electronic: 0.0
   Jazz: 0.0
+  Soul/R&B: 0.0
 
 Audio Name: ES_Bam Bam - Bambi Haze.wav_5.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Bam Bam - Bambi Haze.wav_5.wav
 Genre Values:
-  RB_Soul: 0.0
-  HipHop: 0.4
+  HipHop: 0.8
   Rock: 0.0
-  Pop: 0.1
   Ballad: 0.0
-  Electronic: 0.5
+  Electronic: 0.1
   Jazz: 0.0
+  Soul/R&B: 0.1
 
 Audio Name: ES_Big Reveal - Torii Wolf.wav_6.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Big Reveal - Torii Wolf.wav_6.wav
 Genre Values:
-  RB_Soul: 0.0
   HipHop: 0.0
   Rock: 0.0
-  Pop: 0.3
-  Ballad: 0.7
-  Electronic: 0.0
+  Ballad: 0.0
+  Electronic: 0.2
   Jazz: 0.0
+  Soul/R&B: 0.8
 
 Audio Name: ES_Birdhouse - Hara Noda.wav_7.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Birdhouse - Hara Noda.wav_7.wav
 Genre Values:
-  RB_Soul: 0.4
   HipHop: 0.0
-  Rock: 0.1
-  Pop: 0.0
-  Ballad: 0.45
+  Rock: 0.2
+  Ballad: 0.2
   Electronic: 0.0
-  Jazz: 0.05
+  Jazz: 0.6
+  Soul/R&B: 0.0
 
 Audio Name: ES_Born to Be This High - Snake City.wav_8.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Born to Be This High - Snake City.wav_8.wav
 Genre Values:
-  RB_Soul: 0.0
-  HipHop: 0.0
-  Rock: 0.0
-  Pop: 0.7
-  Ballad: 0.3
-  Electronic: 0.0
+  HipHop: 0.1
+  Rock: 0.1
+  Ballad: 0.1
+  Electronic: 0.5
   Jazz: 0.0
+  Soul/R&B: 0.2
 
 Audio Name: ES_Can't Help It - spring gang.wav_9.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Can't Help It - spring gang.wav_9.wav
 Genre Values:
-  RB_Soul: 0.0
-  HipHop: 0.15
+  HipHop: 0.3
   Rock: 0.15
-  Pop: 0.0
   Ballad: 0.0
-  Electronic: 0.7
+  Electronic: 0.55
   Jazz: 0.0
+  Soul/R&B: 0.0
 
 Audio Name: ES_Drifting Away - Mama Zula.wav_10.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Drifting Away - Mama Zula.wav_10.wav
 Genre Values:
-  RB_Soul: 0.1
-  HipHop: 0.0
+  HipHop: 0.1
   Rock: 0.0
-  Pop: 0.4
   Ballad: 0.0
-  Electronic: 0.5
+  Electronic: 0.0
   Jazz: 0.0
+  Soul/R&B: 0.9
 
 Audio Name: ES_Every Song - Gamma Skies.wav_11.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Every Song - Gamma Skies.wav_11.wav
 Genre Values:
-  RB_Soul: 0.3
   HipHop: 0.0
   Rock: 0.0
-  Pop: 0.0
-  Ballad: 0.7
-  Electronic: 0.0
-  Jazz: 0.0
+  Ballad: 0.3
+  Electronic: 0.1
+  Jazz: 0.1
+  Soul/R&B: 0.5
 
 Audio Name: ES_Faller - Ikhana.wav_12.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Faller - Ikhana.wav_12.wav
 Genre Values:
-  RB_Soul: 0.35
   HipHop: 0.0
   Rock: 0.0
-  Pop: 0.2
-  Ballad: 0.4
+  Ballad: 0.0
   Electronic: 0.0
   Jazz: 0.05
+  Soul/R&B: 0.95
 
 Audio Name: ES_Go on Blues - Bo the Drifter.wav_13.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Go on Blues - Bo the Drifter.wav_13.wav
 Genre Values:
-  RB_Soul: 0.5
   HipHop: 0.0
-  Rock: 0.0
-  Pop: 0.0
-  Ballad: 0.1
+  Rock: 0.2
+  Ballad: 0.6
   Electronic: 0.0
-  Jazz: 0.4
+  Jazz: 0.1
+  Soul/R&B: 0.1
 
 Audio Name: ES_Good Vibes Only - Nbhd Nick.wav_14.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Good Vibes Only - Nbhd Nick.wav_14.wav
 Genre Values:
-  RB_Soul: 0.0
-  HipHop: 1.0
+  HipHop: 0.9
   Rock: 0.0
-  Pop: 0.0
   Ballad: 0.0
   Electronic: 0.0
   Jazz: 0.0
+  Soul/R&B: 0.1
 
 Audio Name: ES_Hierarchy (Clean Version) - Roof.wav_15.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Hierarchy (Clean Version) - Roof.wav_15.wav
 Genre Values:
-  RB_Soul: 0.0
-  HipHop: 0.0
-  Rock: 1.0
-  Pop: 0.0
+  HipHop: 0.1
+  Rock: 0.9
   Ballad: 0.0
   Electronic: 0.0
   Jazz: 0.0
+  Soul/R&B: 0.0
 
 Audio Name: ES_I Feel Good - Mama Zula.wav_16.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_I Feel Good - Mama Zula.wav_16.wav
 Genre Values:
-  RB_Soul: 0.1
-  HipHop: 0.0
+  HipHop: 0.5
   Rock: 0.0
-  Pop: 0.6
   Ballad: 0.0
-  Electronic: 0.3
+  Electronic: 0.1
   Jazz: 0.0
+  Soul/R&B: 0.4
 
 Audio Name: ES_I'm Looking Ahead - Ebo Krdum.wav_17.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_I'm Looking Ahead - Ebo Krdum.wav_17.wav
 Genre Values:
-  RB_Soul: 0.0
-  HipHop: 0.1
-  Rock: 0.0
-  Pop: 0.0
-  Ballad: 0.9
+  HipHop: 0.0
+  Rock: 0.1
+  Ballad: 0.4
   Electronic: 0.0
-  Jazz: 0.0
+  Jazz: 0.1
+  Soul/R&B: 0.4
 
 Audio Name: ES_Keep on Shining - Zorro.wav_18.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Keep on Shining - Zorro.wav_18.wav
 Genre Values:
-  RB_Soul: 0.0
   HipHop: 0.0
   Rock: 0.0
-  Pop: 0.4
   Ballad: 0.0
-  Electronic: 0.1
-  Jazz: 0.5
+  Electronic: 0.5
+  Jazz: 0.2
+  Soul/R&B: 0.3
 
 Audio Name: ES_Like It or Love It - Iso Indies.wav_19.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Like It or Love It - Iso Indies.wav_19.wav
 Genre Values:
-  RB_Soul: 0.1
-  HipHop: 0.3
+  HipHop: 0.5
   Rock: 0.0
-  Pop: 0.3
-  Ballad: 0.3
+  Ballad: 0.0
   Electronic: 0.0
   Jazz: 0.0
+  Soul/R&B: 0.5
 
 Audio Name: ES_Lily My Dear - Bladverk Band.wav_20.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Lily My Dear - Bladverk Band.wav_20.wav
 Genre Values:
-  RB_Soul: 0.0
   HipHop: 0.0
   Rock: 0.0
-  Pop: 0.0
   Ballad: 0.0
   Electronic: 0.0
   Jazz: 1.0
+  Soul/R&B: 0.0
 
 Audio Name: ES_Look at You Differently - Snake City.wav_21.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Look at You Differently - Snake City.wav_21.wav
 Genre Values:
-  RB_Soul: 0.0
   HipHop: 0.0
   Rock: 0.0
-  Pop: 0.45
-  Ballad: 0.55
-  Electronic: 0.0
-  Jazz: 0.0
+  Ballad: 0.0
+  Electronic: 0.35
+  Jazz: 0.05
+  Soul/R&B: 0.6
 
 Audio Name: ES_Lose - R.A.D..wav_22.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Lose - R.A.D..wav_22.wav
 Genre Values:
-  RB_Soul: 0.1
   HipHop: 0.0
   Rock: 0.0
-  Pop: 0.0
-  Ballad: 0.9
+  Ballad: 0.3
   Electronic: 0.0
   Jazz: 0.0
+  Soul/R&B: 0.7
 
 Audio Name: ES_Luvsick - Collin Lim.wav_23.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Luvsick - Collin Lim.wav_23.wav
 Genre Values:
-  RB_Soul: 0.6
   HipHop: 0.0
   Rock: 0.0
-  Pop: 0.1
-  Ballad: 0.2
-  Electronic: 0.1
+  Ballad: 0.0
+  Electronic: 0.0
   Jazz: 0.0
+  Soul/R&B: 1.0
 
 Audio Name: ES_No Crime - The Devil's Sway.wav_24.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_No Crime - The Devil's Sway.wav_24.wav
 Genre Values:
-  RB_Soul: 0.15
-  HipHop: 0.05
-  Rock: 0.0
-  Pop: 0.5
-  Ballad: 0.25
-  Electronic: 0.0
+  HipHop: 0.15
+  Rock: 0.3
+  Ballad: 0.0
+  Electronic: 0.45
   Jazz: 0.05
+  Soul/R&B: 0.05
 
 Audio Name: ES_Our Song - Adelyn Paik.wav_25.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Our Song - Adelyn Paik.wav_25.wav
 Genre Values:
-  RB_Soul: 0.0
   HipHop: 0.0
   Rock: 0.0
-  Pop: 0.0
-  Ballad: 1.0
-  Electronic: 0.0
-  Jazz: 0.0
+  Ballad: 0.15
+  Electronic: 0.55
+  Jazz: 0.05
+  Soul/R&B: 0.25
 
 Audio Name: ES_Put My Roots Down - Just Peachy.wav_26.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Put My Roots Down - Just Peachy.wav_26.wav
 Genre Values:
-  RB_Soul: 0.2
   HipHop: 0.0
   Rock: 0.0
-  Pop: 0.7
   Ballad: 0.0
-  Electronic: 0.1
+  Electronic: 0.0
   Jazz: 0.0
+  Soul/R&B: 1.0
 
 Audio Name: ES_Ride This Train - Robson Carver.wav_27.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Ride This Train - Robson Carver.wav_27.wav
 Genre Values:
-  RB_Soul: 0.0
   HipHop: 0.0
-  Rock: 0.1
-  Pop: 0.4
-  Ballad: 0.4
-  Electronic: 0.1
+  Rock: 0.5
+  Ballad: 0.5
+  Electronic: 0.0
   Jazz: 0.0
+  Soul/R&B: 0.0
 
 Audio Name: ES_Royal Estate - Francis Wells.wav_28.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Royal Estate - Francis Wells.wav_28.wav
 Genre Values:
-  RB_Soul: 0.0
   HipHop: 0.0
-  Rock: 0.35
-  Pop: 0.0
-  Ballad: 0.15
+  Rock: 0.8
+  Ballad: 0.0
   Electronic: 0.0
-  Jazz: 0.5
+  Jazz: 0.2
+  Soul/R&B: 0.0
 
 Audio Name: ES_Sooner Than You Know - Carvings.wav_29.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Sooner Than You Know - Carvings.wav_29.wav
 Genre Values:
-  RB_Soul: 0.0
-  HipHop: 0.0
-  Rock: 0.0
-  Pop: 0.0
+  HipHop: 0.2
+  Rock: 0.3
   Ballad: 0.0
-  Electronic: 1.0
+  Electronic: 0.5
   Jazz: 0.0
+  Soul/R&B: 0.0
 
 Audio Name: ES_Stays The Same - Gloria Tells.wav_30.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Stays The Same - Gloria Tells.wav_30.wav
 Genre Values:
-  RB_Soul: 0.2
-  HipHop: 0.0
+  HipHop: 0.1
   Rock: 0.0
-  Pop: 0.7
-  Ballad: 0.1
-  Electronic: 0.0
+  Ballad: 0.0
+  Electronic: 0.2
   Jazz: 0.0
+  Soul/R&B: 0.7
 
 Audio Name: ES_Stellar Park - Squiid.wav_31.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Stellar Park - Squiid.wav_31.wav
 Genre Values:
-  RB_Soul: 0.0
   HipHop: 0.0
-  Rock: 0.2
-  Pop: 0.7
+  Rock: 0.1
   Ballad: 0.0
-  Electronic: 0.0
-  Jazz: 0.1
+  Electronic: 0.7
+  Jazz: 0.0
+  Soul/R&B: 0.2
 
 Audio Name: ES_Sudden Death - Sightless in Shadow.wav_32.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Sudden Death - Sightless in Shadow.wav_32.wav
 Genre Values:
-  RB_Soul: 0.0
   HipHop: 0.0
-  Rock: 0.5
-  Pop: 0.0
+  Rock: 0.9
   Ballad: 0.0
-  Electronic: 0.5
+  Electronic: 0.0
   Jazz: 0.0
+  Soul/R&B: 0.1
 
 Audio Name: ES_Sure Is Heaven to Me - Binkley.wav_33.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Sure Is Heaven to Me - Binkley.wav_33.wav
 Genre Values:
-  RB_Soul: 0.0
   HipHop: 0.0
-  Rock: 0.0
-  Pop: 0.0
-  Ballad: 1.0
-  Electronic: 0.0
+  Rock: 0.2
+  Ballad: 0.7
+  Electronic: 0.1
   Jazz: 0.0
+  Soul/R&B: 0.0
 
 Audio Name: ES_The Jazz Messenger - Vendla.wav_34.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_The Jazz Messenger - Vendla.wav_34.wav
 Genre Values:
-  RB_Soul: 0.05
   HipHop: 0.0
-  Rock: 0.25
-  Pop: 0.0
-  Ballad: 0.35
+  Rock: 0.0
+  Ballad: 0.05
   Electronic: 0.0
-  Jazz: 0.35
+  Jazz: 0.95
+  Soul/R&B: 0.0
 
 Audio Name: ES_The Old Dirt Road - Bo the Drifter.wav_35.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_The Old Dirt Road - Bo the Drifter.wav_35.wav
 Genre Values:
-  RB_Soul: 0.0
   HipHop: 0.0
   Rock: 0.0
-  Pop: 0.1
-  Ballad: 0.9
-  Electronic: 0.0
+  Ballad: 0.6
+  Electronic: 0.2
   Jazz: 0.0
+  Soul/R&B: 0.2
 
 Audio Name: ES_This Old Habit - Victor Lundberg.wav_36.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_This Old Habit - Victor Lundberg.wav_36.wav
 Genre Values:
-  RB_Soul: 0.15
   HipHop: 0.0
-  Rock: 0.0
-  Pop: 0.25
-  Ballad: 0.6
+  Rock: 0.1
+  Ballad: 0.5
   Electronic: 0.0
   Jazz: 0.0
+  Soul/R&B: 0.4
 
 Audio Name: ES_Trapped in a Maze - Philip Ayers.wav_37.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Trapped in a Maze - Philip Ayers.wav_37.wav
 Genre Values:
-  RB_Soul: 0.0
-  HipHop: 0.0
-  Rock: 0.0
-  Pop: 0.0
-  Ballad: 0.7
-  Electronic: 0.0
-  Jazz: 0.3
+  HipHop: 0.5
+  Rock: 0.1
+  Ballad: 0.0
+  Electronic: 0.2
+  Jazz: 0.2
+  Soul/R&B: 0.0
 
 Audio Name: ES_We Came to Party - Basixx.wav_38.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_We Came to Party - Basixx.wav_38.wav
 Genre Values:
-  RB_Soul: 0.1
-  HipHop: 0.0
-  Rock: 0.0
-  Pop: 0.4
-  Ballad: 0.0
-  Electronic: 0.4
-  Jazz: 0.1
+  HipHop: 0.1
+  Rock: 0.05
+  Ballad: 0.1
+  Electronic: 0.45
+  Jazz: 0.0
+  Soul/R&B: 0.3
 
 Audio Name: ES_Where R U_ - King Sis.wav_39.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Where R U_ - King Sis.wav_39.wav
 Genre Values:
-  RB_Soul: 0.5
-  HipHop: 0.4
+  HipHop: 0.0
   Rock: 0.0
-  Pop: 0.0
-  Ballad: 0.1
+  Ballad: 0.0
   Electronic: 0.0
   Jazz: 0.0
+  Soul/R&B: 1.0
 
 Audio Name: ES_A World That's Gone Bad - The Devil's Sway.wav_1.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_A World That's Gone Bad - The Devil's Sway.wav_1.wav
