@@ -167,20 +167,30 @@ def single_test_result(test_id):
     high_similarity_pairs = [pair for pair, score in sorted_scores if score > high_similarity_threshold]
 
     # Analyze the feature vectors of these song pairs
-    common_attributes = {}
-    for i, j in high_similarity_pairs:
-        for attr, value in enumerate(high_rated_feature_vectors[i]):
-            if value > 0:  # or some threshold to determine if an attribute is significant
-                attribute_name = get_attribute_name(attr)  # function to map index to attribute name
-                common_attributes[attribute_name] = common_attributes.get(attribute_name, 0) + 1
 
-    # Find the most common attributes
-    most_common_attributes = sorted(common_attributes.items(), key=lambda x: x[1], reverse=True)
+    # Changed the following code to average attribute value between the two similar vectors
+
+    attribute_averages = {}
+    for i, j in high_similarity_pairs:
+        for attr_index in range(len(high_rated_feature_vectors[i])):
+            attribute_value_i = high_rated_feature_vectors[i][attr_index]
+            attribute_value_j = high_rated_feature_vectors[j][attr_index]
+
+            # Check if the attribute is significant in either of the vectors
+            if attribute_value_i > 0 or attribute_value_j > 0:
+                attribute_name = get_attribute_name(attr_index)
+                average_value = (attribute_value_i + attribute_value_j) / 2
+                attribute_averages[attribute_name] = attribute_averages.get(attribute_name, 0) + average_value
+
+    # Sort the attributes by their cumulative average values
+    sorted_attribute_averages = sorted(attribute_averages.items(), key=lambda x: x[1], reverse=True)
 
     # Interpret and present the findings
-    print("Your top music preferences are characterized by:")
-    for attr, count in most_common_attributes:
-        print(f"- {attr}: Appearing in {count} of your top song pairs")
+    print("Your top music preferences with their average values are characterized by:")
+    for attr, average_value in sorted_attribute_averages:
+        print(f"- {attr}: Average Value {average_value}")
+
+    #currently printing everything, but preferably average them? and display on template
         
     return render_template('single_test_results.html', user=user, test=test, genre_score=genre_score, mood_score=mood_score, vocal_score=vocal_score)
 
