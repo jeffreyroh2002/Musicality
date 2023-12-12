@@ -6,7 +6,7 @@ import os
 # Load the saved model
 saved_model_path = "pred_genre/save_model"
 test_data_path = "../static/mfccs/full_mix_mfcc.json"
-mfcc_labels = np.array(["RB_Soul", "HipHop", "Rock", "Pop", "Ballad", "Electronic", "Jazz"])
+mfcc_labels = np.array(["HipHop", "Rock", "Ballad", "Electronic", "Jazz", "Soul/R&B"])
 
 def load_testing_data(test_data_path):
     with open(test_data_path, "r") as fp:
