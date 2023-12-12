@@ -1,0 +1,10 @@
+Genre MFCC Mapping
+
+"mapping": [
+    "HipHop",
+    "Rock",
+    "Ballad",
+    "Electronic",
+    "Jazz",
+    "new_RnB"
+]
