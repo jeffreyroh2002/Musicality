@@ -4,6 +4,7 @@ from flask_login import current_user, login_required
 from WebApp.models import db, Test, UserAnswer, AudioFile
 from sklearn.preprocessing import normalize
 from sklearn.metrics.pairwise import cosine_similarity
+import numpy as np
 
 """
 results = Blueprint('results', __name__)
@@ -169,7 +170,6 @@ def single_test_result(test_id):
     # Analyze the feature vectors of these song pairs
 
     # Changed the following code to average attribute value between the two similar vectors
-
     attribute_averages = {}
     for i, j in high_similarity_pairs:
         for attr_index in range(len(high_rated_feature_vectors[i])):
@@ -191,6 +191,33 @@ def single_test_result(test_id):
         print(f"- {attr}: Average Value {average_value}")
 
     #currently printing everything, but preferably average them? and display on template
+
+    #---NEW CODE TO CALCULATE VARIENCE (STANDARD DEV)--#
+
+    # Initialize a dictionary to store all values for each attribute
+    attribute_values = {}
+
+    # Collect all values for each attribute
+    for vector in high_rated_feature_vectors:
+        for attr_index, value in enumerate(vector):
+            attribute_name = get_attribute_name(attr_index)
+            attribute_values.setdefault(attribute_name, []).append(value)
+
+    # Calculate variance or standard deviation for each attribute
+    attribute_variance = {attr: np.var(values) for attr, values in attribute_values.items()}
+    attribute_std_dev = {attr: np.std(values) for attr, values in attribute_values.items()}
+
+    # Set a threshold for high variance or standard deviation
+    high_variance_threshold = 0.2  # define your threshold here: need to experiment
+
+    # Identify attributes with high variance or standard deviation
+    high_variance_attributes = [attr for attr, var in attribute_variance.items() if var > high_variance_threshold]
+    high_std_dev_attributes = [attr for attr, std in attribute_std_dev.items() if std > high_variance_threshold]
+
+    # Interpret and present the findings
+    print("Attributes with significant divergence in your preferences:")
+    for attr in high_variance_attributes:
+        print(f"- {attr}: Variance {attribute_variance[attr]}")
         
     return render_template('single_test_results.html', user=user, test=test, genre_score=genre_score, mood_score=mood_score, vocal_score=vocal_score)
 
