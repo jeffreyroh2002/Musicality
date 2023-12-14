@@ -1,31 +1,17 @@
-ES_A World That's Gone Bad STEMS MELODY - The Devil's Sway.wav,120,180
-ES_AFTERPARTY STEMS MELODY - dasloe.wav,80,140
-ES_Anywhere but Here STEMS MELODY - Easton.wav,0,60
-ES_Bam Bam STEMS MELODY - Bambi Haze.wav,71,101
-ES_Big Reveal STEMS MELODY - Torii Wolf.wav,43,73
-ES_Born to Be This High STEMS MELODY - Snake City.wav,56,86
+ES_Another Life STEMS MELODY - Mimmi Bangoura.wav,19,79
+ES_Big Open Sky Flyer STEMS MELODY - Kylie Dailey.wav,74,134
+ES_Breeze U STEMS MELODY - Collin Lim.wav,35,95
+ES_Bright Red Lights STEMS MELODY - Coma Svensson.wav,25,85
 ES_Can't Help It STEMS MELODY - spring gang.wav,12,72
-ES_Drifting Away STEMS MELODY - Mama Zula.wav,45,75
-ES_Every Song STEMS MELODY - Gamma Skies.wav,38,68
-ES_Faller STEMS MELODY - Ikhana.wav,30,90
-ES_Go on Blues STEMS MELODY - Bo the Drifter.wav,40,70
-ES_Good Vibes Only STEMS MELODY - Nbhd Nick.wav,23,53
-ES_Hierarchy (Clean Version) STEMS MELODY - Roof.wav,20,50
-ES_I Feel Good STEMS MELODY - Mama Zula.wav,93,123
-ES_I'm Looking Ahead STEMS MELODY - Ebo Krdum.wav,10,40
-ES_Keep on Shining STEMS MELODY - Zorro.wav,117,147
-ES_Like It or Love It STEMS MELODY - Iso Indies.wav,12,42
-ES_Look at You Differently STEMS MELODY - Snake City.wav,38,98
-ES_Lose STEMS MELODY - R.A.D..wav,25,55
-ES_Luvsick STEMS MELODY - Collin Lim.wav,8,68
-ES_No Crime STEMS MELODY - The Devil's Sway.wav,35,95
+ES_Can't Stop STEMS MELODY - Foreland.wav,9,69
+ES_Castle to Ruin STEMS MELODY - Pastis.wav,0,60
+ES_Eyes in the Back of My Head STEMS MELODY - Katori Walker.wav,3,63
+ES_Good Vibes Only STEMS MELODY - Nbhd Nick.wav,23,83
+ES_Hierarchy STEMS MELODY - Roof.wav,20,80
+ES_I Got Love STEMS MELODY - Ed Mills.wav,52,112
 ES_Our Song STEMS MELODY - Adelyn Paik.wav,32,92
-ES_Put My Roots Down STEMS MELODY - Just Peachy.wav,51,81
-ES_Sooner Than You Know STEMS MELODY - Carvings.wav,21,51
-ES_Stays The Same STEMS MELODY - Gloria Tells.wav,48,78
-ES_Sudden Death STEMS MELODY - Sightless in Shadow.wav,0,30
-ES_Sure Is Heaven to Me STEMS MELODY - Binkley.wav,9,39
-ES_The Old Dirt Road STEMS MELODY - Bo the Drifter.wav,95,125
-ES_This Old Habit STEMS MELODY - Victor Lundberg.wav,30,90
-ES_We Came to Party STEMS MELODY - Basixx.wav,28,88
-ES_Where R U_ STEMS MELODY - King Sis.wav,30,60
+ES_Paper Crane STEMS MELODY - Revel Day.wav,35,105
+ES_save yourself STEMS MELODY - King Sis.wav,72,132
+ES_There's a Heatwave STEMS MELODY - Siine.wav,19,79
+ES_Top Speed STEMS MELODY - Nbhd Nick.wav,10,80
+ES_Where R U_ STEMS MELODY - King Sis.wav,38,98
