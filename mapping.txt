@@ -8,3 +8,15 @@ Genre MFCC Mapping
     "Jazz",
     "new_RnB"
 ]
+
+genre_7x100_with_Kbal&newHH.json
+"mapping": [
+    "Rock",
+    "new_HipHop",
+    "Ballad",
+    "Electronic",
+    "K_ballad",
+    "Jazz",
+    "new_RnB"
+]
+
