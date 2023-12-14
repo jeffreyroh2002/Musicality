@@ -9,7 +9,7 @@ app = create_app()
 # Assuming you are still within the application context (Musicality)
 with app.app_context():
     # Open a text file for writing
-    with open('output.txt', 'w') as file:
+    with open('output_6_balanced.txt', 'w') as file:
         sys.stdout = file  # Redirect stdout to the file
 
         # Print genre information
