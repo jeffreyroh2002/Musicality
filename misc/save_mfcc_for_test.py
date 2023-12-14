@@ -4,7 +4,7 @@ import math
 import librosa
 
 
-DATASET_PATH = "../audio_data/audio_vocals_split"
+DATASET_PATH = "../audio_data/audio_vocal_split"
 JSON_FILE_NAME = "../WebApp/static/mfccs/vocal_mfcc.json"
 JSON_PATH = JSON_FILE_NAME
 
