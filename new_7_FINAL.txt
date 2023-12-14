@@ -1,232 +1,255 @@
 Audio Name: ES_Another Life.wav_1.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Another Life.wav_1.wav
 Genre Values:
-  HipHop: 0.0
   Rock: 0.0
-  Ballad: 0.05
-  Electronic: 0.05
+  Hip Hop: 0.0
+  Pop Ballad: 0.0
+  Electronic: 0.0
+  Korean Ballad: 0.0
   Jazz: 0.0
-  Soul/R&B: 0.9
+  R&B/Soul: 1.0
 
 Audio Name: ES_Big Open Sky Flyer.wav_2.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Big Open Sky Flyer.wav_2.wav
 Genre Values:
-  HipHop: 0.0
   Rock: 0.0
-  Ballad: 0.85
+  Hip Hop: 0.0
+  Pop Ballad: 0.15
   Electronic: 0.0
-  Jazz: 0.05
-  Soul/R&B: 0.1
+  Korean Ballad: 0.45
+  Jazz: 0.35
+  R&B/Soul: 0.05
 
 Audio Name: ES_Blue Texas.wav_3.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Blue Texas.wav_3.wav
 Genre Values:
-  HipHop: 0.0
   Rock: 0.7
-  Ballad: 0.0
-  Electronic: 0.0
+  Hip Hop: 0.0
+  Pop Ballad: 0.0
+  Electronic: 0.05
+  Korean Ballad: 0.0
   Jazz: 0.25
-  Soul/R&B: 0.05
+  R&B/Soul: 0.0
 
 Audio Name: ES_Breeze U.wav_4.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Breeze U.wav_4.wav
 Genre Values:
-  HipHop: 0.1
   Rock: 0.0
-  Ballad: 0.45
-  Electronic: 0.1
-  Jazz: 0.0
-  Soul/R&B: 0.35
+  Hip Hop: 0.0
+  Pop Ballad: 0.15
+  Electronic: 0.5
+  Korean Ballad: 0.1
+  Jazz: 0.2
+  R&B/Soul: 0.05
 
 Audio Name: ES_Bright Red Lights.wav_5.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Bright Red Lights.wav_5.wav
 Genre Values:
-  HipHop: 0.4
-  Rock: 0.55
-  Ballad: 0.0
-  Electronic: 0.05
+  Rock: 0.7
+  Hip Hop: 0.15
+  Pop Ballad: 0.0
+  Electronic: 0.15
+  Korean Ballad: 0.0
   Jazz: 0.0
-  Soul/R&B: 0.0
+  R&B/Soul: 0.0
 
 Audio Name: ES_Can't Help It.wav_6.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Can't Help It.wav_6.wav
 Genre Values:
-  HipHop: 0.4
-  Rock: 0.05
-  Ballad: 0.0
-  Electronic: 0.55
-  Jazz: 0.0
-  Soul/R&B: 0.0
+  Rock: 0.15
+  Hip Hop: 0.05
+  Pop Ballad: 0.0
+  Electronic: 0.7
+  Korean Ballad: 0.0
+  Jazz: 0.1
+  R&B/Soul: 0.0
 
-Audio Name: ES_Can't Stop.wav_7.wav --> completely wrong
+Audio Name: ES_Can't Stop.wav_7.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Can't Stop.wav_7.wav
 Genre Values:
-  HipHop: 0.4
-  Rock: 0.05
-  Ballad: 0.0
-  Electronic: 0.55
-  Jazz: 0.0
-  Soul/R&B: 0.0
+  Rock: 0.15
+  Hip Hop: 0.05
+  Pop Ballad: 0.0
+  Electronic: 0.7
+  Korean Ballad: 0.0
+  Jazz: 0.1
+  R&B/Soul: 0.0
 
 Audio Name: ES_Castle to Ruin.wav_8.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Castle to Ruin.wav_8.wav
 Genre Values:
-  HipHop: 0.15
   Rock: 0.75
-  Ballad: 0.05
-  Electronic: 0.05
+  Hip Hop: 0.0
+  Pop Ballad: 0.2
+  Electronic: 0.0
+  Korean Ballad: 0.0
   Jazz: 0.0
-  Soul/R&B: 0.0
+  R&B/Soul: 0.05
 
 Audio Name: ES_Do Over.wav_9.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Do Over.wav_9.wav
 Genre Values:
-  HipHop: 0.0
   Rock: 0.0
-  Ballad: 0.2
-  Electronic: 0.3
-  Jazz: 0.25
-  Soul/R&B: 0.25
+  Hip Hop: 0.0
+  Pop Ballad: 0.15
+  Electronic: 0.4
+  Korean Ballad: 0.1
+  Jazz: 0.35
+  R&B/Soul: 0.0
 
 Audio Name: ES_Eyes in the Back of My Head.wav_10.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Eyes in the Back of My Head.wav_10.wav
 Genre Values:
-  HipHop: 0.25
   Rock: 0.0
-  Ballad: 0.0
+  Hip Hop: 1.0
+  Pop Ballad: 0.0
   Electronic: 0.0
+  Korean Ballad: 0.0
   Jazz: 0.0
-  Soul/R&B: 0.75
+  R&B/Soul: 0.0
 
 Audio Name: ES_Good Vibes Only.wav_11.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Good Vibes Only.wav_11.wav
 Genre Values:
-  HipHop: 0.75
   Rock: 0.0
-  Ballad: 0.0
+  Hip Hop: 0.85
+  Pop Ballad: 0.0
   Electronic: 0.0
+  Korean Ballad: 0.0
   Jazz: 0.0
-  Soul/R&B: 0.25
+  R&B/Soul: 0.15
 
 Audio Name: ES_Hierarchy.wav_12.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Hierarchy.wav_12.wav
 Genre Values:
-  HipHop: 0.15
-  Rock: 0.8
-  Ballad: 0.0
+  Rock: 1.0
+  Hip Hop: 0.0
+  Pop Ballad: 0.0
   Electronic: 0.0
+  Korean Ballad: 0.0
   Jazz: 0.0
-  Soul/R&B: 0.05
+  R&B/Soul: 0.0
 
 Audio Name: ES_I Got Love.wav_13.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_I Got Love.wav_13.wav
 Genre Values:
-  HipHop: 0.0
-  Rock: 0.4
-  Ballad: 0.05
+  Rock: 0.5
+  Hip Hop: 0.05
+  Pop Ballad: 0.0
   Electronic: 0.0
-  Jazz: 0.05
-  Soul/R&B: 0.5
+  Korean Ballad: 0.0
+  Jazz: 0.1
+  R&B/Soul: 0.35
 
 Audio Name: ES_Lily My Dear.wav_14.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Lily My Dear.wav_14.wav
 Genre Values:
-  HipHop: 0.0
   Rock: 0.0
-  Ballad: 0.0
+  Hip Hop: 0.0
+  Pop Ballad: 0.0
   Electronic: 0.0
+  Korean Ballad: 0.0
   Jazz: 1.0
-  Soul/R&B: 0.0
+  R&B/Soul: 0.0
 
-Audio Name: ES_Our Song.wav_15.wav  *too much electronic
+Audio Name: ES_Our Song.wav_15.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Our Song.wav_15.wav
 Genre Values:
-  HipHop: 0.0
   Rock: 0.0
-  Ballad: 0.35
-  Electronic: 0.5
+  Hip Hop: 0.0
+  Pop Ballad: 0.0
+  Electronic: 0.2
+  Korean Ballad: 0.5
   Jazz: 0.0
-  Soul/R&B: 0.15
+  R&B/Soul: 0.3
 
 Audio Name: ES_Paper Crane.wav_16.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Paper Crane.wav_16.wav
 Genre Values:
-  HipHop: 0.0
   Rock: 0.0
-  Ballad: 0.0
+  Hip Hop: 0.1
+  Pop Ballad: 0.0
   Electronic: 0.0
+  Korean Ballad: 0.0
   Jazz: 0.0
-  Soul/R&B: 1.0
+  R&B/Soul: 0.9
 
-Audio Name: ES_Roundtrip.wav_17.wav  **should be jazz
+Audio Name: ES_Roundtrip.wav_17.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Roundtrip.wav_17.wav
 Genre Values:
-  HipHop: 0.1
-  Rock: 0.55
-  Ballad: 0.0
-  Electronic: 0.2
-  Jazz: 0.15
-  Soul/R&B: 0.0
-
-Audio Name: ES_save yourself.wav_18.wav
-File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_save yourself.wav_18.wav
-Genre Values:
-  HipHop: 0.0
-  Rock: 0.0
-  Ballad: 0.0
-  Electronic: 0.05
-  Jazz: 0.15
-  Soul/R&B: 0.8
+  Rock: 0.8
+  Hip Hop: 0.0
+  Pop Ballad: 0.0
+  Electronic: 0.15
+  Korean Ballad: 0.0
+  Jazz: 0.05
+  R&B/Soul: 0.0
 
 Audio Name: ES_Step on That Toe.wav_19.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Step on That Toe.wav_19.wav
 Genre Values:
-  HipHop: 0.0
-  Rock: 0.3
-  Ballad: 0.05
+  Rock: 0.1
+  Hip Hop: 0.0
+  Pop Ballad: 0.0
   Electronic: 0.05
-  Jazz: 0.55
-  Soul/R&B: 0.05
+  Korean Ballad: 0.0
+  Jazz: 0.8
+  R&B/Soul: 0.05
 
 Audio Name: ES_There's a Heatwave.wav_20.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_There's a Heatwave.wav_20.wav
 Genre Values:
-  HipHop: 0.15
-  Rock: 0.1
-  Ballad: 0.0
-  Electronic: 0.4
-  Jazz: 0.0
-  Soul/R&B: 0.35
+  Rock: 0.05
+  Hip Hop: 0.0
+  Pop Ballad: 0.0
+  Electronic: 0.7
+  Korean Ballad: 0.05
+  Jazz: 0.05
+  R&B/Soul: 0.15
 
-Audio Name: ES_Top Speed.wav_21.wav  * should be hip hop
+Audio Name: ES_Top Speed.wav_21.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Top Speed.wav_21.wav
 Genre Values:
-  HipHop: 0.1
   Rock: 0.0
-  Ballad: 0.1
+  Hip Hop: 0.9
+  Pop Ballad: 0.0
   Electronic: 0.0
+  Korean Ballad: 0.0
   Jazz: 0.0
-  Soul/R&B: 0.8
+  R&B/Soul: 0.1
 
 Audio Name: ES_Where R U?.wav_22.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Where R U?.wav_22.wav
 Genre Values:
-  HipHop: 0.0
   Rock: 0.0
-  Ballad: 0.0
+  Hip Hop: 0.25
+  Pop Ballad: 0.0
   Electronic: 0.0
+  Korean Ballad: 0.0
   Jazz: 0.0
-  Soul/R&B: 1.0
+  R&B/Soul: 0.75
 
-Audio Name: ES_Whispering Love.wav_23.wav  **should be mostly electronic
+Audio Name: ES_Whispering Love.wav_23.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Whispering Love.wav_23.wav
 Genre Values:
-  HipHop: 0.5
-  Rock: 0.05
-  Ballad: 0.05
-  Electronic: 0.2
-  Jazz: 0.1
-  Soul/R&B: 0.1
+  Rock: 0.0
+  Hip Hop: 0.35
+  Pop Ballad: 0.05
+  Electronic: 0.45
+  Korean Ballad: 0.0
+  Jazz: 0.15
+  R&B/Soul: 0.0
+
+Audio Name: ES_save yourself.wav_18.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_save yourself.wav_18.wav
+Genre Values:
+  Rock: 0.0
+  Hip Hop: 0.0
+  Pop Ballad: 0.0
+  Electronic: 0.15
+  Korean Ballad: 0.0
+  Jazz: 0.15
+  R&B/Soul: 0.7
 
 Audio Name: ES_Another Life.wav_1.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Another Life.wav_1.wav
@@ -364,14 +387,6 @@ Mood Values:
   Bright: 0.8
   Relaxed: 0.0
 
-Audio Name: ES_save yourself.wav_18.wav
-File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_save yourself.wav_18.wav
-Mood Values:
-  Melancholic: 0.1
-  Angry: 0.0
-  Bright: 0.0
-  Relaxed: 0.9
-
 Audio Name: ES_Step on That Toe.wav_19.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Step on That Toe.wav_19.wav
 Mood Values:
@@ -411,6 +426,14 @@ Mood Values:
   Angry: 0.25
   Bright: 0.7
   Relaxed: 0.05
+
+Audio Name: ES_save yourself.wav_18.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_save yourself.wav_18.wav
+Mood Values:
+  Melancholic: 0.1
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.9
 
 Audio Name: ES_Another Life.wav_1.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Another Life.wav_1.wav
@@ -565,15 +588,6 @@ Vocal Values:
   Raspy: 0.0
   Voiceless: 1.0
 
-Audio Name: ES_save yourself.wav_18.wav
-File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_save yourself.wav_18.wav
-Vocal: {"Smooth": 0.05, "Dreamy": 0.8, "Raspy": 0.05, "Voiceless": 0.1}
-Vocal Values:
-  Smooth: 0.05
-  Dreamy: 0.8
-  Raspy: 0.05
-  Voiceless: 0.1
-
 Audio Name: ES_Step on That Toe.wav_19.wav
 File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Step on That Toe.wav_19.wav
 Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
@@ -618,4 +632,13 @@ Vocal Values:
   Dreamy: 0.0
   Raspy: 0.0
   Voiceless: 1.0
+
+Audio Name: ES_save yourself.wav_18.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_save yourself.wav_18.wav
+Vocal: {"Smooth": 0.05, "Dreamy": 0.8, "Raspy": 0.05, "Voiceless": 0.1}
+Vocal Values:
+  Smooth: 0.05
+  Dreamy: 0.8
+  Raspy: 0.05
+  Voiceless: 0.1
 
