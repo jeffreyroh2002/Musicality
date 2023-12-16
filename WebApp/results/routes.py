@@ -19,7 +19,7 @@ def show_single_result(test_id):
 
 def get_attribute_name(index):
     # Define the order of attributes in your feature vectors
-    attributes = ['Rock','HipHop','Pop Ballad','Electronic','Korean Ballad','Jazz','R&B/Soul' 
+    attributes = ['Rock','Hip Hop','Pop Ballad','Electronic','Korean Ballad','Jazz','R&B/Soul' 
                   'Tense', 'Bright', 'Emotional', 'Relaxed', 
                   'Smooth', 'Dreamy', 'Raspy', 'Voiceless']
     
@@ -38,10 +38,7 @@ def single_test_result(test_id):
 
     
     #Update Preference each Song
-    genre_score = {'Rock': 0,'HipHop': 0,'Pop Ballad': 0,'Electronic': 0,'Korean Ballad': 0,'Jazz': 0,'R&B/Soul': 0}
-    genre_score = {'Blues': 0, 'Ballad': 0, 'Orchestral': 0, 'Country': 0,
-                    'Electronic': 0, 'HipHop': 0, 'Jazz': 0, 'Metal': 0, 
-                    'Pop': 0, 'Reggae': 0, 'Rock': 0, 'RB_Soul': 0}
+    genre_score = {'Rock': 0,'Hip Hop': 0,'Pop Ballad': 0,'Electronic': 0,'Korean Ballad': 0,'Jazz': 0,'R&B/Soul': 0}
     mood_score = {'Angry': 0, 'Bright': 0, 'Melancholic': 0, 'Relaxed': 0}
     vocal_score = {'Smooth': 0,'Dreamy': 0,'Raspy': 0,'Voiceless': 0}
 
