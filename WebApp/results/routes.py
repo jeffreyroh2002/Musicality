@@ -19,9 +19,8 @@ def show_single_result(test_id):
 
 def get_attribute_name(index):
     # Define the order of attributes in your feature vectors
-    attributes = ['Blues', 'Ballad', 'Orchestral', 'Country', 'Electronic', 'HipHop', 'Jazz', 'Metal', 
-                  'Pop', 'Reggae', 'Rock', 'RB_Soul', 
-                  'Angry', 'Bright', 'Melancholic', 'Relaxed', 
+    attributes = ['Rock','HipHop','Pop Ballad','Electronic','Korean Ballad','Jazz','R&B/Soul' 
+                  'Tense', 'Bright', 'Emotional', 'Relaxed', 
                   'Smooth', 'Dreamy', 'Raspy', 'Voiceless']
     
     # Return the attribute name corresponding to the given index
@@ -39,6 +38,7 @@ def single_test_result(test_id):
 
     
     #Update Preference each Song
+    genre_score = {'Rock': 0,'HipHop': 0,'Pop Ballad': 0,'Electronic': 0,'Korean Ballad': 0,'Jazz': 0,'R&B/Soul': 0}
     genre_score = {'Blues': 0, 'Ballad': 0, 'Orchestral': 0, 'Country': 0,
                     'Electronic': 0, 'HipHop': 0, 'Jazz': 0, 'Metal': 0, 
                     'Pop': 0, 'Reggae': 0, 'Rock': 0, 'RB_Soul': 0}
@@ -203,7 +203,7 @@ def single_test_result(test_id):
             attribute_name = get_attribute_name(attr_index)
             attribute_values.setdefault(attribute_name, []).append(value)
 
-    # Calculate variance or standard deviation for each attribute
+    # Calculate variance & standard deviation for each attribute
     attribute_variance = {attr: np.var(values) for attr, values in attribute_values.items()}
     attribute_std_dev = {attr: np.std(values) for attr, values in attribute_values.items()}
 
