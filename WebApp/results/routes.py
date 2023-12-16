@@ -19,7 +19,7 @@ def show_single_result(test_id):
 
 def get_attribute_name(index):
     # Define the order of attributes in your feature vectors
-    attributes = ['Rock','Hip Hop','Pop Ballad','Electronic','Korean Ballad','Jazz','R&B/Soul' 
+    attributes = ['Rock','Hip Hop','Pop Ballad','Electronic','Korean Ballad','Jazz','R&B/Soul', 
                   'Tense', 'Bright', 'Emotional', 'Relaxed', 
                   'Smooth', 'Dreamy', 'Raspy', 'Voiceless']
     
@@ -140,52 +140,41 @@ def single_test_result(test_id):
     print(high_rated_feature_vectors)
 
     # Create an empty list to store the similarities
-    similarity_scores = []
+    # Initialize a dictionary to keep track of similar attributes and their averaged values
+    similar_attributes = {}
 
-    # Iterate over each pair of feature vectors
+    # Iterate over pairs of similar songs
     for i in range(len(high_rated_feature_vectors)):
         for j in range(i + 1, len(high_rated_feature_vectors)):
             # Calculate cosine similarity
             similarity = cosine_similarity([high_rated_feature_vectors[i]], [high_rated_feature_vectors[j]])[0][0]
-            
-            # Store the similarity score with song indices (or any other identifier you have)
-            similarity_scores.append(((i, j), similarity))
 
-    # Print or process the similarity scores as needed
-    for pair, score in similarity_scores:
-        print(f"Similarity between songs {pair[0]} and {pair[1]}: {score}")
-    
-    # Sort the similarity scores in descending order
-    sorted_scores = sorted(similarity_scores, key=lambda x: x[1], reverse=True)
+            # Check if the similarity is above a certain threshold (adjust as needed)
+            similarity_threshold = 0.6
+            if similarity > similarity_threshold:
+                # Initialize dictionaries for attributes and their values if not already present
+                if (i, j) not in similar_attributes:
+                    similar_attributes[(i, j)] = {}
 
-    # Set a threshold for high similarity (e.g., 0.7)
-    high_similarity_threshold = 0.6
+                # Iterate over the attribute values and calculate their average
+                for attr_index in range(len(high_rated_feature_vectors[i])):
+                    attribute_value_i = high_rated_feature_vectors[i][attr_index]
+                    attribute_value_j = high_rated_feature_vectors[j][attr_index]
 
-    # Filter out song pairs with high similarity
-    high_similarity_pairs = [pair for pair, score in sorted_scores if score > high_similarity_threshold]
+                    # Check if the attribute is significant in either of the vectors
+                    if attribute_value_i > 0 or attribute_value_j > 0:
+                        attribute_name = get_attribute_name(attr_index)
+                        average_value = (attribute_value_i + attribute_value_j) / 2
 
-    # Analyze the feature vectors of these song pairs
+                        # Store the averaged value for the attribute in the dictionary
+                        similar_attributes[(i, j)][attribute_name] = average_value
 
-    # Changed the following code to average attribute value between the two similar vectors
-    attribute_averages = {}
-    for i, j in high_similarity_pairs:
-        for attr_index in range(len(high_rated_feature_vectors[i])):
-            attribute_value_i = high_rated_feature_vectors[i][attr_index]
-            attribute_value_j = high_rated_feature_vectors[j][attr_index]
-
-            # Check if the attribute is significant in either of the vectors
-            if attribute_value_i > 0 or attribute_value_j > 0:
-                attribute_name = get_attribute_name(attr_index)
-                average_value = (attribute_value_i + attribute_value_j) / 2
-                attribute_averages[attribute_name] = attribute_averages.get(attribute_name, 0) + average_value
-
-    # Sort the attributes by their cumulative average values
-    sorted_attribute_averages = sorted(attribute_averages.items(), key=lambda x: x[1], reverse=True)
-
-    # Interpret and present the findings
-    print("Your top music preferences with their average values are characterized by:")
-    for attr, average_value in sorted_attribute_averages:
-        print(f"- {attr}: Average Value {average_value}")
+    # Presentation: Print similar attributes and their averaged values for each pair of songs
+    for pair, attributes in similar_attributes.items():
+        song_i_index, song_j_index = pair
+        print(f"Similar attributes between songs {song_i_index} and {song_j_index}:")
+        for attribute, averaged_value in attributes.items():
+            print(f"- {attribute}: Averaged Value {averaged_value}")
 
     #currently printing everything, but preferably average them? and display on template
 
