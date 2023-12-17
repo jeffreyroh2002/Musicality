@@ -29,14 +29,30 @@
     </div>
 
     <div class="form-group">
+      {{ form.genre_not_sure(class="form-check-input") }}
+      {{ form.genre_not_sure.label(class="form-check-label ") }}
+    </div>
+
+    <div class="form-group">
       {{ form.mood_rating.label }}
       {{ form.mood_rating(class="form-control") }}
+    </div>
+
+    <div class="form-group">
+      {{ form.mood_not_sure(class="form-check-input") }}
+      {{ form.mood_not_sure.label(class="form-check-label") }}
     </div>
 
     <div class="form-group">
       {{ form.vocal_timbre_rating.label }}
       {{ form.vocal_timbre_rating(class="form-control") }}
     </div>
+
+    <div class="form-group">
+      {{ form.vocal_not_sure(class="form-check-input") }}
+      {{ form.vocal_not_sure.label(class="form-check-label") }}
+    </div>
+
     {% if audio_file.id != 1 %}
       <a href="{{ url_for('questions.test_questions', test_type = test_type, audio_file_id=audio_file.id-1) }}" id="button1" class="btn btn-primary">Previous</a>
     {% endif %}
