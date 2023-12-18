@@ -60,7 +60,7 @@ def single_test_result(test_id):
         genre_not_sure = answer.genre_not_sure
         mood_rating = answer.mood_rating
         mood_not_sure = answer.mood_not_sure
-        vocal_timbre_rating = answer.vocal_timbre_rating
+        vocal_rating = answer.vocal_timbre_rating
         vocal_not_sure = answer.vocal_not_sure
 
         #Calculate overall score
