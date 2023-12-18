@@ -73,17 +73,24 @@ def test_questions(test_type, audio_file_id):
         # when answer fields exists after next button
         if db_answer:
             db_answer.overall_rating=form.overall_rating.data
-            db_answer.genre_rating=form.genre_rating.data if form.genre_rating.data != 'not_sure' else -1
-            db_answer.mood_rating=form.mood_rating.data if form.mood_rating.data != 'not_sure' else -1
-            db_answer.vocal_timbre_rating=form.vocal_timbre_rating.data if form.vocal_timbre_rating.data != 'not_sure' else -1
+            db_answer.genre_rating=form.genre_rating.data
+            db_answer.genre_not_sure=form.genre_not_sure.data 
+            db_answer.mood_rating=form.mood_rating.data
+            db_answer.mood_not_sure=form.mood_not_sure.data 
+            db_answer.vocal_timbre_rating=form.vocal_timbre_rating.data
+            db_answer.vocal_not_sure=form.vocal_not_sure.data 
 
         # when answer fields do not exists after next button
         else:
             user_answer = UserAnswer(
                 overall_rating=form.overall_rating.data,
-                genre_rating=form.genre_rating.data if form.genre_rating.data != 'not_sure' else -1,
-                mood_rating=form.mood_rating.data if form.mood_rating.data != 'not_sure' else -1,
-                vocal_timbre_rating=form.vocal_timbre_rating.data if form.vocal_timbre_rating.data != 'not_sure' else -1,
+                genre_rating=form.genre_rating.data,
+                genre_not_sure=form.genre_not_sure.data, 
+                mood_rating=form.mood_rating.data,
+                mood_not_sure=form.mood_not_sure.data, 
+                vocal_timbre_rating=form.vocal_timbre_rating.data,
+                vocal_not_sure=form.vocal_not_sure.data,
+
                 user = current_user,
                 audio = audio_file,
                 test = test
@@ -110,7 +117,15 @@ def test_questions(test_type, audio_file_id):
         form.genre_rating.default = db_answer.genre_rating
         form.mood_rating.default = db_answer.mood_rating
         form.vocal_timbre_rating.default = db_answer.vocal_timbre_rating
+        if db_answer.genre_not_sure:
+            form.genre_not_sure.default = True
+        if db_answer.mood_not_sure:
+            form.mood_not_sure.default = True
+        if db_answer.vocal_not_sure:
+            form.vocal_not_sure.default = True
         form.process()
+
+
     
 
     return render_template('questionnaire.html', form=form, test_type=test_type, audio_file=audio_file, test=test)

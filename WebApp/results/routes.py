@@ -57,13 +57,13 @@ def single_test_result(test_id):
         #from Questions Form
         overall_rating = answer.overall_rating   # need to use this
         genre_rating = answer.genre_rating
+        genre_not_sure = answer.genre_not_sure
         mood_rating = answer.mood_rating
+        mood_not_sure = answer.mood_not_sure
         vocal_timbre_rating = answer.vocal_timbre_rating
+        vocal_not_sure = answer.vocal_not_sure
 
-        # store highly rated songs into high_rated songs list
-        if (overall_rating >= 2):
-            high_rated_songs.append(answer.audio_id)
-
+        #Calculate overall score
         #Calculate each genre score
         genre_weighted = {}
         if genre_pred and not isinstance(audio.genre, float):
@@ -73,9 +73,16 @@ def single_test_result(test_id):
             except json.JSONDecodeError:
                 print("Error decoding genre_data JSON.")
 
-            for genre_name, proportion in genre_data.items():
-                genre_weighted[genre_name] = proportion * genre_rating
+            #if user is not sure about the genre, calculate the genre_score based on overall rating
+            if genre_not_sure:
+                for genre_name, proportion in genre_data.items():
+                    genre_weighted[genre_name] = proportion * overall_rating
             
+            #in other case, calculate the genre_score based on (0.3 portion of overall_rating) and (0.7 portion of genre_rating)
+            else:
+                for genre_name, proportion in genre_data.items():
+                    genre_weighted[genre_name] = (proportion * overall_rating * 0.3) + (proportion * genre_rating * 0.7)
+
             for genre in genre_weighted:
                 genre_score[genre] += genre_weighted[genre]
 
@@ -91,8 +98,15 @@ def single_test_result(test_id):
             except json.JSONDecodeError:
                 print("Error decoding mood_data JSON.")
 
-            for mood_name, proportion in mood_data.items():
-                mood_weighted[mood_name] = proportion * mood_rating
+            #if user is not sure about the mood, calculate the mood_score based on overall rating
+            if mood_not_sure:
+                for mood_name, proportion in mood_data.items():
+                    mood_weighted[mood_name] = proportion * overall_rating
+            
+            #in other case, calculate the mood_score based on (0.3 portion of overall_rating) and (0.7 portion of mood_rating)
+            else:
+                for mood_name, proportion in mood_data.items():
+                    mood_weighted[mood_name] = (proportion * overall_rating * 0.3) + (proportion * mood_rating * 0.7)
             
             for mood in mood_weighted:
                 mood_score[mood] += mood_weighted[mood]
@@ -109,14 +123,25 @@ def single_test_result(test_id):
             except json.JSONDecodeError:
                 print("Error decoding vocal_data JSON.")
 
-            for vocal_name, proportion in vocal_data.items():
-                vocal_weighted[vocal_name] = proportion * vocal_timbre_rating
+            #if user is not sure about the vocal, calculate the vocal_score based on overall rating
+            if vocal_not_sure:
+                for vocal_name, proportion in vocal_data.items():
+                    vocal_weighted[vocal_name] = proportion * overall_rating
             
+            #in other case, calculate the vocal_score based on (0.3 portion of overall_rating) and (0.7 portion of vocal_rating)
+            else:
+                for vocal_name, proportion in vocal_data.items():
+                    vocal_weighted[vocal_name] = (proportion * overall_rating * 0.3) + (proportion * vocal_rating * 0.7)
+                    
             for vocal in vocal_weighted:
                 vocal_score[vocal] += vocal_weighted[vocal]
         else:
             print("Vocal data is not available or is in an unexpected format.")
         
+    # store highly rated songs into high_rated songs list
+        if (overall_rating >= 2):
+            high_rated_songs.append(answer.audio_id)
+
     # array of arrays to store each feature vector of highly rated songs
     high_rated_feature_vectors = []
     for high_rated_song in high_rated_songs:
