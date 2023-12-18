@@ -1,0 +1,644 @@
+Audio Name: ES_Another Life.wav_1.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Another Life.wav_1.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.0
+  HipHop: 0.0
+  Electronic: 0.0
+  K_ballad: 0.0
+  Jazz: 0.0
+  R&B/Soul: 1.0
+
+Audio Name: ES_Big Open Sky Flyer.wav_2.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Big Open Sky Flyer.wav_2.wav
+Genre Values:
+  Acoustic: 0.15
+  Rock: 0.0
+  HipHop: 0.0
+  Electronic: 0.0
+  K_ballad: 0.6
+  Jazz: 0.15
+  R&B/Soul: 0.1
+
+Audio Name: ES_Blue Texas.wav_3.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Blue Texas.wav_3.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.75
+  HipHop: 0.0
+  Electronic: 0.0
+  K_ballad: 0.0
+  Jazz: 0.25
+  R&B/Soul: 0.0
+
+Audio Name: ES_Breeze U.wav_4.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Breeze U.wav_4.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.0
+  HipHop: 0.05
+  Electronic: 0.4
+  K_ballad: 0.2
+  Jazz: 0.0
+  R&B/Soul: 0.35
+
+Audio Name: ES_Bright Red Lights.wav_5.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Bright Red Lights.wav_5.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.9
+  HipHop: 0.1
+  Electronic: 0.0
+  K_ballad: 0.0
+  Jazz: 0.0
+  R&B/Soul: 0.0
+
+Audio Name: ES_Can't Help It.wav_6.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Can't Help It.wav_6.wav
+Genre Values:
+  Acoustic: 0.05
+  Rock: 0.05
+  HipHop: 0.05
+  Electronic: 0.8
+  K_ballad: 0.0
+  Jazz: 0.0
+  R&B/Soul: 0.05
+
+Audio Name: ES_Can't Stop.wav_7.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Can't Stop.wav_7.wav
+Genre Values:
+  Acoustic: 0.05
+  Rock: 0.05
+  HipHop: 0.05
+  Electronic: 0.8
+  K_ballad: 0.0
+  Jazz: 0.0
+  R&B/Soul: 0.05
+
+Audio Name: ES_Castle to Ruin.wav_8.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Castle to Ruin.wav_8.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.85
+  HipHop: 0.0
+  Electronic: 0.05
+  K_ballad: 0.05
+  Jazz: 0.0
+  R&B/Soul: 0.05
+
+Audio Name: ES_Do Over.wav_9.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Do Over.wav_9.wav
+Genre Values:
+  Acoustic: 0.25
+  Rock: 0.1
+  HipHop: 0.0
+  Electronic: 0.4
+  K_ballad: 0.05
+  Jazz: 0.05
+  R&B/Soul: 0.15
+
+Audio Name: ES_Eyes in the Back of My Head.wav_10.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Eyes in the Back of My Head.wav_10.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.0
+  HipHop: 1.0
+  Electronic: 0.0
+  K_ballad: 0.0
+  Jazz: 0.0
+  R&B/Soul: 0.0
+
+Audio Name: ES_Good Vibes Only.wav_11.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Good Vibes Only.wav_11.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.0
+  HipHop: 0.65
+  Electronic: 0.05
+  K_ballad: 0.0
+  Jazz: 0.0
+  R&B/Soul: 0.3
+
+Audio Name: ES_Hierarchy.wav_12.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Hierarchy.wav_12.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 1.0
+  HipHop: 0.0
+  Electronic: 0.0
+  K_ballad: 0.0
+  Jazz: 0.0
+  R&B/Soul: 0.0
+
+Audio Name: ES_I Got Love.wav_13.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_I Got Love.wav_13.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.6
+  HipHop: 0.05
+  Electronic: 0.0
+  K_ballad: 0.0
+  Jazz: 0.35
+  R&B/Soul: 0.0
+
+Audio Name: ES_Lily My Dear.wav_14.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Lily My Dear.wav_14.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.0
+  HipHop: 0.0
+  Electronic: 0.0
+  K_ballad: 0.0
+  Jazz: 1.0
+  R&B/Soul: 0.0
+
+Audio Name: ES_Our Song.wav_15.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Our Song.wav_15.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.0
+  HipHop: 0.0
+  Electronic: 0.25
+  K_ballad: 0.55
+  Jazz: 0.0
+  R&B/Soul: 0.2
+
+Audio Name: ES_Paper Crane.wav_16.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Paper Crane.wav_16.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.0
+  HipHop: 0.0
+  Electronic: 0.0
+  K_ballad: 0.0
+  Jazz: 0.0
+  R&B/Soul: 1.0
+
+Audio Name: ES_Roundtrip.wav_17.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Roundtrip.wav_17.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.55
+  HipHop: 0.0
+  Electronic: 0.15
+  K_ballad: 0.0
+  Jazz: 0.3
+  R&B/Soul: 0.0
+
+Audio Name: ES_Step on That Toe.wav_19.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Step on That Toe.wav_19.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.2
+  HipHop: 0.0
+  Electronic: 0.3
+  K_ballad: 0.0
+  Jazz: 0.5
+  R&B/Soul: 0.0
+
+Audio Name: ES_There's a Heatwave.wav_20.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_There's a Heatwave.wav_20.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.05
+  HipHop: 0.0
+  Electronic: 0.6
+  K_ballad: 0.1
+  Jazz: 0.0
+  R&B/Soul: 0.25
+
+Audio Name: ES_Top Speed.wav_21.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Top Speed.wav_21.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.0
+  HipHop: 0.5
+  Electronic: 0.1
+  K_ballad: 0.0
+  Jazz: 0.0
+  R&B/Soul: 0.4
+
+Audio Name: ES_Where R U?.wav_22.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Where R U?.wav_22.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.0
+  HipHop: 0.1
+  Electronic: 0.05
+  K_ballad: 0.0
+  Jazz: 0.0
+  R&B/Soul: 0.85
+
+Audio Name: ES_Whispering Love.wav_23.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Whispering Love.wav_23.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.05
+  HipHop: 0.3
+  Electronic: 0.5
+  K_ballad: 0.05
+  Jazz: 0.1
+  R&B/Soul: 0.0
+
+Audio Name: ES_save yourself.wav_18.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_save yourself.wav_18.wav
+Genre Values:
+  Acoustic: 0.0
+  Rock: 0.0
+  HipHop: 0.0
+  Electronic: 0.1
+  K_ballad: 0.05
+  Jazz: 0.1
+  R&B/Soul: 0.75
+
+Audio Name: ES_Another Life.wav_1.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Another Life.wav_1.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.05
+  Bright: 0.35
+  Relaxed: 0.6
+
+Audio Name: ES_Big Open Sky Flyer.wav_2.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Big Open Sky Flyer.wav_2.wav
+Mood Values:
+  Melancholic: 0.35
+  Angry: 0.0
+  Bright: 0.05
+  Relaxed: 0.6
+
+Audio Name: ES_Blue Texas.wav_3.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Blue Texas.wav_3.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.9
+  Bright: 0.1
+  Relaxed: 0.0
+
+Audio Name: ES_Breeze U.wav_4.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Breeze U.wav_4.wav
+Mood Values:
+  Melancholic: 0.6
+  Angry: 0.0
+  Bright: 0.3
+  Relaxed: 0.1
+
+Audio Name: ES_Bright Red Lights.wav_5.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Bright Red Lights.wav_5.wav
+Mood Values:
+  Melancholic: 0.3
+  Angry: 0.05
+  Bright: 0.65
+  Relaxed: 0.0
+
+Audio Name: ES_Can't Help It.wav_6.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Can't Help It.wav_6.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.05
+  Bright: 0.95
+  Relaxed: 0.0
+
+Audio Name: ES_Can't Stop.wav_7.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Can't Stop.wav_7.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.05
+  Bright: 0.95
+  Relaxed: 0.0
+
+Audio Name: ES_Castle to Ruin.wav_8.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Castle to Ruin.wav_8.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.6
+  Bright: 0.4
+  Relaxed: 0.0
+
+Audio Name: ES_Do Over.wav_9.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Do Over.wav_9.wav
+Mood Values:
+  Melancholic: 0.35
+  Angry: 0.0
+  Bright: 0.2
+  Relaxed: 0.45
+
+Audio Name: ES_Eyes in the Back of My Head.wav_10.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Eyes in the Back of My Head.wav_10.wav
+Mood Values:
+  Melancholic: 0.25
+  Angry: 0.4
+  Bright: 0.35
+  Relaxed: 0.0
+
+Audio Name: ES_Good Vibes Only.wav_11.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Good Vibes Only.wav_11.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.15
+  Bright: 0.4
+  Relaxed: 0.45
+
+Audio Name: ES_Hierarchy.wav_12.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Hierarchy.wav_12.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.6
+  Bright: 0.4
+  Relaxed: 0.0
+
+Audio Name: ES_I Got Love.wav_13.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_I Got Love.wav_13.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.0
+  Bright: 1.0
+  Relaxed: 0.0
+
+Audio Name: ES_Lily My Dear.wav_14.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Lily My Dear.wav_14.wav
+Mood Values:
+  Melancholic: 0.55
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.45
+
+Audio Name: ES_Our Song.wav_15.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Our Song.wav_15.wav
+Mood Values:
+  Melancholic: 1.0
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.0
+
+Audio Name: ES_Paper Crane.wav_16.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Paper Crane.wav_16.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.0
+  Bright: 1.0
+  Relaxed: 0.0
+
+Audio Name: ES_Roundtrip.wav_17.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Roundtrip.wav_17.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.2
+  Bright: 0.8
+  Relaxed: 0.0
+
+Audio Name: ES_Step on That Toe.wav_19.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Step on That Toe.wav_19.wav
+Mood Values:
+  Melancholic: 0.05
+  Angry: 0.1
+  Bright: 0.4
+  Relaxed: 0.45
+
+Audio Name: ES_There's a Heatwave.wav_20.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_There's a Heatwave.wav_20.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.0
+  Bright: 1.0
+  Relaxed: 0.0
+
+Audio Name: ES_Top Speed.wav_21.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Top Speed.wav_21.wav
+Mood Values:
+  Melancholic: 0.4
+  Angry: 0.1
+  Bright: 0.3
+  Relaxed: 0.2
+
+Audio Name: ES_Where R U?.wav_22.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Where R U?.wav_22.wav
+Mood Values:
+  Melancholic: 0.05
+  Angry: 0.6
+  Bright: 0.35
+  Relaxed: 0.0
+
+Audio Name: ES_Whispering Love.wav_23.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Whispering Love.wav_23.wav
+Mood Values:
+  Melancholic: 0.0
+  Angry: 0.25
+  Bright: 0.7
+  Relaxed: 0.05
+
+Audio Name: ES_save yourself.wav_18.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_save yourself.wav_18.wav
+Mood Values:
+  Melancholic: 0.1
+  Angry: 0.0
+  Bright: 0.0
+  Relaxed: 0.9
+
+Audio Name: ES_Another Life.wav_1.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Another Life.wav_1.wav
+Vocal: {"Smooth": 0.2, "Dreamy": 0.8, "Raspy": 0.0, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.2
+  Dreamy: 0.8
+  Raspy: 0.0
+  Voiceless: 0.0
+
+Audio Name: ES_Big Open Sky Flyer.wav_2.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Big Open Sky Flyer.wav_2.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.95, "Raspy": 0.05, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.95
+  Raspy: 0.05
+  Voiceless: 0.0
+
+Audio Name: ES_Blue Texas.wav_3.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Blue Texas.wav_3.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_Breeze U.wav_4.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Breeze U.wav_4.wav
+Vocal: {"Smooth": 0.05, "Dreamy": 0.85, "Raspy": 0.05, "Voiceless": 0.05}
+Vocal Values:
+  Smooth: 0.05
+  Dreamy: 0.85
+  Raspy: 0.05
+  Voiceless: 0.05
+
+Audio Name: ES_Bright Red Lights.wav_5.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Bright Red Lights.wav_5.wav
+Vocal: {"Smooth": 0.7, "Dreamy": 0.0, "Raspy": 0.15, "Voiceless": 0.15}
+Vocal Values:
+  Smooth: 0.7
+  Dreamy: 0.0
+  Raspy: 0.15
+  Voiceless: 0.15
+
+Audio Name: ES_Can't Help It.wav_6.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Can't Help It.wav_6.wav
+Vocal: {"Smooth": 0.35, "Dreamy": 0.45, "Raspy": 0.2, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.35
+  Dreamy: 0.45
+  Raspy: 0.2
+  Voiceless: 0.0
+
+Audio Name: ES_Can't Stop.wav_7.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Can't Stop.wav_7.wav
+Vocal: {"Smooth": 0.35, "Dreamy": 0.45, "Raspy": 0.2, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.35
+  Dreamy: 0.45
+  Raspy: 0.2
+  Voiceless: 0.0
+
+Audio Name: ES_Castle to Ruin.wav_8.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Castle to Ruin.wav_8.wav
+Vocal: {"Smooth": 0.15, "Dreamy": 0.45, "Raspy": 0.15, "Voiceless": 0.25}
+Vocal Values:
+  Smooth: 0.15
+  Dreamy: 0.45
+  Raspy: 0.15
+  Voiceless: 0.25
+
+Audio Name: ES_Do Over.wav_9.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Do Over.wav_9.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_Eyes in the Back of My Head.wav_10.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Eyes in the Back of My Head.wav_10.wav
+Vocal: {"Smooth": 0.35, "Dreamy": 0.4, "Raspy": 0.2, "Voiceless": 0.05}
+Vocal Values:
+  Smooth: 0.35
+  Dreamy: 0.4
+  Raspy: 0.2
+  Voiceless: 0.05
+
+Audio Name: ES_Good Vibes Only.wav_11.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Good Vibes Only.wav_11.wav
+Vocal: {"Smooth": 0.2, "Dreamy": 0.0, "Raspy": 0.8, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.2
+  Dreamy: 0.0
+  Raspy: 0.8
+  Voiceless: 0.0
+
+Audio Name: ES_Hierarchy.wav_12.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Hierarchy.wav_12.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.3, "Raspy": 0.65, "Voiceless": 0.05}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.3
+  Raspy: 0.65
+  Voiceless: 0.05
+
+Audio Name: ES_I Got Love.wav_13.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_I Got Love.wav_13.wav
+Vocal: {"Smooth": 0.5, "Dreamy": 0.35, "Raspy": 0.15, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.5
+  Dreamy: 0.35
+  Raspy: 0.15
+  Voiceless: 0.0
+
+Audio Name: ES_Lily My Dear.wav_14.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Lily My Dear.wav_14.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_Our Song.wav_15.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Our Song.wav_15.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 1.0, "Raspy": 0.0, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 1.0
+  Raspy: 0.0
+  Voiceless: 0.0
+
+Audio Name: ES_Paper Crane.wav_16.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Paper Crane.wav_16.wav
+Vocal: {"Smooth": 0.4, "Dreamy": 0.0, "Raspy": 0.6, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.4
+  Dreamy: 0.0
+  Raspy: 0.6
+  Voiceless: 0.0
+
+Audio Name: ES_Roundtrip.wav_17.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Roundtrip.wav_17.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_Step on That Toe.wav_19.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Step on That Toe.wav_19.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_There's a Heatwave.wav_20.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_There's a Heatwave.wav_20.wav
+Vocal: {"Smooth": 0.2, "Dreamy": 0.6, "Raspy": 0.05, "Voiceless": 0.15}
+Vocal Values:
+  Smooth: 0.2
+  Dreamy: 0.6
+  Raspy: 0.05
+  Voiceless: 0.15
+
+Audio Name: ES_Top Speed.wav_21.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Top Speed.wav_21.wav
+Vocal: {"Smooth": 0.3, "Dreamy": 0.4, "Raspy": 0.2, "Voiceless": 0.1}
+Vocal Values:
+  Smooth: 0.3
+  Dreamy: 0.4
+  Raspy: 0.2
+  Voiceless: 0.1
+
+Audio Name: ES_Where R U?.wav_22.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Where R U?.wav_22.wav
+Vocal: {"Smooth": 0.35, "Dreamy": 0.6, "Raspy": 0.05, "Voiceless": 0.0}
+Vocal Values:
+  Smooth: 0.35
+  Dreamy: 0.6
+  Raspy: 0.05
+  Voiceless: 0.0
+
+Audio Name: ES_Whispering Love.wav_23.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_Whispering Love.wav_23.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: ES_save yourself.wav_18.wav
+File Path: /workspace/Musicality/audio_data/audio_full_mix_split/ES_save yourself.wav_18.wav
+Vocal: {"Smooth": 0.05, "Dreamy": 0.8, "Raspy": 0.05, "Voiceless": 0.1}
+Vocal Values:
+  Smooth: 0.05
+  Dreamy: 0.8
+  Raspy: 0.05
+  Voiceless: 0.1
+
