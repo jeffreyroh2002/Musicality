@@ -4,7 +4,6 @@ from tensorflow import keras
 import os
 
 # Load the saved model
-saved_model_path = "pred_genre/save_model"
 test_data_path = "../static/mfccs/full_mix_mfcc.json"
 mfcc_labels = np.array(["Rock", "new_HipHop", "Ballad", "Electronic", "K_ballad", "Jazz", "new_R&B"])
 
