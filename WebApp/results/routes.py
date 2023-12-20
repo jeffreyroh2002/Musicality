@@ -15,6 +15,13 @@ import base64
 import matplotlib.pyplot as plt
 from flask import render_template
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+from matplotlib.ticker import MaxNLocator
+from collections import defaultdict
+import seaborn as sns
+
+
+# Set matplotlib style
+plt.style.use('ggplot')
 
 """
 results = Blueprint('results', __name__)
@@ -174,6 +181,8 @@ def single_test_result(test_id):
         normalized_vector = normalize([feature_vector])[0]
         high_rated_feature_vectors.append(normalized_vector)
 
+    
+    ## ALGORITHM FOR CUSTOM BINNING HISTORGRAM ##
 
     # Initialize a dictionary to store all values for each attribute
     attribute_values = defaultdict(list)
@@ -189,9 +198,12 @@ def single_test_result(test_id):
     range_size = 0.2  # Define the size of each range
 
     for attr, values in attribute_values.items():
-        # Bin values into ranges
-        bins = np.arange(0, 1 + range_size, range_size)
-        hist, bin_edges = np.histogram(values, bins=bins)
+        # Filter out values less than or equal to 0.2
+        filtered_values = [value for value in values if value > 0.2]
+
+        # Bin values into ranges starting from 0.2
+        bins = np.arange(0.2, 1 + range_size, range_size)
+        hist, bin_edges = np.histogram(filtered_values, bins=bins)
 
         # Find the range with the maximum count
         max_count_index = np.argmax(hist)
@@ -200,43 +212,80 @@ def single_test_result(test_id):
         attribute_ranges[attr] = common_range
 
     # Prepare the display message
-    display_messages.append("Most common ranges for attributes in your top-rated songs:")
+    display_messages.append("Most common ranges for attributes in your top-rated songs (excluding 0 to 0.2):")
     for attr, common_range in attribute_ranges.items():
         display_messages.append(f"- {attr}: Most Common Range {common_range}")
 
-    # Plotting Histogram
-        # Initialize a dictionary to store all values for each attribute
+
+    # PLOTTING DENSITY PLOT
+
+    # Initialize a dictionary to store all values for each attribute
     attribute_values = defaultdict(list)
 
     # Collect values for each attribute across all high-rated songs
     for vector in high_rated_feature_vectors:
         for attr_index, value in enumerate(vector):
             attribute_name = get_attribute_name(attr_index)
-            attribute_values[attribute_name].append(value)
+            if value > 0.2:  # Exclude values between 0.0 and 0.2
+                attribute_values[attribute_name].append(value)
 
-    # Plot histograms for each attribute
-    num_attributes = len(attribute_values)
-    fig, axs = plt.subplots(num_attributes, 1, figsize=(15, num_attributes * 3))
+    # Define color palettes for each category
+    genre_colors = sns.color_palette('Set1', len(genre_score))
+    mood_colors = sns.color_palette('Set2', len(mood_score))
+    vocal_colors = sns.color_palette('Set3', len(vocal_score))
 
-    for i, (attr, values) in enumerate(attribute_values.items()):
-        axs[i].hist(values, bins=10, range=(0, 1), alpha=0.7, color='blue', edgecolor='black')
-        axs[i].set_title(f'Distribution of {attr}')
-        axs[i].set_xlabel(attr)
-        axs[i].set_ylabel('Frequency')
+    
+    # Create a combined density plot for each category
 
+    # Plot for Genres
+    plt.figure(figsize=(5, 3))
+    for (genre, _), color in zip(genre_score.items(), genre_colors):
+        sns.kdeplot(attribute_values[genre], label=genre, color=color, fill=True, bw_adjust=0.5)
+    plt.title('Density Plots for Genres', fontsize=14)
+    plt.xlabel('Attribute Values', fontsize=12)
+    plt.ylabel('Density', fontsize=12)
+    plt.legend()
     plt.tight_layout()
+    # Save the first plot
+    genre_png = io.BytesIO()
+    plt.savefig(genre_png, format='png')
+    genre_png.seek(0)
+    genre_encoded = base64.b64encode(genre_png.getvalue()).decode('utf-8')
+    plt.close()
 
-    # Save it to a BytesIO object
-    pngImage = io.BytesIO()
-    FigureCanvas(fig).print_png(pngImage)
+    # Plot for Moods
+    plt.figure(figsize=(5, 3))
+    for (mood, _), color in zip(mood_score.items(), mood_colors):
+        sns.kdeplot(attribute_values[mood], label=mood, color=color, fill=True, bw_adjust=0.5)
+    plt.title('Density Plots for Moods', fontsize=14)
+    plt.xlabel('Attribute Values', fontsize=12)
+    plt.ylabel('Density', fontsize=12)
+    plt.legend()
+    plt.tight_layout()
+    # Save the second plot
+    mood_png = io.BytesIO()
+    plt.savefig(mood_png, format='png')
+    mood_png.seek(0)
+    mood_encoded = base64.b64encode(mood_png.getvalue()).decode('utf-8')
+    plt.close()
 
-    # Encode the image to base64 string
-    encodedImgData = base64.b64encode(pngImage.getvalue()).decode('utf-8')
+    # Plot for Vocals
+    plt.figure(figsize=(5, 3))
+    for (vocal, _), color in zip(vocal_score.items(), vocal_colors):
+        sns.kdeplot(attribute_values[vocal], label=vocal, color=color, fill=True, bw_adjust=0.5)
+    plt.title('Density Plots for Vocals', fontsize=14)
+    plt.xlabel('Attribute Values', fontsize=12)
+    plt.ylabel('Density', fontsize=12)
+    plt.legend()
+    plt.tight_layout()
+    # Save the third plot
+    vocal_png = io.BytesIO()
+    plt.savefig(vocal_png, format='png')
+    vocal_png.seek(0)
+    vocal_encoded = base64.b64encode(vocal_png.getvalue()).decode('utf-8')
+    plt.close()
 
-    # Close the figure to prevent memory leaks
-    plt.close(fig)
-
-    # Pass the encoded image and other necessary information to the template
+    # Pass the encoded images and other necessary information to the template
     return render_template(
         'single_test_results.html', 
         user=user, 
@@ -245,7 +294,9 @@ def single_test_result(test_id):
         mood_score=mood_score, 
         vocal_score=vocal_score, 
         display_messages=display_messages,
-        image_data=encodedImgData
+        genre_image=genre_encoded,
+        mood_image=mood_encoded,
+        vocal_image=vocal_encoded
     )
 
 # @results.route("/test-results/<int:user_id>", methods=['GET', 'POST'])
