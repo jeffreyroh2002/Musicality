@@ -5,6 +5,16 @@ from WebApp.models import db, Test, UserAnswer, AudioFile
 from sklearn.preprocessing import normalize
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+from collections import defaultdict
+import statistics
+import matplotlib.pyplot as plt
+
+#imports for saving png files
+import io
+import base64
+import matplotlib.pyplot as plt
+from flask import render_template
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 
 """
 results = Blueprint('results', __name__)
@@ -163,81 +173,70 @@ def single_test_result(test_id):
         # Normalize the feature vector
         normalized_vector = normalize([feature_vector])[0]
         high_rated_feature_vectors.append(normalized_vector)
-        
-    
-    print(high_rated_feature_vectors)
 
-    # Create an empty list to store the similarities
-    # Initialize a dictionary to keep track of similar attributes and their averaged values
-    similar_attributes = {}
-
-    # Iterate over pairs of similar songs
-    for i in range(len(high_rated_feature_vectors)):
-        for j in range(i + 1, len(high_rated_feature_vectors)):
-            # Calculate cosine similarity
-            similarity = cosine_similarity([high_rated_feature_vectors[i]], [high_rated_feature_vectors[j]])[0][0]
-
-            # Check if the similarity is above a certain threshold (adjust as needed)
-            similarity_threshold = 0.6
-            if similarity > similarity_threshold:
-                # Initialize dictionaries for attributes and their values if not already present
-                if (i, j) not in similar_attributes:
-                    similar_attributes[(i, j)] = {}
-
-                # Iterate over the attribute values and calculate their average
-                for attr_index in range(len(high_rated_feature_vectors[i])):
-                    attribute_value_i = high_rated_feature_vectors[i][attr_index]
-                    attribute_value_j = high_rated_feature_vectors[j][attr_index]
-
-                    # Check if the attribute is significant in either of the vectors
-                    if attribute_value_i > 0 or attribute_value_j > 0:
-                        attribute_name = get_attribute_name(attr_index)
-                        average_value = (attribute_value_i + attribute_value_j) / 2
-
-                        # Store the averaged value for the attribute in the dictionary
-                        similar_attributes[(i, j)][attribute_name] = average_value
-
-    # Presentation: Print similar attributes and their averaged values for each pair of songs
-    for pair, attributes in similar_attributes.items():
-        song_i_index, song_j_index = pair
-        display_messages.append(f"Similar attributes between songs {song_i_index} and {song_j_index}:")
-        for attribute, averaged_value in attributes.items():
-            display_messages.append(f"- {attribute}: Averaged Value {averaged_value}")
-
-
-    #currently printing everything, but preferably average them? and display on template
-
-    #---NEW CODE TO CALCULATE VARIENCE (STANDARD DEV)--#
 
     # Initialize a dictionary to store all values for each attribute
-    attribute_values = {}
+    attribute_values = defaultdict(list)
 
-    # Collect all values for each attribute
+    # Collect values for each attribute across all high-rated songs
     for vector in high_rated_feature_vectors:
         for attr_index, value in enumerate(vector):
             attribute_name = get_attribute_name(attr_index)
-            attribute_values.setdefault(attribute_name, []).append(value)
+            attribute_values[attribute_name].append(value)
 
-    # Calculate variance & standard deviation for each attribute
-    attribute_variance = {attr: np.var(values) for attr, values in attribute_values.items()}
-    attribute_std_dev = {attr: np.std(values) for attr, values in attribute_values.items()}
+    # Determine the most populated range for each attribute
+    attribute_ranges = {}
+    range_size = 0.2  # Define the size of each range
 
-    # Set a threshold for high variance or standard deviation
-    high_variance_threshold = 0.2  # define your threshold here: need to experiment
+    for attr, values in attribute_values.items():
+        # Bin values into ranges
+        bins = np.arange(0, 1 + range_size, range_size)
+        hist, bin_edges = np.histogram(values, bins=bins)
 
-    # Identify attributes with high variance
-    high_variance_attributes = [
-        attr for attr, var in attribute_variance.items() 
-        if var > high_variance_threshold
-    ]
+        # Find the range with the maximum count
+        max_count_index = np.argmax(hist)
+        common_range = (bin_edges[max_count_index], bin_edges[max_count_index + 1])
+        
+        attribute_ranges[attr] = common_range
 
-    # Display only the attribute names with high variance
-    if high_variance_attributes:
-        display_messages.append("Attributes with significant divergence in your preferences:")
-        for attr in high_variance_attributes:
-            display_messages.append(f"- {attr}")
+    # Prepare the display message
+    display_messages.append("Most common ranges for attributes in your top-rated songs:")
+    for attr, common_range in attribute_ranges.items():
+        display_messages.append(f"- {attr}: Most Common Range {common_range}")
 
-    # Pass only the necessary information to the template
+    # Plotting Histogram
+        # Initialize a dictionary to store all values for each attribute
+    attribute_values = defaultdict(list)
+
+    # Collect values for each attribute across all high-rated songs
+    for vector in high_rated_feature_vectors:
+        for attr_index, value in enumerate(vector):
+            attribute_name = get_attribute_name(attr_index)
+            attribute_values[attribute_name].append(value)
+
+    # Plot histograms for each attribute
+    num_attributes = len(attribute_values)
+    fig, axs = plt.subplots(num_attributes, 1, figsize=(15, num_attributes * 3))
+
+    for i, (attr, values) in enumerate(attribute_values.items()):
+        axs[i].hist(values, bins=10, range=(0, 1), alpha=0.7, color='blue', edgecolor='black')
+        axs[i].set_title(f'Distribution of {attr}')
+        axs[i].set_xlabel(attr)
+        axs[i].set_ylabel('Frequency')
+
+    plt.tight_layout()
+
+    # Save it to a BytesIO object
+    pngImage = io.BytesIO()
+    FigureCanvas(fig).print_png(pngImage)
+
+    # Encode the image to base64 string
+    encodedImgData = base64.b64encode(pngImage.getvalue()).decode('utf-8')
+
+    # Close the figure to prevent memory leaks
+    plt.close(fig)
+
+    # Pass the encoded image and other necessary information to the template
     return render_template(
         'single_test_results.html', 
         user=user, 
@@ -245,7 +244,8 @@ def single_test_result(test_id):
         genre_score=genre_score, 
         mood_score=mood_score, 
         vocal_score=vocal_score, 
-        display_messages=display_messages
+        display_messages=display_messages,
+        image_data=encodedImgData
     )
 
 # @results.route("/test-results/<int:user_id>", methods=['GET', 'POST'])
