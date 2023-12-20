@@ -94,3 +94,31 @@ body {
     margin: 19px;
     box-sizing: border-box;
   }
+
+.preference-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.preference-label {
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.preference-scale {
+  width: 200px;
+  display: flex;
+  height: 20px;
+}
+
+.positive {
+  background-color: #74A4FB;
+  height: 100%;
+}
+
+.negative {
+  background-color: #C54F4B;
+  height: 100%;
+}

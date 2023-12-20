@@ -7,33 +7,61 @@
     {% endif %}
 
     <h2>Genre you like:</h2>
-    <ul>
-        <li> Blues: {{ genre_score['Blues'] }} </li>
-        <li> Ballad: {{ genre_score['Ballad'] }} </li>
-        <li> Classical: {{ genre_score['Orchestral'] }} </li>
-        <li> Country: {{ genre_score['Country'] }} </li>
-        <li> Electronic: {{ genre_score['Electronic'] }} </li>
-        <li> Jazz: {{ genre_score['Jazz'] }} </li>
-        <li> Metal: {{ genre_score['Metal'] }} </li>
-        <li> Pop: {{ genre_score['Pop'] }} </li>
-        <li> Reggae: {{ genre_score['Reggae'] }} </li>
-        <li> Rock: {{ genre_score['Rock'] }} </li>
-        <li> Soul/R&B: {{ genre_score['RB_Soul'] }} </li>
-    </ul>
+    <div id="genrePreferences">
+        <!-- Placeholder for dynamically generated genres -->
+    </div>
 
+    <!--
+    <ul>
+        <li> Rock: {{ genre_score['Rock'] }} </li>
+        <li> Hip Hop: {{ genre_score['Hip Hop'] }} </li>
+        <li> Pop Ballad: {{ genre_score['Pop Ballad'] }} </li>
+        <li> Electronic: {{ genre_score['Electronic'] }} </li>
+        <li> Korean Ballad: {{ genre_score['Korean Ballad'] }} </li>
+        <li> Jazz: {{ genre_score['Jazz'] }} </li>
+        <li> R&B/Soul: {{ genre_score['R&B/Soul'] }} </li>
+    </ul>
+    -->
+    
     <h2>Mood you like:</h2>
+    <div id="moodPreferences">
+        <!-- Placeholder for dynamically generated moods -->
+    </div>
+    <!--
     <ul>
         <li> Angry: {{ mood_score['Angry'] }} </li>
         <li> Bright: {{ mood_score['Bright'] }} </li>
         <li> Melancholy: {{ mood_score['Melancholic'] }} </li>
         <li> Relaxed: {{ mood_score['Relaxed'] }} </li>
     </ul>
+    -->
 
     <h2>Vocals you like:</h2>
+    <div id="vocalPreferences">
+        <!-- Placeholder for dynamically generated vocals -->
+    </div>
+    <!--
     <ul>
         <li> Clear: {{ vocal_score['Smooth'] }} </li>
         <li> Ethereal: {{ vocal_score['Dreamy'] }} </li>
         <li> Raspy: {{ vocal_score['Raspy'] }} </li>
         <li> Voiceless: {{ vocal_score['Voiceless'] }} </li>
     </ul>
+    -->
+
+    <!-- Embedding genre, mood, and vocal scores as JavaScript variables -->
+    <script type="text/javascript">
+        var genreScores = JSON.parse('{{ genre_score | tojson | safe }}');
+        var moodScores = JSON.parse('{{ mood_score | tojson | safe }}');
+        var vocalScores = JSON.parse('{{ vocal_score | tojson | safe }}');
+
+        document.addEventListener('DOMContentLoaded', function() {
+            createPreferenceScales(genreScores, 'genrePreferences');
+            createPreferenceScales(moodScores, 'moodPreferences');
+            createPreferenceScales(vocalScores, 'vocalPreferences');
+        });
+    </script>
+
+    <!-- Include JavaScript file -->
+    <script src="../static/main.js"></script>
 {% endblock content %}

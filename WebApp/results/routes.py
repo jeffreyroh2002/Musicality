@@ -230,7 +230,7 @@ def single_test_result(test_id):
     for attr in high_variance_attributes:
         print(f"- {attr}: Variance {attribute_variance[attr]}")
         
-    return render_template('single_test_results.html', user=user, test=test, genre_score=genre_score, mood_score=mood_score, vocal_score=vocal_score)
+    return render_template('single_test_results.html', user=user, test=test, =genre_score, mood_score=mood_score, genre_scorevocal_score=vocal_score)
 
 # @results.route("/test-results/<int:user_id>", methods=['GET', 'POST'])
 # @login_required
