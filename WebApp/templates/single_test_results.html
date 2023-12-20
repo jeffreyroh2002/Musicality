@@ -49,6 +49,19 @@
     </ul>
     -->
 
+    <div class="display-messages">
+        {% for message in display_messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="attribute-values">
+        <h2>Attribute Values</h2>
+        {% for attribute, values in attribute_values.items() %}
+            <p><strong>{{ attribute }}:</strong> {{ values }}</p>
+        {% endfor %}
+    </div>    
+
     <!-- Embedding genre, mood, and vocal scores as JavaScript variables -->
     <script type="text/javascript">
         var genreScores = JSON.parse('{{ genre_score | tojson | safe }}');

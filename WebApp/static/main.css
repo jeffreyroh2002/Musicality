@@ -122,3 +122,45 @@ body {
   background-color: #C54F4B;
   height: 100%;
 }
+
+.display-messages {
+  background-color: #f9f9f9; /* Light grey background */
+  border: 1px solid #ddd;    /* Slight border for definition */
+  border-radius: 8px;        /* Rounded corners */
+  padding: 15px;             /* Padding for inner spacing */
+  margin: 20px 0;            /* Space above and below the element */
+  max-width: 800px;          /* Maximum width */
+  margin-left: auto;         /* Center align the element */
+  margin-right: auto;        
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  color: #333;               /* Darker text for readability */
+  font-family: Arial, sans-serif; /* Font styling */
+}
+
+.display-messages p {
+  margin: 10px 0;            /* Margin for each paragraph/message */
+  line-height: 1.5;          /* Line height for readability */
+}
+
+.attribute-values {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.attribute-values h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.attribute-values p {
+  margin: 5px 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.attribute-values strong {
+  color: #000;
+}

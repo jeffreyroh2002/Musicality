@@ -30,6 +30,9 @@ results = Blueprint('results', __name__)
 @results.route("/test-results/<int:test_id>", methods=['GET', 'POST'])
 @login_required
 def single_test_result(test_id):
+    
+    display_messages = []
+
     #calculate all characteristics
     user = current_user
     test = Test.query.filter_by(id=test_id).first()
@@ -197,9 +200,10 @@ def single_test_result(test_id):
     # Presentation: Print similar attributes and their averaged values for each pair of songs
     for pair, attributes in similar_attributes.items():
         song_i_index, song_j_index = pair
-        print(f"Similar attributes between songs {song_i_index} and {song_j_index}:")
+        display_messages.append(f"Similar attributes between songs {song_i_index} and {song_j_index}:")
         for attribute, averaged_value in attributes.items():
-            print(f"- {attribute}: Averaged Value {averaged_value}")
+            display_messages.append(f"- {attribute}: Averaged Value {averaged_value}")
+
 
     #currently printing everything, but preferably average them? and display on template
 
@@ -221,16 +225,28 @@ def single_test_result(test_id):
     # Set a threshold for high variance or standard deviation
     high_variance_threshold = 0.2  # define your threshold here: need to experiment
 
-    # Identify attributes with high variance or standard deviation
-    high_variance_attributes = [attr for attr, var in attribute_variance.items() if var > high_variance_threshold]
-    high_std_dev_attributes = [attr for attr, std in attribute_std_dev.items() if std > high_variance_threshold]
+    # Identify attributes with high variance
+    high_variance_attributes = [
+        attr for attr, var in attribute_variance.items() 
+        if var > high_variance_threshold
+    ]
 
-    # Interpret and present the findings
-    print("Attributes with significant divergence in your preferences:")
-    for attr in high_variance_attributes:
-        print(f"- {attr}: Variance {attribute_variance[attr]}")
-        
-    return render_template('single_test_results.html', user=user, test=test, =genre_score, mood_score=mood_score, genre_scorevocal_score=vocal_score)
+    # Display only the attribute names with high variance
+    if high_variance_attributes:
+        display_messages.append("Attributes with significant divergence in your preferences:")
+        for attr in high_variance_attributes:
+            display_messages.append(f"- {attr}")
+
+    # Pass only the necessary information to the template
+    return render_template(
+        'single_test_results.html', 
+        user=user, 
+        test=test, 
+        genre_score=genre_score, 
+        mood_score=mood_score, 
+        vocal_score=vocal_score, 
+        display_messages=display_messages
+    )
 
 # @results.route("/test-results/<int:user_id>", methods=['GET', 'POST'])
 # @login_required
