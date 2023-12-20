@@ -6,34 +6,111 @@
         <h1>Your Contextual Test Results</h1>
     {% endif %}
 
-    <h2>Genre you like:</h2>
-    <ul>
-        <li> Blues: {{ genre_score['Blues'] }} </li>
-        <li> Ballad: {{ genre_score['Ballad'] }} </li>
-        <li> Classical: {{ genre_score['Orchestral'] }} </li>
-        <li> Country: {{ genre_score['Country'] }} </li>
-        <li> Electronic: {{ genre_score['Electronic'] }} </li>
-        <li> Jazz: {{ genre_score['Jazz'] }} </li>
-        <li> Metal: {{ genre_score['Metal'] }} </li>
-        <li> Pop: {{ genre_score['Pop'] }} </li>
-        <li> Reggae: {{ genre_score['Reggae'] }} </li>
-        <li> Rock: {{ genre_score['Rock'] }} </li>
-        <li> Soul/R&B: {{ genre_score['RB_Soul'] }} </li>
-    </ul>
+    <h2>Genre Preference:</h2>
+    <div id="genrePreferences">
+        <!-- Placeholder for dynamically generated genres -->
+    </div>
+    
+    <h2>Mood Preference:</h2>
+    <div id="moodPreferences">
+        <!-- Placeholder for dynamically generated moods -->
+    </div>
 
-    <h2>Mood you like:</h2>
-    <ul>
-        <li> Angry: {{ mood_score['Angry'] }} </li>
-        <li> Bright: {{ mood_score['Bright'] }} </li>
-        <li> Melancholy: {{ mood_score['Melancholic'] }} </li>
-        <li> Relaxed: {{ mood_score['Relaxed'] }} </li>
-    </ul>
+    <h2>Vocal Timbre Preference:</h2>
+    <div id="vocalPreferences">
+        <!-- Placeholder for dynamically generated vocals -->
+    </div>
 
-    <h2>Vocals you like:</h2>
-    <ul>
-        <li> Clear: {{ vocal_score['Smooth'] }} </li>
-        <li> Ethereal: {{ vocal_score['Dreamy'] }} </li>
-        <li> Raspy: {{ vocal_score['Raspy'] }} </li>
-        <li> Voiceless: {{ vocal_score['Voiceless'] }} </li>
-    </ul>
+    <div class="radar-chart-container">
+        <h3>Genre Preferences</h3>
+        <canvas id="genreRadarChart"></canvas>
+    </div>
+    <div class="radar-chart-container">
+        <h3>Mood Preferences</h3>
+        <canvas id="moodRadarChart"></canvas>
+    </div>
+    <div class="radar-chart-container">
+        <h3>Vocal Preferences</h3>
+        <canvas id="vocalRadarChart"></canvas>
+    </div>
+
+    <div class="display-messages">
+        {% if display_messages %}
+            {% for message in display_messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        {% else %}
+            <p>It seems like you disliked all of the sample songs provided. We will try to add a more diverse range of songs in the near future.</p>
+        {% endif %}
+    </div>
+
+    <!-- Embedding genre, mood, and vocal scores as JavaScript variables -->
+    <script type="text/javascript">
+        var genreScores = JSON.parse('{{ genre_score | tojson | safe }}');
+        var moodScores = JSON.parse('{{ mood_score | tojson | safe }}');
+        var vocalScores = JSON.parse('{{ vocal_score | tojson | safe }}');
+
+        document.addEventListener('DOMContentLoaded', function() {
+            createPreferenceScales(genreScores, 'genrePreferences');
+            createPreferenceScales(moodScores, 'moodPreferences');
+            createPreferenceScales(vocalScores, 'vocalPreferences');
+
+            // Genre Radar Chart
+            var genreCtx = document.getElementById('genreRadarChart').getContext('2d');
+            var genreRadarChart = new Chart(genreCtx, {
+                type: 'radar',
+                data: {
+                    labels: Object.keys(genreScores),
+                    datasets: [{
+                        label: 'Genre Distribution',
+                        data: Object.values(genreScores),
+                        // Additional styling for the radar chart
+                    }]
+                },
+                options: {
+                    // Options for the radar chart
+                }
+            });
+
+            var moodCtx = document.getElementById('moodRadarChart').getContext('2d');
+            var moodRadarChart = new Chart(moodCtx, {
+                type: 'radar',
+                data: {
+                    labels: Object.keys(moodScores),
+                    datasets: [{
+                        label: 'Genre Distribution',
+                        data: Object.values(moodScores),
+                        // Additional styling for the radar chart
+                    }]
+                },
+                options: {
+                    // Options for the radar chart
+                }
+            });
+
+            var vocalCtx = document.getElementById('vocalRadarChart').getContext('2d');
+            var vocalRadarChart = new Chart(vocalCtx, {
+                type: 'radar',
+                data: {
+                    labels: Object.keys(vocalScores),
+                    datasets: [{
+                        label: 'Vocal Distribution',
+                        data: Object.values(vocalScores),
+                        // Additional styling for the radar chart
+                    }]
+                },
+                options: {
+                    // Options for the radar chart
+                }
+            });
+
+        });
+    </script>
+
+    <img src="data:image/png;base64,{{ genre_image }}" alt="Genre Plot">
+    <img src="data:image/png;base64,{{ mood_image }}" alt="Mood Plot">
+    <img src="data:image/png;base64,{{ vocal_image }}" alt="Vocal Plot">
+
+    <!-- Include JavaScript file -->
+    <script src="../static/main.js"></script>
 {% endblock content %}

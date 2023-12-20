@@ -94,3 +94,50 @@ body {
     margin: 19px;
     box-sizing: border-box;
   }
+
+.preference-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.preference-label {
+  width: 150px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.preference-scale {
+  width: 200px;
+  display: flex;
+  height: 20px;
+}
+
+.positive {
+  background-color: #74A4FB;
+  height: 100%;
+}
+
+.negative {
+  background-color: #C54F4B;
+  height: 100%;
+}
+
+.display-messages {
+  background-color: #f9f9f9; /* Light grey background */
+  border: 1px solid #ddd;    /* Slight border for definition */
+  border-radius: 8px;        /* Rounded corners */
+  padding: 15px;             /* Padding for inner spacing */
+  margin: 20px 0;            /* Space above and below the element */
+  max-width: 800px;          /* Maximum width */
+  margin-left: auto;         /* Center align the element */
+  margin-right: auto;        
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  color: #333;               /* Darker text for readability */
+  font-family: Arial, sans-serif; /* Font styling */
+}
+
+.display-messages p {
+  margin: 10px 0;            /* Margin for each paragraph/message */
+  line-height: 1.5;          /* Line height for readability */
+}
