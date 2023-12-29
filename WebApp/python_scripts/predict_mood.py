@@ -8,7 +8,7 @@ saved_model_path = os.path.join(
     os.getcwd(), "WebApp", "python_scripts", "pred_mood", "saved_model"
 )
 test_data_path = "genre_testing_data.json"
-mfcc_labels = np.array(["Melancholic", "Angry", "Bright", "Relaxed"])
+mfcc_labels = np.array(["Emotional", "Tense", "Bright", "Relaxed"])
 
 
 def load_testing_data(test_data_path):
