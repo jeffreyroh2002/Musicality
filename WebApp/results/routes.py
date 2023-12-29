@@ -59,7 +59,7 @@ def single_test_result(test_id):
     
     #Update Preference each Song
     genre_score = {'Rock': 0,'Hip Hop': 0,'Pop Ballad': 0,'Electronic': 0,'Korean Ballad': 0,'Jazz': 0,'R&B/Soul': 0}
-    mood_score = {'Angry': 0, 'Bright': 0, 'Melancholic': 0, 'Relaxed': 0}
+    mood_score = {'Tense': 0, 'Bright': 0, 'Emotional': 0, 'Relaxed': 0}
     vocal_score = {'Smooth': 0,'Dreamy': 0,'Raspy': 0,'Voiceless': 0}
 
     # High Rating song tracker
