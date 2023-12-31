@@ -1,0 +1,10 @@
+Genre Analysis Results
+
+Genre                Nonzero Count        Total Percentage    
+  Rock               10                   4.8999999999999995  
+  Hip Hop            10                   3.75                
+  Pop Ballad         4                    0.55                
+  Electronic         11                   3.6999999999999997  
+  Korean Ballad      4                    1.1                 
+  Jazz               12                   3.4499999999999993  
+  R&B/Soul           12                   4.55                
