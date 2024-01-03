@@ -1,0 +1,144 @@
+Audio Name: Barry Manilow - Can't Smile Without You (Audio).wav_1.wav
+File Path: /workspace/Musicality/audio_data/yt_split/Barry Manilow - Can't Smile Without You (Audio).wav_1.wav
+Genre Values:
+  Rock: 0.6
+  Hip Hop: 0.0
+  Pop Ballad: 0.3
+  Electronic: 0.0
+  Korean Ballad: 0.1
+  Jazz: 0.0
+  R&B/Soul: 0.0
+
+Audio Name: Delete (삭제).wav_2.wav
+File Path: /workspace/Musicality/audio_data/yt_split/Delete (삭제).wav_2.wav
+Genre Values:
+  Rock: 0.0
+  Hip Hop: 0.0
+  Pop Ballad: 0.0
+  Electronic: 0.15
+  Korean Ballad: 0.55
+  Jazz: 0.3
+  R&B/Soul: 0.0
+
+Audio Name: Frank Ocean - Pink + White.wav_3.wav
+File Path: /workspace/Musicality/audio_data/yt_split/Frank Ocean - Pink + White.wav_3.wav
+Genre Values:
+  Rock: 0.0
+  Hip Hop: 0.0
+  Pop Ballad: 0.0
+  Electronic: 0.0
+  Korean Ballad: 0.0
+  Jazz: 0.05
+  R&B/Soul: 0.95
+
+Audio Name: HONNE - no song without you.wav_4.wav
+File Path: /workspace/Musicality/audio_data/yt_split/HONNE - no song without you.wav_4.wav
+Genre Values:
+  Rock: 0.0
+  Hip Hop: 0.0
+  Pop Ballad: 0.25
+  Electronic: 0.65
+  Korean Ballad: 0.0
+  Jazz: 0.1
+  R&B/Soul: 0.0
+
+Audio Name: Nujabes - Luv(sic) Part 2 feat.Shing02 [Official Audio].wav_5.wav
+File Path: /workspace/Musicality/audio_data/yt_split/Nujabes - Luv(sic) Part 2 feat.Shing02 [Official Audio].wav_5.wav
+Genre Values:
+  Rock: 0.05
+  Hip Hop: 0.1
+  Pop Ballad: 0.3
+  Electronic: 0.1
+  Korean Ballad: 0.1
+  Jazz: 0.0
+  R&B/Soul: 0.35
+
+Audio Name: 주호 - 내가 아니라도 [가사].wav_6.wav
+File Path: /workspace/Musicality/audio_data/yt_split/주호 - 내가 아니라도 [가사].wav_6.wav
+Genre Values:
+  Rock: 0.0
+  Hip Hop: 0.35
+  Pop Ballad: 0.25
+  Electronic: 0.0
+  Korean Ballad: 0.4
+  Jazz: 0.0
+  R&B/Soul: 0.0
+
+Audio Name: Barry Manilow - Can't Smile Without You (Audio).wav_1.wav
+File Path: /workspace/Musicality/audio_data/yt_split/Barry Manilow - Can't Smile Without You (Audio).wav_1.wav
+Mood Values:
+
+Audio Name: Delete (삭제).wav_2.wav
+File Path: /workspace/Musicality/audio_data/yt_split/Delete (삭제).wav_2.wav
+Mood Values:
+
+Audio Name: Frank Ocean - Pink + White.wav_3.wav
+File Path: /workspace/Musicality/audio_data/yt_split/Frank Ocean - Pink + White.wav_3.wav
+Mood Values:
+
+Audio Name: HONNE - no song without you.wav_4.wav
+File Path: /workspace/Musicality/audio_data/yt_split/HONNE - no song without you.wav_4.wav
+Mood Values:
+
+Audio Name: Nujabes - Luv(sic) Part 2 feat.Shing02 [Official Audio].wav_5.wav
+File Path: /workspace/Musicality/audio_data/yt_split/Nujabes - Luv(sic) Part 2 feat.Shing02 [Official Audio].wav_5.wav
+Mood Values:
+
+Audio Name: 주호 - 내가 아니라도 [가사].wav_6.wav
+File Path: /workspace/Musicality/audio_data/yt_split/주호 - 내가 아니라도 [가사].wav_6.wav
+Mood Values:
+
+Audio Name: Barry Manilow - Can't Smile Without You (Audio).wav_1.wav
+File Path: /workspace/Musicality/audio_data/yt_split/Barry Manilow - Can't Smile Without You (Audio).wav_1.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: Delete (삭제).wav_2.wav
+File Path: /workspace/Musicality/audio_data/yt_split/Delete (삭제).wav_2.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: Frank Ocean - Pink + White.wav_3.wav
+File Path: /workspace/Musicality/audio_data/yt_split/Frank Ocean - Pink + White.wav_3.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: HONNE - no song without you.wav_4.wav
+File Path: /workspace/Musicality/audio_data/yt_split/HONNE - no song without you.wav_4.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: Nujabes - Luv(sic) Part 2 feat.Shing02 [Official Audio].wav_5.wav
+File Path: /workspace/Musicality/audio_data/yt_split/Nujabes - Luv(sic) Part 2 feat.Shing02 [Official Audio].wav_5.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
+Audio Name: 주호 - 내가 아니라도 [가사].wav_6.wav
+File Path: /workspace/Musicality/audio_data/yt_split/주호 - 내가 아니라도 [가사].wav_6.wav
+Vocal: {"Smooth": 0.0, "Dreamy": 0.0, "Raspy": 0.0, "Voiceless": 1.0}
+Vocal Values:
+  Smooth: 0.0
+  Dreamy: 0.0
+  Raspy: 0.0
+  Voiceless: 1.0
+
