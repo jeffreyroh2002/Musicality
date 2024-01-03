@@ -1,1 +1,7 @@
 venv/
+WebApp/__pycache__
+WebApp/main/__pycache__
+WebApp/python_scripts/__pycache__
+WebApp/questions/__pycache__
+WebApp/results/__pycache__
+WebApp/users/__pycache__
