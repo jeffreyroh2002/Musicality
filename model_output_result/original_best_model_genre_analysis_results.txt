@@ -1,0 +1,10 @@
+Genre Analysis Results
+
+Genre                Nonzero Count        Total Percentage    
+  Rock               9                    3.3                 
+  new_HipHop         7                    3.0999999999999996  
+  Pop                13                   3.0                 
+  Ballad             8                    1.8000000000000003  
+  Electronic         12                   3.55                
+  Jazz               10                   3.3500000000000005  
+  new_RnB            9                    3.9000000000000004  
