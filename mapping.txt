@@ -20,3 +20,27 @@ genre_7x100_with_Kbal&newHH.json
     "new_RnB"
 ]
 
+0107_PCRNN_Genre7_original_100ep_0.00001lr
+"mapping": [
+    "Rock",
+    "HipHop",
+    "Pop",
+    "Ballad",
+    "Electronic",
+    "Jazz",
+    "RnB/Soul"
+]
+
+0108_PCRNN_Genre7_set1_100ep_0.00001lr
+"mapping": [
+    "Acoustic",
+    "Rock",
+    "HipHop",
+    "Pop",
+    "Ballad",
+    "Electronic",
+    "Jazz",
+    "RnB/Soul"
+]
+
+0109_PCRNN_Genre7_final_100each_100ep_0.00001lr
