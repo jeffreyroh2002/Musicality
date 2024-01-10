@@ -1,6 +1,6 @@
 from WebApp import db, create_app
 import os
-from WebApp.python_scripts.predict_genre_without_argmax import predict_genre
+from WebApp.python_scripts.predict_genre import predict_genre
 from WebApp.python_scripts.predict_mood import predict_mood
 from WebApp.python_scripts.predict_timbre import predict_timbre
 import json
