@@ -1,6 +1,6 @@
 from WebApp import db, create_app
 import os
-from WebApp.python_scripts.predict_genre import predict_genre
+from WebApp.python_scripts.predict_genre_without_argmax import predict_genre
 from WebApp.python_scripts.predict_mood import predict_mood
 from WebApp.python_scripts.predict_timbre import predict_timbre
 import json
@@ -12,7 +12,7 @@ genre_saved_mfcc = os.path.join(os.getcwd(), 'WebApp', 'static', 'mfccs', 'full_
 mood_saved_mfcc = os.path.join(os.getcwd(), 'WebApp', 'static', 'mfccs', 'instrumental_mfcc.json')
 timbre_saved_mfcc = os.path.join(os.getcwd(), 'WebApp', 'static', 'mfccs', 'vocal_mfcc.json')
 
-genre_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_genre_7_separated', 'saved_model')
+genre_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', '0109_PCRNN_Genre7_final_100each_100ep_0.00001lr', 'best_model.h5')
 mood_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_mood', 'saved_model')
 timbre_model_path = os.path.join(os.getcwd(), 'WebApp', 'python_scripts', 'pred_vocal', 'saved_model')
 
