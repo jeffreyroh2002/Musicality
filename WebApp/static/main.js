@@ -1,3 +1,14 @@
+var dropdown = document.querySelector(".dropdown_bar");
+var dropdownContent = document.querySelector(".dropdown_content");
+
+dropdown.addEventListener("click", function() {
+  dropdownContent.style.display='block';
+});
+
+function close_profile() {
+    dropdownContent.style.display='none'
+}
+
 var once = true;
 
 function OnlyOneClick() {
