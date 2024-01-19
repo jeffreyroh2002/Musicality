@@ -1,13 +1,28 @@
-var dropdown = document.querySelector(".dropdown_bar");
-var dropdownContent = document.querySelector(".dropdown_content");
+var accountModalBtn = document.querySelector(".account-modal-btn");
+var accountModal = document.getElementById("accountModal");
+var overlay = document.getElementById('overlay');
+var body = document.body;
+var navBar = document.querySelector(".app-bar")
 
-dropdown.addEventListener("click", function() {
-  dropdownContent.style.display='block';
+accountModalBtn.addEventListener("click", function() {
+    accountModal.style.display = 'block';
+    overlay.style.display = 'block'; // 어두운 오버레이 표시
+    body.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // 기존 창 어둡게
 });
 
-function close_profile() {
-    dropdownContent.style.display='none'
+// 모달 닫기
+function closeModal() {
+    accountModal.style.display = 'none';
+    overlay.style.display = 'none'; // 어두운 오버레이 감추기
+    body.style.backgroundColor = '#fff'; // 기존 창 밝게
 }
+
+// 모달 외의 영역 클릭 시 모달 닫기 (선택 사항)
+window.addEventListener('click', function(event) {
+    if (event.target === overlay) {
+        closeModal();
+    }
+});
 
 var once = true;
 
