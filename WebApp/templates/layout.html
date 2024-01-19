@@ -31,20 +31,15 @@
           <div class="headline-div">
             <a class="headline" href="/">ODEUM</a>
           </div>
-            <!-- 드롭다운 메뉴바 -->
-            <div class="dropdown_bar">
-              <div class="leading-icon">
-                <div class="state-layer">
-                  <a class="icon-layout" >
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.5C6.48 2.5 2 6.98 2 12.5C2 18.02 6.48 22.5 12 22.5C17.52 22.5 22 18.02 22 12.5C22 6.98 17.52 2.5 12 2.5ZM18.36 17.33C16.93 15.59 13.46 15 12 15C10.54 15 7.07 15.59 5.64 17.33C4.62 15.99 4 14.32 4 12.5C4 8.09 7.59 4.5 12 4.5C16.41 4.5 20 8.09 20 12.5C20 14.32 19.38 15.99 18.36 17.33ZM8.5 10C8.5 8.06 10.06 6.5 12 6.5C13.94 6.5 15.5 8.06 15.5 10C15.5 11.94 13.94 13.5 12 13.5C10.06 13.5 8.5 11.94 8.5 10Z" fill="#49454F"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
+          <div class="leading-icon account-modal-btn">
+            <div class="state-layer">
+              <a class="icon-layout" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.5C6.48 2.5 2 6.98 2 12.5C2 18.02 6.48 22.5 12 22.5C17.52 22.5 22 18.02 22 12.5C22 6.98 17.52 2.5 12 2.5ZM18.36 17.33C16.93 15.59 13.46 15 12 15C10.54 15 7.07 15.59 5.64 17.33C4.62 15.99 4 14.32 4 12.5C4 8.09 7.59 4.5 12 4.5C16.41 4.5 20 8.09 20 12.5C20 14.32 19.38 15.99 18.36 17.33ZM8.5 10C8.5 8.06 10.06 6.5 12 6.5C13.94 6.5 15.5 8.06 15.5 10C15.5 11.94 13.94 13.5 12 13.5C10.06 13.5 8.5 11.94 8.5 10Z" fill="#49454F"/>                    
+                </svg>
+              </a>
             </div>
-          
-
+          </div>
           <div class="leading-icon">
             <div class="state-layer">
               <a class="icon-layout" href="">
@@ -57,16 +52,12 @@
         </div>
       </nav>
     </header>
-    <main role="main" class="container" id="main-container">
-      <!-- 드롭다운 시 보여질 태그 -->
-      <div class="dropdown_content">
+    <!-- 드롭다운 시 보여질 태그 -->
+    <div class="account-modal" id="accountModal">
+      <div class="account-modal-content">
         {% if current_user.is_authenticated %}
-          <div style="display: flex; justify-content: space-between;">
-            <img class="profile-img" style="border-radius: 48px; background: lightgray 50% / cover no-repeat; ;" src="{{ url_for('static', filename=image_file) }}">
-            <div>
-              <a href="javascript:close_profile();" class="close-profile">X</a>
-            </div>
-          </div>
+          <span class="close-profile" onclick="closeModal()">&times;</span>
+          <img class="profile-img" style="border-radius: 48px; background: lightgray 50% / cover no-repeat; ;" src="{{ url_for('static', filename=image_file) }}">
           <h3 class="profile-user">Welcome! {{ current_user.username }}</h3>
           <hr style="width: 246px; height: 1px; background: #000;">
           <div class="profile-features">
@@ -76,21 +67,19 @@
           </div>
         {% else %}
           <div>
-            <div style="display: flex; justify-content: space-between;">
-              <svg class="profile-img" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-                <g clip-path="url(#clip0_32_1996)">
-                  <circle cx="24" cy="24" r="23" fill="#EFEFF0" stroke="#AFB1B6" stroke-width="2"/>
-                  <circle cx="24" cy="19" r="8" stroke="#AFB1B6" stroke-width="2"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.02344 38.6955C9.16854 33.4442 16.1215 30 23.9996 30C31.8777 30 38.8307 33.4442 42.9758 38.6955C42.5559 39.237 42.1133 39.76 41.6494 40.2632C37.9558 35.3445 31.5288 32 23.9996 32C16.4705 32 10.0435 35.3445 6.34986 40.2632C5.88601 39.76 5.44339 39.237 5.02344 38.6955Z" fill="#AFB1B6"/>
-                </g>
-                <defs>
-                  <clipPath id="clip0_32_1996">
-                    <rect width="48" height="48" fill="white"/>
-                  </clipPath>
-                </defs>
-              </svg>
-              <a href="javascript:close_profile();" class="close-profile">X</a>
-            </div>
+            <span class="close-profile" onclick="closeModal()">&times;</span>
+            <svg class="profile-img" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+              <g clip-path="url(#clip0_32_1996)">
+                <circle cx="24" cy="24" r="23" fill="#EFEFF0" stroke="#AFB1B6" stroke-width="2"/>
+                <circle cx="24" cy="19" r="8" stroke="#AFB1B6" stroke-width="2"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.02344 38.6955C9.16854 33.4442 16.1215 30 23.9996 30C31.8777 30 38.8307 33.4442 42.9758 38.6955C42.5559 39.237 42.1133 39.76 41.6494 40.2632C37.9558 35.3445 31.5288 32 23.9996 32C16.4705 32 10.0435 35.3445 6.34986 40.2632C5.88601 39.76 5.44339 39.237 5.02344 38.6955Z" fill="#AFB1B6"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_32_1996">
+                  <rect width="48" height="48" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
             <h3 class="profile-user">Please Log in</h3>
           </div>
           <hr style="width: 246px; height: 1px; background: #000;">
@@ -114,6 +103,9 @@
           <a class=start-test-phrase" href="{{ url_for('questions.test_questions', test_type = 1, audio_file_id=0) }}">Get Test</a>
         </div>
       </div>
+    </div>
+
+    <main role="main" class="container" id="main-container">
       <div class="row">
         <div class="col-md-8">
           {% with messages = get_flashed_messages(with_categories=true) %}
@@ -130,6 +122,7 @@
       </div>
     </main>
 
+    <div id="overlay"></div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
