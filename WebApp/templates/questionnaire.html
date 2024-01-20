@@ -10,6 +10,21 @@
     <source src="{{ url_for('static', filename='audio_full_mix_split/' + audio_file.audio_name) }}" type="audio/wav"> 
     Your browser does not support the audio player. Please consider upgrading to a modern browser.
   </audio>
+  <div class="audio-container">
+    <div class="bar-container">
+      <div class="bar-1"></div>
+      <div class="bar-2"></div>
+      <div class="bar-circle" title="0:00"></div>
+      <div class="bar-text">
+        <span title="current">0:00</span><span title="end">3:01</span>
+      </div>
+    </div>
+
+    <div class="play-button">
+
+    </div>
+  </div>
+
 
   <form method="post" action="">
     {{ form.csrf_token }}
