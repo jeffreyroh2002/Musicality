@@ -4,6 +4,13 @@ from WebApp.models import db, UserAnswer, AudioFile, Test
 from .forms import UserAnswerForm  #.forms imports from same package dir
 from datetime import datetime
 
+questions = Blueprint('questions', __name__)
+
+@questions.route("/before-test/<int:test_type>")
+@login_required
+def before_test(test_type):
+    return render_template("before_test.html", test_type=test_type)
+
 def get_next_audio_file_id(current_audio_file_id):
     current_audio_file = AudioFile.query.get_or_404(current_audio_file_id)
     next_audio_file = AudioFile.query.filter(AudioFile.id > current_audio_file.id).order_by(AudioFile.id.asc()).first()
@@ -13,7 +20,6 @@ def get_next_audio_file_id(current_audio_file_id):
     else:
         return None
 
-questions = Blueprint('questions', __name__)
 
 @questions.route("/test/<int:test_type>/<int:audio_file_id>", methods=['GET', 'POST'])
 @login_required

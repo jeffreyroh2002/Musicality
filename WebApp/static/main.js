@@ -7,7 +7,8 @@ var navBar = document.querySelector(".app-bar")
 accountModalBtn.addEventListener("click", function() {
     accountModal.style.display = 'block';
     overlay.style.display = 'block'; // 어두운 오버레이 표시
-    body.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // 기존 창 어둡게
+    body.style.backgroundColor = 'rgba(0, 0, 0, 0.65)'; // 기존 창 어둡게
+    navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.65)';
 });
 
 // 모달 닫기
@@ -15,12 +16,14 @@ function closeModal() {
     accountModal.style.display = 'none';
     overlay.style.display = 'none'; // 어두운 오버레이 감추기
     body.style.backgroundColor = '#fff'; // 기존 창 밝게
+    navBar.style.backgroundColor = '#F3E5FA';
 }
 
 // 모달 외의 영역 클릭 시 모달 닫기 (선택 사항)
-window.addEventListener('click', function(event) {
-    if (event.target === overlay) {
-        closeModal();
+$(document).mouseup(function (e){
+    var LayerPopup = $("#accountModal");
+    if(LayerPopup.has(e.target).length === 0){
+      closeModal();
     }
 });
 

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="before-test-div">
+    <div class="before-test-title">
+        Before Test
+    </div>
+    <div class= before-test-description>
+        <ul>
+            <li class="before-test-span">
+                음악을 듣고 질문에 답이 되는 선택지를 클릭하세요.<br/>
+            </li>
+            <span class="before-test-span">
+                <br/>
+            </span>
+            <li class="before-test-span">
+                곡의 전체적인 느낌을 묻는 질문은 필수로 답해야 합니다.<br/>
+            </li>
+            <span class="before-test-span">
+                <br/>
+            </span>
+            <li class="before-test-span">
+                추가 질문은 해도 되고 안해도 됩니다.<br/>
+            </li>
+            <span class="before-test-span">
+                <br/>
+            </span>
+            <li class="before-test-span">
+                가능한 추가질문에 답해주는 것이 도움이 됩니다.
+            </li>
+        </ul>
+    </div>
+    <div class="before-test-button-helper">
+        <a class="before-test-next-button" href="{{ url_for('questions.test_questions', test_type=test_type, audio_file_id=0) }}">
+            Next &#8594;
+        </a>
+    </div>
+</div>
+{% endblock content %}
