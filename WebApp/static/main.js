@@ -80,3 +80,20 @@ function createPreferenceScales(prefDict, containerId) {
         container.appendChild(prefContainer);
     }
 }
+
+// Play Button Logic
+const playButton = document.getElementById('play-button');
+let isPlaying = false;
+
+playButton.addEventListener('click', () => {
+  if (isPlaying) {
+    playButton.classList.remove('pause');
+    playButton.classList.add('play');
+    // Pause your media or perform any other action
+  } else {
+    playButton.classList.remove('play');
+    playButton.classList.add('pause');
+    // Play your media or perform any other action
+  }
+  isPlaying = !isPlaying;
+});
