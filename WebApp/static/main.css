@@ -297,16 +297,19 @@ body {
 }
 
 .bar-2 {
-  position: absolute;
+  position: relative;
+  top: -4px;
+  width: 345px;
+  height: 4px;
   border-radius: 100px;
   cursor: pointer;
   width: 220px;
-  height: 4px;
   background: blue;
 }
 
 .bar-circle {
-  position: absolute;
+  position: relative;
+  top:-20px;
   cursor: pointer;
   left: 20%;
   width: 28px;
